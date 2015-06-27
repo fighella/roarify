@@ -1,6 +1,9 @@
 # ROARify
 
 Access to the Shopify API ( https://docs.shopify.com/api ) using the amazing ROAR ( https://github.com/apotonick/roar )
+## Why?
+
+Because God kills a kitten everytime someone uses ActiveResource. And we're running out of kittens.
 
 ## Installation
 
