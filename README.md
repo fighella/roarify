@@ -1,6 +1,6 @@
 # Roarify
 
-TODO: Write a gem description
+Access to the Shopify API using the amazing ROAR ( https://github.com/apotonick/roar )
 
 ## Installation
 
