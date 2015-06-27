@@ -1,6 +1,6 @@
-# Roarify
+# ROARify
 
-Access to the Shopify API using the amazing ROAR ( https://github.com/apotonick/roar )
+Access to the Shopify API ( https://docs.shopify.com/api ) using the amazing ROAR ( https://github.com/apotonick/roar )
 
 ## Installation
 
