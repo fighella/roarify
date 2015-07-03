@@ -5,6 +5,10 @@ Access to the Shopify API (https://docs.shopify.com/api) using the amazing ROAR 
 
 Because Ghandi kills a kitten everytime someone uses ActiveResource. And we're running out of kittens.
 
+## Shopify API Updates
+
+https://ecommerce.shopify.com/c/api-announcements
+
 ## Shopify Objects
 
 ApplicationCharge
@@ -60,6 +64,25 @@ Or install it yourself as:
 ## Usage
 
 I wouldn't use it yet. Because it aint done.
+
+## Testing
+
+### Dummy store for testing for now
+
+*API Key*
+267bb31dc494b49d62868e5845133fea
+
+*Password*
+670cb9711a17762b01aedd42692b2225
+
+*Shared Secret*
+77b5c92c2fbd96575956dc3e1260f51d
+
+*URL Format*
+https://apikey:password@hostname/admin/resource.json
+
+*Example URL*
+https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/orders.json
 
 ## Contributing
 
