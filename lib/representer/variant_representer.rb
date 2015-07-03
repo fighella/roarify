@@ -1,10 +1,13 @@
 require 'roar/client'
+require 'variant'
+require 'image'
 
 module VariantRepresenter
   include Roar::JSON
   property :id
   property :sku
   property :option1
+  property :option2
 
   def update
     put(resource_request(represented.id))

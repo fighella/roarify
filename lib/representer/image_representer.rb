@@ -1,5 +1,5 @@
 require 'roar/client'
-class ImageRepresenter < Roar::Decorator
+module ImageRepresenter
   include Roar::JSON
   include Roar::Client
   # self.representation_wrap = :image
