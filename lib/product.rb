@@ -7,8 +7,8 @@ class Product
     end
   end
 
-  def images
-      ##
-  end
+  # def images
+  #     ##
+  # end
 
 end

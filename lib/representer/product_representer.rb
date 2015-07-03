@@ -4,6 +4,7 @@ require 'representer/image_representer'
 require 'product'
 require 'variant'
 require 'request'
+require 'image'
 
 module ProductRepresenter
   include Roar::JSON
@@ -12,7 +13,7 @@ module ProductRepresenter
   # self.representation_wrap = :product
  
   collection :variants, class: Variant, decorator: VariantRepresenter
-  collection :images, class: OpenStruct, decorator: ImageRepresenter
+  collection :images, class: Image, decorator: ImageRepresenter
  
   property :title
   property :id

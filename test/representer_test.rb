@@ -28,7 +28,10 @@ class RepresenterTest < MiniTest::Spec
     representer = ProductDecorator.new(product)
     product_url = "https://#{DummyStore.store}/admin/products/1418685443.json"
     representer.get(uri: product_url, as: "application/json",  basic_auth: [DummyStore.api_key, DummyStore.password])
-    product.images << DummyData.image
+    image = Image.new
+    irepresenter = ImageDecorator.new(image)
+    irepresenter.src = DummyData.image
+    product.images << image
     product.save
     ## save?
   end
