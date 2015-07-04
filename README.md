@@ -1,6 +1,6 @@
 # ROARify
 
-Access to the Shopify API (https://docs.shopify.com/api) using the amazing ROAR (https://github.com/apotonick/roar)
+Access to the Shopify API (https://docs.shopify.com/api) using ROAR (https://github.com/apotonick/roar)
 ## Why?
 
 Because Ghandi kills a kitten everytime someone uses ActiveResource. And we're running out of kittens.
@@ -82,7 +82,7 @@ I wouldn't use it yet. Because it aint done.
 https://apikey:password@hostname/admin/resource.json
 
 *Example URL*
-https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/orders.json
+https://<api_key>:<password>@roarify.myshopify.com/admin/orders.json
 
 ## Contributing
 
