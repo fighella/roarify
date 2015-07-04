@@ -86,10 +86,11 @@ class RepresenterTest < MiniTest::Spec
     # representer.update
 
     variant = Variant.new
-    vrepresenter = VariantDecorator.new(variant)
+    # vrepresenter = VariantDecorator.new(variant)
     variant.option1 = 'Large'
     variant.option2 = 'Blue'
     variant.price = 12.50
+    variant.inventory_quantity = 12
     variant.barcode = 'iwaslike'
     variant.title = 'BestEdition'
     product.variants << variant
@@ -138,8 +139,13 @@ class RepresenterTest < MiniTest::Spec
     end
 
     matching = product.variants[0]
-    matching.sku = 'DISKO-Uz'
+    matching.sku = 'DISKO-sUz'
+    matching.old_inventory_quantity = 1
+    matching.inventory_quantity = 12
 
+    puts "1. Matching: #{matching.inventory_quantity}"
+    #is 12
+    
     variant = VariantDecorator.new(matching)
     VCR.use_cassette 'update_product_variant' do
       variant.update

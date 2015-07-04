@@ -1,23 +1,26 @@
 require 'roar/client'
 require 'variant'
 require 'image'
+require 'image'
+require 'representer'
 
 module VariantRepresenter
   include Roar::JSON
-  property :id
+  include Representer
+  self.api_name = 'variants'
+  
+  property :id 
   property :sku
   property :option1
   property :option2
   property :price
   property :title
   property :barcode
+  property :inventory_quantity
+  property :old_inventory_quantity
 
   def update
     put(resource_request(represented.id))
-  end
-
-  def resource_request(id=nil)
-    Request.new('variants', id).url
   end
 
 # variants

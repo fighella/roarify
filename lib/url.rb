@@ -1,9 +1,9 @@
 require 'shop'
-class Request
+class Url
   def initialize(resource, id=nil)
     @resource = resource
     @id = id
-    set_request_type
+    set_request_type!
   end
 
   def url
@@ -33,11 +33,11 @@ class Request
     Shop.new.connect
   end
 
-  def set_request_type
-    if @id.nil?
-      @collection = true
-    else
+  def set_request_type!
+    unless @id.nil?
       @member = @id.to_s
+    else
+      @collection = true
     end
   end
 
