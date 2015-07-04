@@ -10,6 +10,7 @@ require "representer/image_representer"
 require "representer/image_decorator"
 require "representer/option_decorator"
 require "representer/option_representer"
+require "support/vcr"
 require "product"
 require "option"
 require "search"
@@ -20,4 +21,3 @@ require "image"
 
 require "dummy/dummy_store"
 require "dummy/dummy_data"
-

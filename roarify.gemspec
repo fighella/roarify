@@ -24,5 +24,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "minitest"
   spec.add_development_dependency "pry-rescue"
   spec.add_development_dependency "pry-stack_explorer"
-
+  spec.add_development_dependency "vcr"
+  spec.add_development_dependency "webmock"
 end

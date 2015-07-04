@@ -1,0 +1,83 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products/1418157891.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 04 Jul 2015 15:45:01 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Sorting-Hat-Podid:
+      - '2'
+      X-Sorting-Hat-Shopid:
+      - '9123524'
+      X-Sorting-Hat-Podid-Cached:
+      - '1'
+      X-Sorting-Hat-Shopid-Cached:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      Status:
+      - 200 OK
+      X-Xss-Protection:
+      - 1; mode=block; report=/xss-report/7ebe5b53-ed3d-40a3-864c-5a1daaf67ed3?source%5Baction%5D=show&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Shopid:
+      - '9123524'
+      X-Shardid:
+      - '2'
+      X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      Http-X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      X-Stats-Userid:
+      - '0'
+      X-Stats-Apiclientid:
+      - '977366'
+      X-Stats-Apipermissionid:
+      - '12331486'
+      Set-Cookie:
+      - request_method=GET; path=/
+      X-Request-Id:
+      - 7ebe5b53-ed3d-40a3-864c-5a1daaf67ed3
+      P3p:
+      - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
+      X-Dc:
+      - ash
+    body:
+      encoding: ASCII-8BIT
+      string: '{"product":{"body_html":null,"created_at":"2015-07-03T07:41:49-04:00","handle":"trailblazer-the-book","id":1418157891,"product_type":"","published_at":"2015-07-03T07:41:49-04:00","published_scope":"global","template_suffix":null,"title":"Trailblazer
+        the book.","updated_at":"2015-07-04T11:03:03-04:00","vendor":"Roarify","tags":"","variants":[{"barcode":null,"compare_at_price":null,"created_at":"2015-07-03T07:41:49-04:00","fulfillment_service":"manual","grams":0,"id":4266490755,"inventory_management":null,"inventory_policy":"deny","option1":"Default
+        Title","option2":null,"option3":null,"position":1,"price":"0.00","product_id":1418157891,"requires_shipping":true,"sku":"DISKO-Uz","taxable":true,"title":"Default
+        Title","updated_at":"2015-07-04T11:03:03-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"}],"options":[{"id":1700948867,"name":"Title","position":1,"product_id":1418157891,"values":["Default
+        Title"]}],"images":[],"image":null}}'
+    http_version: 
+  recorded_at: Sat, 04 Jul 2015 15:45:01 GMT
+recorded_with: VCR 2.9.3
