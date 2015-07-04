@@ -1,7 +1,6 @@
 require 'roar/client'
 require 'variant'
 require 'image'
-require 'image'
 require 'representer'
 
 module VariantRepresenter
@@ -20,7 +19,7 @@ module VariantRepresenter
   property :old_inventory_quantity
 
   def update
-    put(resource_request(represented.id))
+    put(resource_request(represented.id).url)
   end
 
 # variants

@@ -43,7 +43,6 @@ class Url
 
   def resource
     @collection ? @resource : @resource + '/' + @member 
-    ## pluralize is rails
   end
 
 end
