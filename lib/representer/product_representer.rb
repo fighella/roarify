@@ -2,6 +2,7 @@ require 'roar/client'
 require 'representer/variant_representer'
 require 'representer/image_representer'
 require 'representer/option_representer'
+require 'representer/option_decorator'
 require 'product'
 require 'option'
 require 'variant'
@@ -16,7 +17,7 @@ module ProductRepresenter
  
   collection :variants, class: Variant, decorator: VariantRepresenter
   collection :images, class: Image, decorator: ImageRepresenter
-  collection :options, class: Option, decorator: OptionRepresenter
+  collection :options, class: Option, decorator: OptionDecorator
  
   property :title
   property :id
@@ -49,8 +50,10 @@ module ProductRepresenter
     get(resource_request(id).url)
   end
 
-  def self.update
-    put(resource_request(id).url)
+  def update
+    put(resource_request(represented.id).url)
+  rescue
+    @error_message = 'AHH!'
   end
 
   def find_by(attribute, title)

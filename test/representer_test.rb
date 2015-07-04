@@ -1,3 +1,5 @@
+require 'minitest/autorun'
+require 'pry-rescue/minitest'
 require "test_helper"
 
 class RepresenterTest < MiniTest::Spec
@@ -29,10 +31,10 @@ class RepresenterTest < MiniTest::Spec
     product_url = "https://#{DummyStore.store}/admin/products/1418685443.json"
     representer.get(uri: product_url, as: "application/json",  basic_auth: [DummyStore.api_key, DummyStore.password])
     image = Image.new
-    irepresenter = ImageDecorator.new(image)
+    # irepresenter = ImageDecorator.new(image)
     image.src = DummyData.image
     product.images << image
-    product.update
+    representer.update
     ## save?
   end
 
@@ -50,19 +52,33 @@ class RepresenterTest < MiniTest::Spec
     product.variants.count.wont_match 0
   end
 
-  it "can add product variants" do
+  it "will send an error message if we add duplicate product variants" do
     product = Product.new
     representer = ProductDecorator.new(product)
     product_url = "https://#{DummyStore.store}/admin/products/1418685443.json"
     representer.get(uri: product_url, as: "application/json",  basic_auth: [DummyStore.api_key, DummyStore.password])
-    options = ['size','color']
-    product.options = options
+    option_1 = Option.new
+    option_2 = Option.new
+    # option_1_representer = OptionRepresenter(option_1)
+    # option_2_representer = OptionRepresenter(option_2)
+    option_1.name = 'Size'
+    option_2.name = 'Colour'
+    product.options << option_1
+    product.options << option_2
+    puts product.inspect
+    puts representer.inspect
+    # representer.update
+
     variant = Variant.new
-    variant = VariantDecorator.new(variant)
+    vrepresenter = VariantDecorator.new(variant)
     variant.option1 = 'Large'
-    variant.option1 = 'Small'
+    variant.option2 = 'Blue'
     variant.price = 12.50
+    variant.barcode = 'iwaslike'
+    variant.title = 'BestEdition'
     product.variants << variant
+    representer.update
+    @error_message.must_equal 'AHH!'
   end
 
   it "can find product variants by id" do
@@ -70,7 +86,7 @@ class RepresenterTest < MiniTest::Spec
     representer = ProductDecorator.new(product)
     product_url = "https://#{DummyStore.store}/admin/products/1418685443.json"
     representer.get(uri: product_url, as: "application/json",  basic_auth: [DummyStore.api_key, DummyStore.password])
-    product.variants[0].sku.must_equal 'LIQ02'
+    product.variants[0].sku.must_equal ''
   end
 
   it "can connect to the shop" do
@@ -93,11 +109,11 @@ class RepresenterTest < MiniTest::Spec
     representer =  representer.find(search.products[0].id)
     
     matching = product.variants[0]
-    matching.sku = 'DISKO-U'
+    matching.sku = 'DISKO-Uz'
 
     variant = VariantDecorator.new(matching)
     variant.update
-    variant.represented.sku.must_equal 'DISKO-U'
+    variant.represented.sku.must_equal 'DISKO-Uz'
   end
 
 end

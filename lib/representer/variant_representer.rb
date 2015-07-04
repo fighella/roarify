@@ -8,6 +8,9 @@ module VariantRepresenter
   property :sku
   property :option1
   property :option2
+  property :price
+  property :title
+  property :barcode
 
   def update
     put(resource_request(represented.id))
