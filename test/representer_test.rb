@@ -13,7 +13,11 @@ class RepresenterTest < MiniTest::Spec
       product.vendor = 'VayBay'
       product.product_type = 'Bible'
       products_url = "https://#{DummyStore.store}/admin/products.json"
-      representer.post(uri: products_url, as: "application/json",  basic_auth: [DummyStore.api_key, DummyStore.password])
+      VCR.use_cassette 'create_product' do
+        representer.post(uri: products_url,
+                         as: "application/json",
+                         basic_auth: [DummyStore.api_key, DummyStore.password])
+      end
       product.title.must_match 'Trailblazer the book.'
     end
   end
@@ -29,7 +33,11 @@ class RepresenterTest < MiniTest::Spec
     product = Product.new
     representer = ProductDecorator.new(product)
     product_url = "https://#{DummyStore.store}/admin/products/1418685443.json"
-    representer.get(uri: product_url, as: "application/json",  basic_auth: [DummyStore.api_key, DummyStore.password])
+    VCR.use_cassette 'show_product' do
+      representer.get(uri: product_url,
+                      as: "application/json",
+                      basic_auth: [DummyStore.api_key, DummyStore.password])
+    end
     image = Image.new
     # irepresenter = ImageDecorator.new(image)
     image.src = DummyData.image
@@ -48,7 +56,11 @@ class RepresenterTest < MiniTest::Spec
     product = Product.new
     representer = ProductDecorator.new(product)
     product_url = "https://#{DummyStore.store}/admin/products/1418685443.json"
-    representer.get(uri: product_url, as: "application/json",  basic_auth: [DummyStore.api_key, DummyStore.password])
+    VCR.use_cassette 'show_product' do
+      representer.get(uri: product_url,
+                      as: "application/json",
+                      basic_auth: [DummyStore.api_key, DummyStore.password])
+    end
     product.variants.count.wont_match 0
   end
 
@@ -56,7 +68,11 @@ class RepresenterTest < MiniTest::Spec
     product = Product.new
     representer = ProductDecorator.new(product)
     product_url = "https://#{DummyStore.store}/admin/products/1418685443.json"
-    representer.get(uri: product_url, as: "application/json",  basic_auth: [DummyStore.api_key, DummyStore.password])
+    VCR.use_cassette 'show_product' do
+      representer.get(uri: product_url,
+                      as: "application/json",
+                      basic_auth: [DummyStore.api_key, DummyStore.password])
+    end
     option_1 = Option.new
     option_2 = Option.new
     # option_1_representer = OptionRepresenter(option_1)
@@ -77,7 +93,9 @@ class RepresenterTest < MiniTest::Spec
     variant.barcode = 'iwaslike'
     variant.title = 'BestEdition'
     product.variants << variant
-    representer.update
+    VCR.use_cassette 'add_duplicate' do
+      representer.update
+    end
     ## not right but kind of...
     representer.update.must_equal 'AHH!'
   end
@@ -86,7 +104,11 @@ class RepresenterTest < MiniTest::Spec
     product = Product.new
     representer = ProductDecorator.new(product)
     product_url = "https://#{DummyStore.store}/admin/products/1418685443.json"
-    representer.get(uri: product_url, as: "application/json",  basic_auth: [DummyStore.api_key, DummyStore.password])
+    VCR.use_cassette 'show_product' do
+      representer.get(uri: product_url,
+                      as: "application/json",
+                      basic_auth: [DummyStore.api_key, DummyStore.password])
+    end
     product.variants[0].sku.must_equal ''
   end
 
@@ -94,7 +116,11 @@ class RepresenterTest < MiniTest::Spec
     product = Product.new
     representer = ProductDecorator.new(product)
     product_url = "https://#{DummyStore.store}/admin/products/1418685443.json"
-    representer.get(uri: product_url, as: "application/json",  basic_auth: [DummyStore.api_key, DummyStore.password])
+    VCR.use_cassette 'show_product' do
+      representer.get(uri: product_url,
+                      as: "application/json",
+                      basic_auth: [DummyStore.api_key, DummyStore.password])
+    end
     product.body_html.must_match '<p>'
     product.id.must_equal 1418685443
   end
@@ -103,17 +129,21 @@ class RepresenterTest < MiniTest::Spec
     search = Search.new
     srepresenter = SearchRepresenter.new(search)
     srepresenter.find_by(:handle, 'trailblazer-the-book')
-    
+
     ## Do the search, but then 're-find' the book... ??
     product = Product.new
     representer = ProductDecorator.new(product)
-    representer =  representer.find(search.products[0].id)
-    
+    VCR.use_cassette 'find_product' do
+      representer = representer.find(search.products[0].id)
+    end
+
     matching = product.variants[0]
     matching.sku = 'DISKO-Uz'
 
     variant = VariantDecorator.new(matching)
-    variant.update
+    VCR.use_cassette 'update_product_variant' do
+      variant.update
+    end
     variant.represented.sku.must_equal 'DISKO-Uz'
   end
 

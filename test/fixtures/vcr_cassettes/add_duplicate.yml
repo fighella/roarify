@@ -1,0 +1,137 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products/1418685443.json
+    body:
+      encoding: UTF-8
+      string: '{"product":{"variants":[{"id":4294729667,"sku":"","option1":"Large","price":"12.50","title":"Large","barcode":"iwaslike"},{"option1":"Large","option2":"Blue","price":12.5,"title":"BestEdition","barcode":"iwaslike"}],"images":[],"options":[{"id":1701824579,"name":"Title","position":1,"product_id":1418685443,"values":["Large"]},"#<Option:0x007fea34575e10>","#<Option:0x007fea34575de8>"],"title":"Trailblazer
+        the book.","id":1418685443,"vendor":"VayBay","created_at":"2015-07-03T08:26:03-04:00","body_html":"<p>  EXT.  CITY
+        STREET - TRAFFIC - DAY  Johnny weaves the sedan among the creeping commuters.\n  Long
+        glittering lines and heat waves.                           UTAH\n            I
+        say we call it in.  Get some\n            backup.  But you gotta do it.  Harp\n            won''t
+        listen to me.                           PAPPAS\n            Sure.  No problem.  I''ll
+        just call\n            up and tell him his favorite agent\n            saw
+        this one surfer moon another\n            surfer yesterday and it looked real\n            suspicious.  Shit,
+        he''ll probably\n            call out the National Guard.                           UTAH\n            I
+        say we don''t call it in.  Under no\n            circumstance are we to call
+        this in.                           PAPPAS\n            Look, we handle it
+        ourselves, for\n            right now, okay?  We cover the bank,\n            whatever.  You
+        and me.  That way if\n            nothing happens, or more accurately,\n            when
+        nothing happens... I don''t get\n            my tits any further into the
+        wringer\n            than they already are.                                              CUT
+        TO:  EXT.  ASSURED TRUST SAVING AND LOAN  SLOW PAN from the facade of the
+        bank halfway up the block\n  to Utah''s sedan in the TIGHT F.G.  Head flopped
+        back over\n  the seat, Angelo snoozes in the hot sun with a sports page\n  over
+        his face.  Johnny looks at his watch for the fiftieth\n  time.  Whole lot
+        of nothing going on.  Angelo slides the sports page down to his chin, without\n  otherwise
+        moving.                           PAPPAS\n            Time for lunch.                           UTAH\n            Angelo,
+        it''s eleven thirty.                           PAPPAS\n            That place
+        up the street has\n            meatball sandwiches.  Get me two.  Utah slides
+        out of the car.  Feeling a little exposed he\n  pulls his Dodgers cap down
+        a little tighter, and adjusts\n  his sunglasses.\n  He trudges off through
+        the sidewalk crowd toward the FAST-\n  FOOD STAND nearby.\n  Pappas pulls
+        the sports page back up to block the sun.                                              CUT
+        TO:  EXT.  FAST FOOD PLACE  ON A LONG LENS, very stacked up, we see Johnny
+        standing at\n  the grody pick-up window.  He keeps looking at the bank,\n  visible
+        B.G.\n  The pick-up window opens and food appears, sliding out.\n  Utah turns,
+        pulling out his wallet.                           VOICE FROM INSIDE\n            Two
+        meatball, one tuna on wheat,\n            two lemonades.  Total''s seven eighty\n            four.  As
+        Johnny is counting out the bills, a BURGUNDY\n  THUNDERBIRD pulls up in front
+        of the bank.  The doors fly\n  open.\n  The Ex-Presidents jump out.\n  They
+        sprint for the entrance.  All this OUT OF FOCUS, B.G.\n  Johnny misses it
+        as he picks up the food order.\n  The Presidents disappear inside.\n  Johnny
+        looks toward the bank again.  There is no movement.  REVERSE, as Utah walks
+        back toward his car.  Pappas is\n  still under the paper.  He slides it down
+        when he smells\n  food.                           UTAH\n            Here,
+        yours is the one that looks\n            like a road kill.  Enjoy.  Utah throws
+        a big stack of napkins through the window into\n  Pappas'' lap.  Still standing
+        next to the car.                           UTAH\n            Here''s your
+        lemonade.\n                    (he looks down the\n                     street)\n            Did
+        you see that T-Bird pull up?  Pappas pulls a disgusting mass from the bag,
+        unwrapping\n  one end.                           PAPPAS\n                    (without
+        looking)\n            Damn, I could eat the ass out of an\n            elephant.  I
+        shoulda had you get me\n            three a these.  What T-Bird?  Pappas is
+        about to take a huge bite when a meatball falls\n  out of the end of the sandwich.  It
+        lands on the seat next\n  to him.\n  He looks at it.  Picks it up.  Pops it
+        into his mouth\n  and--\n  Freezes, mouth open.  Eyes focused on...\n  The
+        Ex-Presidents, in living color, flashing through the\n  doors of the bank
+        80 feet away.  Johnny is so astounded he doesn''t do anything for about\n  two
+        seconds.  Pappas coughs out his meatball, eyes\n  bugging.                           PAPPAS\n            Jesus
+        Christ!!  It''s them!  The Presidents are piling into the car.\n  Johnny reacts
+        characteristically.  He whips out the\n  Beretta and yells--                           UTAH\n            FBI!!  Freeze!!  Right
+        now!  NIXON spins, raising his shotgun.\n  But Reagan knocks the muzzle down
+        with his hand.  Shoves\n  him into the car.  Then Reagan jumps behind the
+        wheel.\n  The back wheels light up, smoking, as the T-Bird launches.  Utah
+        FIRES.\n  BLAM!  BLAM!  BLAM!\n  He puts two into the trunk and blows the
+        back window into\n  junk jewelry.  The T-Bird peels out into traffic, clipping\n  a
+        Subaru which locks them up and spins.                           PAPPAS\n            Come
+        on, kid, get in the car!\n            Jesus!</p>","handle":"trailblazer-the-book-12","product_type":"Bible","published_at":"2015-07-03T08:26:03-04:00","published_scope":"global","tags":"","updated_at":"2015-07-04T11:43:08-04:00"}}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 422
+      message: Unprocessable Entity
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 04 Jul 2015 15:45:00 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Sorting-Hat-Podid:
+      - '2'
+      X-Sorting-Hat-Shopid:
+      - '9123524'
+      X-Sorting-Hat-Podid-Cached:
+      - '1'
+      X-Sorting-Hat-Shopid-Cached:
+      - '1'
+      Status:
+      - 422 Unprocessable Entity
+      X-Xss-Protection:
+      - 1; mode=block; report=/xss-report/b4ef48ec-bb58-485f-aa69-6c7428eb256c?source%5Baction%5D=update&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Shopid:
+      - '9123524'
+      X-Shardid:
+      - '2'
+      X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      Http-X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      X-Stats-Userid:
+      - '0'
+      X-Stats-Apiclientid:
+      - '977366'
+      X-Stats-Apipermissionid:
+      - '12331486'
+      X-Stats-Validation-Errors:
+      - The variant 'Large' already exists.
+      Set-Cookie:
+      - _secure_admin_session_id=1e7f275c7f330fda6d186a9f36f389dc; path=/admin; secure;
+        HttpOnly
+      - request_method=PUT; path=/
+      X-Request-Id:
+      - b4ef48ec-bb58-485f-aa69-6c7428eb256c
+    body:
+      encoding: UTF-8
+      string: '{"errors":{"base":["The variant ''Large'' already exists."]}}'
+    http_version: 
+  recorded_at: Sat, 04 Jul 2015 15:44:59 GMT
+recorded_with: VCR 2.9.3

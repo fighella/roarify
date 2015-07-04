@@ -1,0 +1,109 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products.json
+    body:
+      encoding: UTF-8
+      string: '{"product":{"title":"Trailblazer the book.","vendor":"VayBay","body_html":"<p>  EXT.  ALLEY<br/>  A
+        non-descript L.A. alley... commercial buildings on one\n  side, walled suburb
+        on the other.  Two men running all\n  out.\n  A recent President and a wild-eyed
+        cop trailing smoke like\n  a crashing jet fighter.<br/>  Beyond the buildings
+        behind them A FIREBALL EXPLODES\n  SKYWARD.  We hear sirens and shouting,
+        which recede as the\n  two pelt along the alley.  It gets quieter.  Just the\n  machine-gun
+        slap of the shoes on pavement, and the hard\n  breathing of the two men, each
+        in overdrive, going all out\n  in long blurring strides.<br/>  REAGAN looks
+        back.  Sees the demon cop behind him,\n  gaining.\n  Utah has become an engine,
+        a running machine... juggernaut\n  mode.<br/>  AHEAD OF THEM a BLACK AND WHITE
+        swings into the alley.\n  Reagan hangs a hard left and blasts a wooden gate
+        half off\n  its hinges.  Utah whips through the gate a second later.\n  Diving
+        into suburbia.</p>","product_type":"Bible"}}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 04 Jul 2015 15:44:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Sorting-Hat-Podid:
+      - '2'
+      X-Sorting-Hat-Shopid:
+      - '9123524'
+      X-Sorting-Hat-Podid-Cached:
+      - '1'
+      X-Sorting-Hat-Shopid-Cached:
+      - '1'
+      Status:
+      - 201 Created
+      X-Xss-Protection:
+      - 1; mode=block; report=/xss-report/cace405e-02fa-4686-8f12-92ed0a3d90bf?source%5Baction%5D=create&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Shopid:
+      - '9123524'
+      X-Shardid:
+      - '2'
+      X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      Http-X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      X-Stats-Userid:
+      - '0'
+      X-Stats-Apiclientid:
+      - '977366'
+      X-Stats-Apipermissionid:
+      - '12331486'
+      Location:
+      - https://roarify.myshopify.com/admin/products/1438765763
+      Set-Cookie:
+      - _secure_admin_session_id=08350c4492a2504fd8b45f9a3e0a542a; path=/admin; secure;
+        HttpOnly
+      - request_method=POST; path=/
+      X-Request-Id:
+      - cace405e-02fa-4686-8f12-92ed0a3d90bf
+      P3p:
+      - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
+      X-Dc:
+      - ash
+    body:
+      encoding: UTF-8
+      string: '{"product":{"body_html":"\u003cp\u003e  EXT.  ALLEY\u003cbr\u003e  A
+        non-descript L.A. alley... commercial buildings on one\n  side, walled suburb
+        on the other.  Two men running all\n  out.\n  A recent President and a wild-eyed
+        cop trailing smoke like\n  a crashing jet fighter.\u003cbr\u003e  Beyond the
+        buildings behind them A FIREBALL EXPLODES\n  SKYWARD.  We hear sirens and
+        shouting, which recede as the\n  two pelt along the alley.  It gets quieter.  Just
+        the\n  machine-gun slap of the shoes on pavement, and the hard\n  breathing
+        of the two men, each in overdrive, going all out\n  in long blurring strides.\u003cbr\u003e  REAGAN
+        looks back.  Sees the demon cop behind him,\n  gaining.\n  Utah has become
+        an engine, a running machine... juggernaut\n  mode.\u003cbr\u003e  AHEAD OF
+        THEM a BLACK AND WHITE swings into the alley.\n  Reagan hangs a hard left
+        and blasts a wooden gate half off\n  its hinges.  Utah whips through the gate
+        a second later.\n  Diving into suburbia.\u003c\/p\u003e","created_at":"2015-07-04T11:44:56-04:00","handle":"trailblazer-the-book-115","id":1438765763,"product_type":"Bible","published_at":"2015-07-04T11:44:56-04:00","published_scope":"global","template_suffix":null,"title":"Trailblazer
+        the book.","updated_at":"2015-07-04T11:44:56-04:00","vendor":"VayBay","tags":"","variants":[{"barcode":null,"compare_at_price":null,"created_at":"2015-07-04T11:44:56-04:00","fulfillment_service":"manual","grams":0,"id":4311238915,"inventory_management":null,"inventory_policy":"deny","option1":"Default
+        Title","option2":null,"option3":null,"position":1,"price":"0.00","product_id":1438765763,"requires_shipping":true,"sku":"","taxable":true,"title":"Default
+        Title","updated_at":"2015-07-04T11:44:56-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"}],"options":[{"id":1724161795,"name":"Title","position":1,"product_id":1438765763,"values":["Default
+        Title"]}],"images":[],"image":null}}'
+    http_version: 
+  recorded_at: Sat, 04 Jul 2015 15:44:55 GMT
+recorded_with: VCR 2.9.3
