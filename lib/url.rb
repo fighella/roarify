@@ -8,14 +8,14 @@ class Url
     set_request_type!
   end
 
-  def roar
+  def url
     original_uri = connect[:uri]
     fixed_uri = original_uri + resource + '.json'
     connect.merge({uri: fixed_uri})
   end
 
   def search(attribute,query)
-    start_url = roar
+    start_url = url
     original_uri = url[:uri]
     search_url = original_uri + '?' + attribute + '=' + query
     start_url.merge({uri: search_url})

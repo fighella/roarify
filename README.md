@@ -1,6 +1,9 @@
 # ROARify
 
 Access to the Shopify API (https://docs.shopify.com/api) using ROAR (https://github.com/apotonick/roar)
+
+[![Build Status](https://travis-ci.org/fighella/roarify.svg?branch=master)](https://travis-ci.org/fighella/roarify)
+
 ## Why?
 
 Because Ghandi kills a kitten everytime someone uses ActiveResource. And we're running out of kittens.
