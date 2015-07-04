@@ -29,7 +29,7 @@ class SearchRepresenter < Roar::Decorator
 
   def resource_request
     ## just use products for now
-    Request.new('products')
+    Url.new('products')
   end
 end
 

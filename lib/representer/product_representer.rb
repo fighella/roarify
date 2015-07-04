@@ -6,12 +6,15 @@ require 'representer/option_decorator'
 require 'product'
 require 'option'
 require 'variant'
-require 'request'
+require 'url'
 require 'image'
+require 'representer'
 
 module ProductRepresenter
   include Roar::JSON
   include Roar::Client
+  include Representer
+  self.api_name = 'product'
   ## when accessing Product through SEARCH, it does not "self wrap" each product...
   # self.representation_wrap = :product
  
@@ -60,11 +63,11 @@ module ProductRepresenter
     get(resource_request.search(attribute.to_s,title))
   end
 
-  def shopify_url
-    resource_request.url
-  end
+  # def shopify_url
+  #   resource_request.url
+  # end
 
-  def resource_request(id=nil)
-    Request.new('products',id)
-  end
+  # def resource_request(id=nil)
+  #   Url.new(self.class.api_name,id)
+  # end
 end

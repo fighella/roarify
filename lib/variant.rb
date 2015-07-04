@@ -1,5 +1,5 @@
 class Variant
-  attr_accessor :id, :sku, :option1, :option2, :price, :title, :barcode
+  attr_accessor :id, :sku, :option1, :option2, :price, :title, :barcode, :inventory_quantity, :old_inventory_quantity
 # { "barcode" : "1234_pink" }
 # { "compare_at_price" : "null" }
 # { "created_at" : "2012-08-24T14:01:47-04:00" }
