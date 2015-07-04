@@ -53,7 +53,7 @@ module ProductRepresenter
   def update
     put(resource_request(represented.id).url)
   rescue
-    @error_message = 'AHH!'
+    'AHH!'
   end
 
   def find_by(attribute, title)

@@ -78,7 +78,8 @@ class RepresenterTest < MiniTest::Spec
     variant.title = 'BestEdition'
     product.variants << variant
     representer.update
-    @error_message.must_equal 'AHH!'
+    ## not right but kind of...
+    representer.update.must_equal 'AHH!'
   end
 
   it "can find product variants by id" do
