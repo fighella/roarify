@@ -65,22 +65,18 @@ Or install it yourself as:
 
 I wouldn't use it yet. Because it aint done.
 
-## Testing
+## 'Live' Testing
 
-### Dummy store for testing for now
+#### Dummy store for testing for now
 
 *API Key*
 267bb31dc494b49d62868e5845133fea
-
 *Password*
 670cb9711a17762b01aedd42692b2225
-
 *Shared Secret*
 77b5c92c2fbd96575956dc3e1260f51d
-
 *URL Format*
 https://apikey:password@hostname/admin/resource.json
-
 *Example URL*
 https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/orders.json
 
@@ -91,3 +87,7 @@ https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarif
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## Special Thanks
+
+Nick Sutterer, Zubin Henner, Sean Seefried
