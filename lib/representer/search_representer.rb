@@ -14,9 +14,15 @@ class SearchRepresenter < Roar::Decorator
   property :handle
 
   def find_by(attribute, title)
+    search = represented
+    representer = SearchRepresenter.new(search)
     VCR.use_cassette "search_#{attribute}_for_#{title}" do
-      get(resource_request.search(attribute.to_s,title))
+      representer.get(resource_request.search(attribute.to_s,title))
     end
+    puts search.inspect
+    puts search.products.count
+
+      # get(resource_request.search(attribute.to_s,title))
   end
 
   def url

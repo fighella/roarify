@@ -1,17 +1,11 @@
 ---
 http_interactions:
 - request:
-    method: post
-    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products.json
+    method: get
+    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products.json?handle=trailblazer-the-book-119
     body:
-      encoding: UTF-8
-      string: '{"product":{"title":"Trailblazer. The Book.","vendor":"Sutterer Inc","body_html":"<p>  EXT.  HOUSE<br/>  JOHNNY
-        is pissing himself.  He can see it all going down.\n  So fast he doesn''t
-        have time to think.\n  He goes into motion -- slipping rapidly along the wall
-        to\n  the next window.\n  The bathroom window.<br/>  PAPPAS, AT THE FRONT
-        DOOR, makes his move.\n  He pushes the door open, breaking the security chain,
-        and\n  jams his FBI shield in the girl''s face as he grabs her\n  arm.<br/>                           PAPPAS\n            FBI,
-        gorgeous.  Now let''s take a\n            look around--</p>","product_type":"Video"}}'
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -23,13 +17,13 @@ http_interactions:
       - application/json
   response:
     status:
-      code: 201
-      message: Created
+      code: 200
+      message: OK
     headers:
       Server:
       - nginx
       Date:
-      - Wed, 08 Jul 2015 06:31:10 GMT
+      - Wed, 08 Jul 2015 06:59:00 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -44,10 +38,12 @@ http_interactions:
       - '1'
       X-Sorting-Hat-Shopid-Cached:
       - '1'
+      Vary:
+      - Accept-Encoding
       Status:
-      - 201 Created
+      - 200 OK
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/b5648cac-27b6-46ed-9cba-9d8dace63045?source%5Baction%5D=create&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/e480589f-0baf-4305-ae47-39f39b6bb3fc?source%5Baction%5D=index&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
       X-Content-Type-Options:
       - nosniff
       - nosniff
@@ -67,21 +63,17 @@ http_interactions:
       - '977366'
       X-Stats-Apipermissionid:
       - '12331486'
-      Location:
-      - https://roarify.myshopify.com/admin/products/1502490243
       Set-Cookie:
-      - _secure_admin_session_id=8a5ff0f2a52bf2981525ed21bd9784c1; path=/admin; secure;
-        HttpOnly
-      - request_method=POST; path=/
+      - request_method=GET; path=/
       X-Request-Id:
-      - b5648cac-27b6-46ed-9cba-9d8dace63045
+      - e480589f-0baf-4305-ae47-39f39b6bb3fc
       P3p:
       - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
       X-Dc:
       - ash
     body:
       encoding: UTF-8
-      string: '{"product":{"body_html":"\u003cp\u003e  EXT.  HOUSE\u003cbr\u003e  JOHNNY
+      string: '{"products":[{"body_html":"\u003cp\u003e  EXT.  HOUSE\u003cbr\u003e  JOHNNY
         is pissing himself.  He can see it all going down.\n  So fast he doesn''t
         have time to think.\n  He goes into motion -- slipping rapidly along the wall
         to\n  the next window.\n  The bathroom window.\u003cbr\u003e  PAPPAS, AT THE
@@ -91,7 +83,7 @@ http_interactions:
         The Book.","updated_at":"2015-07-08T02:31:10-04:00","vendor":"Sutterer Inc","tags":"","variants":[{"barcode":null,"compare_at_price":null,"created_at":"2015-07-08T02:31:10-04:00","fulfillment_service":"manual","grams":0,"id":4500494019,"inventory_management":null,"inventory_policy":"deny","option1":"Default
         Title","option2":null,"option3":null,"position":1,"price":"0.00","product_id":1502490243,"requires_shipping":true,"sku":"","taxable":true,"title":"Default
         Title","updated_at":"2015-07-08T02:31:10-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"}],"options":[{"id":1798900419,"name":"Title","position":1,"product_id":1502490243,"values":["Default
-        Title"]}],"images":[],"image":null}}'
+        Title"]}],"images":[],"image":null}]}'
     http_version: 
-  recorded_at: Wed, 08 Jul 2015 06:31:10 GMT
+  recorded_at: Wed, 08 Jul 2015 06:59:00 GMT
 recorded_with: VCR 2.9.3

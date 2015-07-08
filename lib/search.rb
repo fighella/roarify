@@ -1,10 +1,8 @@
 class Search
   attr_accessor :id, :handle, :products
 
-  def find_by_sku(sku)
-    variants.find do |v|
-      v.sku =~ /sku/ 
-    end
+  def self.find_by(attribute,value)
+
   end
 
   def title

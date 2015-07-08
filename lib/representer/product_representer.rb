@@ -1,5 +1,5 @@
 require 'roar/client'
-require 'representer/variant_representer'
+require 'representer/variant_decorator'
 require 'representer/image_representer'
 require 'representer/option_representer'
 require 'representer/option_decorator'
@@ -18,7 +18,7 @@ module ProductRepresenter
   ## when accessing Product through SEARCH, it does not "self wrap" each product...
   # self.representation_wrap = :product
  
-  collection :variants, class: Variant, decorator: VariantRepresenter
+  collection :variants, class: Variant, decorator: VariantDecorator, wrap: false
   collection :images, class: Image, decorator: ImageRepresenter
   collection :options, class: Option, decorator: OptionDecorator
  
@@ -53,16 +53,41 @@ module ProductRepresenter
     get(resource_request(id).url)
   end
 
+  def find!(id)
+    find
+    rescue 
+    'NOOO!'
+  end
+
   def update
     put(resource_request(represented.id).url)
   rescue
     'AHH!'
   end
 
-  def find_by(attribute, title)
-    get(resource_request.search(attribute.to_s,title))
+  def create
+    post(resource_request(represented.id).url)
+  rescue
+    'Duplicate'
   end
 
+
+  def find_by(attribute, title)
+    search = OpenStruct.new
+    representer = SearchRepresenter.new(search)
+    representer.get(resource_request.search(attribute.to_s,title))
+    puts search.inspect
+  end
+
+  def where_first_or_create(attribute,title)
+    puts where(attribute, title).inspect
+    if where(attribute,title).to_s #represented #.any?
+      first
+    else
+      create(resource_request(represented.id).url)
+    end
+  end
+  #
   # def shopify_url
   #   resource_request.url
   # end
