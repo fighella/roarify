@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 08 Jul 2015 07:04:38 GMT
+      - Thu, 09 Jul 2015 12:26:29 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -43,7 +43,7 @@ http_interactions:
       Status:
       - 200 OK
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/8b836ff1-5e57-4148-819b-346dd966e80b?source%5Baction%5D=index&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/99b66cfe-b5a4-49ab-b180-c4533587347c?source%5Baction%5D=index&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
       X-Content-Type-Options:
       - nosniff
       - nosniff
@@ -66,7 +66,7 @@ http_interactions:
       Set-Cookie:
       - request_method=GET; path=/
       X-Request-Id:
-      - 8b836ff1-5e57-4148-819b-346dd966e80b
+      - 99b66cfe-b5a4-49ab-b180-c4533587347c
       P3p:
       - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
       X-Dc:
@@ -79,5 +79,5 @@ http_interactions:
         Title","updated_at":"2015-07-07T07:37:15-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"}],"options":[{"id":1700948867,"name":"Title","position":1,"product_id":1418157891,"values":["Default
         Title"]}],"images":[],"image":null}]}'
     http_version: 
-  recorded_at: Wed, 08 Jul 2015 07:04:39 GMT
+  recorded_at: Thu, 09 Jul 2015 12:26:30 GMT
 recorded_with: VCR 2.9.3

@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products/1505250435.json
+    body:
+      encoding: UTF-8
+      string: '{"product":{"variants":[{}],"images":[],"options":[{"id":1802264003,"name":"Title","position":1,"product_id":1505250435,"values":["Default
+        Title"]}],"title":"New Title","id":1505250435,"vendor":"Roarify","created_at":"2015-07-08T07:42:19-04:00","handle":"i-like-this-book","product_type":"","published_at":"2015-07-08T07:42:19-04:00","published_scope":"global","tags":"","updated_at":"2015-07-08T07:42:19-04:00"}}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 422
+      message: Unprocessable Entity
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 09 Jul 2015 12:26:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Sorting-Hat-Podid:
+      - '2'
+      X-Sorting-Hat-Shopid:
+      - '9123524'
+      X-Sorting-Hat-Podid-Cached:
+      - '1'
+      X-Sorting-Hat-Shopid-Cached:
+      - '1'
+      Status:
+      - 422 Unprocessable Entity
+      X-Xss-Protection:
+      - 1; mode=block; report=/xss-report/7471d1fb-d76e-4054-9427-ffe939e26eba?source%5Baction%5D=update&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Shopid:
+      - '9123524'
+      X-Shardid:
+      - '2'
+      X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      Http-X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      X-Stats-Userid:
+      - '0'
+      X-Stats-Apiclientid:
+      - '977366'
+      X-Stats-Apipermissionid:
+      - '12331486'
+      X-Stats-Validation-Errors:
+      - The variant 'Default Title' already exists.
+      Set-Cookie:
+      - _secure_admin_session_id=97d30d7fdfcf3ab0d3bd64296c3c1c8a; path=/admin; secure;
+        HttpOnly
+      - request_method=PUT; path=/
+      X-Request-Id:
+      - 7471d1fb-d76e-4054-9427-ffe939e26eba
+    body:
+      encoding: UTF-8
+      string: '{"errors":{"base":["The variant ''Default Title'' already exists."]}}'
+    http_version: 
+  recorded_at: Thu, 09 Jul 2015 12:26:39 GMT
+recorded_with: VCR 2.9.3

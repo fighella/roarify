@@ -19,9 +19,6 @@ class SearchRepresenter < Roar::Decorator
     VCR.use_cassette "search_#{attribute}_for_#{title}" do
       representer.get(resource_request.search(attribute.to_s,title))
     end
-    puts search.inspect
-    puts search.products.count
-
       # get(resource_request.search(attribute.to_s,title))
   end
 

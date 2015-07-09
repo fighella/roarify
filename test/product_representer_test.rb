@@ -1,47 +1,61 @@
 require 'minitest/autorun'
-# require 'pry-rescue/minitest'
+require 'pry-rescue/minitest'
 require "test_helper"
 
 class ProductRepresenterTest < MiniTest::Spec
   
-  describe "Product Creation" do
+  describe "Products" do
     it "can create a product" do
       product = Product.new
-      representer = ProductDecorator.new(product)
       product.title = 'Trailblazer. The Book.'
       product.body_html = DummyData.new.description
       product.vendor = 'Sutterer Inc'
       product.product_type = 'Video'
-      VCR.use_cassette 'create_product' do
-        representer.create
+      VCR.use_cassette "create_product_#{product.title}-#{product.vendor}" do
+        Product.create(product)
       end
-      ##representer.title.must_equal 'Trailblazer. The Book.'
+      product.title.must_equal 'Trailblazer. The Book.'
     end
+
+    # it "can delete a product zzz" do
+    #   product = Product.new
+    #   product.title = 'Gonna Delete this'
+    #   VCR.use_cassette "create_product_with_handle_#{product.handle}" do
+    #     product = Product.create(product)
+    #   end
+
+    #   puts product.id
+    #   puts product.class
+    #   VCR.use_cassette "delete_product_by_id_#{product.id}" do
+    #     product.delete
+    #   end
+    # 
+    #   product.must_be_nil
+
+    # end
 
     it "find and update a product" do
       product = Product.new
-      representer = ProductDecorator.new(product)
-      
       product.title = 'I was like. The movie.'
       product.body_html = DummyData.new.description
       product.vendor = 'Sutterer Inc'
       product.handle = 'like-the-movie'
       product.product_type = 'Video'
-      VCR.use_cassette 'create_product' do
-        representer.create
+      VCR.use_cassette "create_product_with_handle_#{product.handle}" do
+        Product.create(product)
+      end
+      new_product = nil
+      VCR.use_cassette "find_new_product_by_handle_#{product.handle}" do
+        new_product = Product.where('handle', product.handle).first
+      end
+      new_product.title = 'This is a new titles'
+      VCR.use_cassette "update_new_product_by_handle_#{product.handle}" do
+        new_product.update
       end
 
-      VCR.use_cassette 'find_product_by_handle' do
-        representer.find_by('handle', product.handle)
-      end
 
-      product.title = 'This is a new title'
-      VCR.use_cassette 'update product title' do
-        representer.update
-      end
-
-      ## ERROR
-      product.handle.must_equal 'like-the-movie'
+      new_product.handle.must_equal product.handle
+      new_product.title.must_equal 'This is a new titles'
     end
 
     it "can search for a Product by handle" do 
@@ -50,26 +64,30 @@ class ProductRepresenterTest < MiniTest::Spec
       VCR.use_cassette 'find_product_by_handle' do
         representer.find_by(:handle, 'trailblazer-the-book')
       end
-      puts 'HELLO'
-      puts search.inspect
       # search.products[0].title.must_match 'Trailblazer the book.'
     end
 
+    it "can find a product or create a new one" do
+      product = nil
+      VCR.use_cassette 'find_or_init_product' do
+        product = Product.where_first_or_initialize('handle', 'i-like-this-book')
+      end
+      product.title = 'New Title'
+      VCR.use_cassette 'update_fs_o_i_product' do
+        product.update
+      end
+      product.handle.must_equal 'i-like-this-book'
+    end
+
     it "can add product images" do
-      product = Product.new
-      representer = ProductDecorator.new(product)
-      product_url = "https://#{DummyStore.store}/admin/products/1418685443.json"
-      VCR.use_cassette 'show_product' do
-        representer.get(uri: product_url,
-                        as: "application/json",
-                        basic_auth: [DummyStore.api_key, DummyStore.password])
+      product = nil
+      VCR.use_cassette "show_product_1418685443" do
+        product = Product.find(1418685443)
       end
       image = Image.new
-      # irepresenter = ImageDecorator.new(image)
       image.src = DummyData.image
       product.images << image
-      representer.update
-      ## save?
+      product.update
     end
 
     # it "searches in product model / but breaks" do 
@@ -78,41 +96,28 @@ class ProductRepresenterTest < MiniTest::Spec
     #   representer.find_by(:handle, 'count-hat')
     #   # product.products[0].title.must_match 'Count Hat'
     # end
+
     it "can find if a product has any variants" do
-      product = Product.new
-      representer = ProductDecorator.new(product)
-      product_url = "https://#{DummyStore.store}/admin/products/1418685443.json"
-      VCR.use_cassette 'show_product' do
-        representer.get(uri: product_url,
-                        as: "application/json",
-                        basic_auth: [DummyStore.api_key, DummyStore.password])
+      product = nil
+      VCR.use_cassette "show_product_1418685443" do
+        product = Product.find(1418685443)
       end
       product.variants.count.wont_match 0
     end
 
     it "will send an error message if we add duplicate product variants" do
-      product = Product.new
-      representer = ProductDecorator.new(product)
-      product_url = "https://#{DummyStore.store}/admin/products/1418685443.json"
-      VCR.use_cassette 'show_product' do
-        representer.get(uri: product_url,
-                        as: "application/json",
-                        basic_auth: [DummyStore.api_key, DummyStore.password])
+      product = nil
+      VCR.use_cassette "find_product_1418685443" do
+        product = Product.find(1418685443)
       end
       option_1 = Option.new
       option_2 = Option.new
-      # option_1_representer = OptionRepresenter(option_1)
-      # option_2_representer = OptionRepresenter(option_2)
       option_1.name = 'Size'
       option_2.name = 'Colour'
       product.options << option_1
       product.options << option_2
-      # puts product.inspect
-      # puts representer.inspect
-      # representer.update
 
       variant = Variant.new
-      # vrepresenter = VariantDecorator.new(variant)
       variant.option1 = 'Large'
       variant.option2 = 'Blue'
       variant.price = 12.50
@@ -121,14 +126,13 @@ class ProductRepresenterTest < MiniTest::Spec
       variant.title = 'BestEdition'
       product.variants << variant
 
-      puts product.variants.inspect
-      puts representer.to_json
-
+      updated_product = nil
       VCR.use_cassette 'add_duplicate' do
-        representer.update
+        updated_product = product.update
       end
-      ## not right but kind of...
-      representer.update.must_equal 'AHH!'
+
+      ## Updating a product simply won't change variants...
+      updated_product.must_equal 'Probably trying to save a duplicate'
     end
 
     it "can find product variants by id" do
@@ -140,7 +144,7 @@ class ProductRepresenterTest < MiniTest::Spec
                         as: "application/json",
                         basic_auth: [DummyStore.api_key, DummyStore.password])
       end
-      product.variants[0].sku.must_equal ''
+      #product.variants[0].sku.must_equal ''
     end
 
     it "can connect to the shop" do
@@ -162,10 +166,9 @@ class ProductRepresenterTest < MiniTest::Spec
       srepresenter.find_by(:handle, 'trailblazer-the-book')
 
       ## Do the search, but then 're-find' the book... ??
-      product = Product.new
-      representer = ProductDecorator.new(product)
+      product = nil
       VCR.use_cassette 'find_product' do
-        representer = representer.find(search.products[0].id)
+        product = Product.find(search.products[0].id)
       end
 
       matching = product.variants[0]

@@ -1,0 +1,121 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products/1527752451.json
+    body:
+      encoding: UTF-8
+      string: '{"product":{"variants":[{}],"images":[],"options":[{"id":1835563075,"name":"Title","position":1,"product_id":1527752451,"values":["Default
+        Title"]}],"title":"This is a new titles","id":1527752451,"vendor":"Sutterer
+        Inc","created_at":"2015-07-09T08:26:45-04:00","body_html":"<p>  INT.  GYMNASIUM
+        POOL - DAY<br>  The pool casts wavy distortions upon TWO DOZEN MEN, all\n  grumbling
+        as they stand in line, wearing T-shirts with FBI\n  logos, sweats and sneakers.  We
+        hear a splash, and the men\n  shuffle forward.<br>                           PAPPAS
+        (V.O.)\n            The dolls love this baby.  It brings\n            them
+        luck when they rub it -- right\n            between their buttons.<br>  CLOSE
+        ON tape measure wrapped around a generous belly.\n  PULL BACK to reveal VETERAN
+        AGENT COREY measuring the\n  ample waist of ANGELO PAPPAS.  This 54 year old
+        silver\n  haired Greek stands rubbing his belly like a Zulu chief.<br>                           COREY\n            Angelo,
+        we need a bigger tape.<br>                           PAPPAS\n            Just
+        read the goddamn number.<br>                           COREY\n            Still
+        a 46.  Maybe we can cinch it\n            down, wear a girdle--<br>                           PAPPAS\n            Screw
+        you and this holistic fitness\n            crap!  At least my arms don''t
+        flap\n            in the wind.<br>  Corey secretly squeezes his bicep as...\n  A
+        whistle blows.  A broad shouldered MAN wearing an FBI\n  cap barks at the
+        Greek.<br>                           BIG SHOULDERS\n            Okay, Pappas,
+        let''s put on the\n            blindfold.  Wanna see you retrieve\n            at
+        least two bricks from the bottom.<br>  JOHNNY UTAH enters the pool area in
+        the distance.  Says\n  something to one of the agents.  Is pointed toward
+        us as--\n  Corey ties the blindfold and guides Pappas to the edge of\n  the
+        pool.<br>                           PAPPAS\n            I''ve been in the
+        field 33 years,\n            fired my piece 23 times in the line\n            of
+        duty, and I got no idea what a\n            blind man fetching bricks has
+        gotta\n            do with being a Special Agent!<br>  Johnny has walked up.  Pappas,
+        blindfolded, turns directly\n  to Utah as he continues, thinking it''s Corey.<br>                           PAPPAS\n            Added
+        to which indignity, I got\n            three months left to retirement and\n            they
+        saddle me with some blue-flamer\n            fresh out of Quantico for a partner.\n            Some
+        quarterback punk, Johnny Unitas\n            or something.<br>                           UTAH\n            The
+        shit they pull, huh?<br>  Pappas snorts agreement and cannonballs into the
+        pool.\n  Huge backblast of water.  The other agents hoot and\n  holler.\n  Corey
+        swears and wipes off his clipboard.\n  Johnny steps to the edge, looks down.\n  We
+        see the blindfolded Pappas groveling along the bottom.\n  The other agents
+        cheer as Pappas heads for the surface.<br>                           COREY\n            Here
+        he comes.  Hold up a fish,\n            he''ll take it right outta your hand.<br>  Pappas
+        surfaces in an explosion of spray as he sputters\n  for breath.  He grabs
+        the edge and angrily slaps two\n  bricks on the tiles.  He rips off the blindfold
+        looks up\n  and frowns.<br>  A HAND ENTERS FRAME to help him up.  Pappas takes
+        it and\n  Johnny hauls him on deck.<br>                           COREY\n            Hey
+        Shamu, this is your guy.<br>  Pappas eyes the new agent warily.  Extends his
+        hand.<br>                           PAPPAS\n            Pappas.  Angelo Pappas.<br>                           UTAH\n            Punk.  Quarterback
+        Punk.<br>                           PAPPAS\n                    (grinning)\n            Welcome
+        to Sea World, kid.</p>","handle":"like-the-movie-19","product_type":"Video","published_at":"2015-07-09T08:26:45-04:00","published_scope":"global","tags":"","updated_at":"2015-07-09T08:26:45-04:00"}}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 422
+      message: Unprocessable Entity
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 09 Jul 2015 12:26:51 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Sorting-Hat-Podid:
+      - '2'
+      X-Sorting-Hat-Shopid:
+      - '9123524'
+      X-Sorting-Hat-Podid-Cached:
+      - '1'
+      X-Sorting-Hat-Shopid-Cached:
+      - '1'
+      Status:
+      - 422 Unprocessable Entity
+      X-Xss-Protection:
+      - 1; mode=block; report=/xss-report/c3829138-9de4-43a3-8831-a03d76dc7443?source%5Baction%5D=update&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Shopid:
+      - '9123524'
+      X-Shardid:
+      - '2'
+      X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      Http-X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      X-Stats-Userid:
+      - '0'
+      X-Stats-Apiclientid:
+      - '977366'
+      X-Stats-Apipermissionid:
+      - '12331486'
+      X-Stats-Validation-Errors:
+      - Variants.base The variant 'Default Title' already exists.,The variant 'Default
+        Title' already exists.
+      Set-Cookie:
+      - _secure_admin_session_id=3888019b63b308d6f1dc5b129fc8d061; path=/admin; secure;
+        HttpOnly
+      - request_method=PUT; path=/
+      X-Request-Id:
+      - c3829138-9de4-43a3-8831-a03d76dc7443
+    body:
+      encoding: UTF-8
+      string: '{"errors":{"variants.base":["The variant ''Default Title'' already
+        exists."],"base":["The variant ''Default Title'' already exists."]}}'
+    http_version: 
+  recorded_at: Thu, 09 Jul 2015 12:26:51 GMT
+recorded_with: VCR 2.9.3

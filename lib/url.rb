@@ -21,6 +21,10 @@ class Url
     start_url.merge({uri: search_url})
   end
 
+  def filter(ids)
+    search('ids',ids.join(','))
+  end
+
   def update
     if @member
       # do some stuff. can't update a collection bra'

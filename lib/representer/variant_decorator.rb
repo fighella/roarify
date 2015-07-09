@@ -21,7 +21,8 @@ class VariantDecorator < Roar::Decorator
   property :old_inventory_quantity
 
   def update
-    put(resource_request(represented.id).url)
+    #
+    #put(resource_request(represented.id).url)
   end
 
 end

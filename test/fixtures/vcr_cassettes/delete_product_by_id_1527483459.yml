@@ -1,11 +1,11 @@
 ---
 http_interactions:
 - request:
-    method: post
-    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/smart_collections.json
+    method: delete
+    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products/1527483459.json
     body:
-      encoding: UTF-8
-      string: '{"smart_collection":{"title":"New SC"}}'
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -17,13 +17,13 @@ http_interactions:
       - application/json
   response:
     status:
-      code: 201
-      message: Created
+      code: 200
+      message: OK
     headers:
       Server:
       - nginx
       Date:
-      - Thu, 09 Jul 2015 12:21:46 GMT
+      - Thu, 09 Jul 2015 12:22:03 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -35,13 +35,15 @@ http_interactions:
       X-Sorting-Hat-Shopid:
       - '9123524'
       X-Sorting-Hat-Podid-Cached:
-      - '0'
+      - '1'
       X-Sorting-Hat-Shopid-Cached:
-      - '0'
+      - '1'
+      Vary:
+      - Accept-Encoding
       Status:
-      - 201 Created
+      - 200 OK
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/13165a8e-2995-4b1c-a8ac-22863f1bff8f?source%5Baction%5D=create&source%5Bcontroller%5D=admin%2Fsmart_collections&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/2a1eb8c1-4574-4f61-b51f-4264c535d71e?source%5Baction%5D=destroy&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
       X-Content-Type-Options:
       - nosniff
       - nosniff
@@ -62,21 +64,20 @@ http_interactions:
       X-Stats-Apipermissionid:
       - '12331486'
       Location:
-      - https://roarify.myshopify.com/admin/smart_collections/90211139
+      - https://roarify.myshopify.com/admin/products
       Set-Cookie:
-      - _secure_admin_session_id=586aa95d007d89574e85789dea8d0c02; path=/admin; secure;
+      - _secure_admin_session_id=25d32566e57be0c8e0e20548e1baba04; path=/admin; secure;
         HttpOnly
-      - request_method=POST; path=/
+      - request_method=DELETE; path=/
       X-Request-Id:
-      - 13165a8e-2995-4b1c-a8ac-22863f1bff8f
+      - 2a1eb8c1-4574-4f61-b51f-4264c535d71e
       P3p:
       - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
       X-Dc:
       - ash
     body:
       encoding: UTF-8
-      string: '{"smart_collection":{"body_html":null,"disjunctive":false,"handle":"new-sc-31","id":90211139,"published_at":"2015-07-09T08:21:46-04:00","published_scope":"global","sort_order":"alpha-asc","template_suffix":null,"title":"New
-        SC","updated_at":"2015-07-09T08:21:46-04:00","rules":[]}}'
+      string: '{}'
     http_version: 
-  recorded_at: Thu, 09 Jul 2015 12:21:47 GMT
+  recorded_at: Thu, 09 Jul 2015 12:22:04 GMT
 recorded_with: VCR 2.9.3

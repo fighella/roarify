@@ -15,8 +15,6 @@ module SmartCollectionRepresenter
   property :id
   
   def create
-    # puts resource_request.to_s
-    # puts resource_request.url
     post(resource_request.url)
   end
 

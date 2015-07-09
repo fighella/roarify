@@ -48,46 +48,7 @@ module ProductRepresenter
   property :inventory_policy
   property :inventory_quantity
   property :metafield
-
-  def find(id)
-    get(resource_request(id).url)
-  end
-
-  def find!(id)
-    find
-    rescue 
-    'NOOO!'
-  end
-
-  def update
-    put(resource_request(represented.id).url)
-  rescue
-    'AHH!'
-  end
-
-  def create
-    post(resource_request(represented.id).url)
-  rescue
-    'Duplicate'
-  end
-
-
-  def find_by(attribute, title)
-    search = OpenStruct.new
-    representer = SearchRepresenter.new(search)
-    representer.get(resource_request.search(attribute.to_s,title))
-    puts search.inspect
-  end
-
-  def where_first_or_create(attribute,title)
-    puts where(attribute, title).inspect
-    if where(attribute,title).to_s #represented #.any?
-      first
-    else
-      create(resource_request(represented.id).url)
-    end
-  end
-  #
+  
   # def shopify_url
   #   resource_request.url
   # end

@@ -24,7 +24,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Tue, 07 Jul 2015 12:56:47 GMT
+      - Thu, 09 Jul 2015 12:21:42 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -42,7 +42,7 @@ http_interactions:
       Status:
       - 201 Created
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/e3fde747-d3ac-468b-ad96-47352f9d457e?source%5Baction%5D=create&source%5Bcontroller%5D=admin%2Fsmart_collections&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/bbe58a3f-fc0a-4663-be1a-1fa99e2850e3?source%5Baction%5D=create&source%5Bcontroller%5D=admin%2Fsmart_collections&source%5Bsection%5D=admin
       X-Content-Type-Options:
       - nosniff
       - nosniff
@@ -63,21 +63,21 @@ http_interactions:
       X-Stats-Apipermissionid:
       - '12331486'
       Location:
-      - https://roarify.myshopify.com/admin/smart_collections/88190595
+      - https://roarify.myshopify.com/admin/smart_collections/90211075
       Set-Cookie:
-      - _secure_admin_session_id=96b0e2ec074dcd07e0f2b7e764afa6d2; path=/admin; secure;
+      - _secure_admin_session_id=f2d65a40314a3f05b8bd2b68337af857; path=/admin; secure;
         HttpOnly
       - request_method=POST; path=/
       X-Request-Id:
-      - e3fde747-d3ac-468b-ad96-47352f9d457e
+      - bbe58a3f-fc0a-4663-be1a-1fa99e2850e3
       P3p:
       - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
       X-Dc:
       - ash
     body:
       encoding: UTF-8
-      string: '{"smart_collection":{"body_html":null,"disjunctive":false,"handle":"new-sc-1","id":88190595,"published_at":"2015-07-07T08:56:47-04:00","published_scope":"global","sort_order":"alpha-asc","template_suffix":null,"title":"New
-        SC","updated_at":"2015-07-07T08:56:47-04:00","rules":[{"column":"title","relation":"starts_with","condition":"Shoes"}]}}'
+      string: '{"smart_collection":{"body_html":null,"disjunctive":false,"handle":"new-sc-30","id":90211075,"published_at":"2015-07-09T08:21:42-04:00","published_scope":"global","sort_order":"alpha-asc","template_suffix":null,"title":"New
+        SC","updated_at":"2015-07-09T08:21:42-04:00","rules":[{"column":"title","relation":"starts_with","condition":"Shoes"}]}}'
     http_version: 
-  recorded_at: Tue, 07 Jul 2015 12:56:47 GMT
+  recorded_at: Thu, 09 Jul 2015 12:21:43 GMT
 recorded_with: VCR 2.9.3
