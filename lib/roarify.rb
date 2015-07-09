@@ -19,7 +19,6 @@ module Roarify
   require "representer/smart_collection_decorator"
   require "representer/collection_rule_representer"
   require "representer/collection_rule_decorator"
-  require "support/vcr"
   require "product"
   require "smart_collection"
   require "collection_rule"
