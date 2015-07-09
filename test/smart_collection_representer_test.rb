@@ -6,8 +6,8 @@ class SmartCollectionRepresenterTest < MiniTest::Spec
   
   describe "Smart Collections" do
     it "can create a new smart collection" do
-      sc = SmartCollection.new
-      representer = SmartCollectionDecorator.new(sc)
+      sc = Roarify::SmartCollection.new
+      representer = Roarify::SmartCollectionDecorator.new(sc)
       sc.title = 'New SC'
       VCR.use_cassette 'create_smart_collections' do
         representer.create
@@ -16,10 +16,10 @@ class SmartCollectionRepresenterTest < MiniTest::Spec
     end
 
     it "can create a new smart collection with rules" do
-      sc = SmartCollection.new
-      representer = SmartCollectionDecorator.new(sc)
+      sc = Roarify::SmartCollection.new
+      representer = Roarify::SmartCollectionDecorator.new(sc)
       sc.title = 'New SC'
-      rule = CollectionRule.new
+      rule = Roarify::CollectionRule.new
       rules = []
       rule.column = 'title'
       rule.relation =  'starts_with'

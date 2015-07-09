@@ -1,12 +1,13 @@
 require 'roar/client'
-require 'variant'
-require 'image'
-require 'representer'
+require 'roarify/variant'
+require 'roarify/image'
+require 'roarify/representer'
 
+module Roarify
 class VariantDecorator < Roar::Decorator
   include Roar::Client
   include Roar::JSON
-  include Representer
+  include Roarify::Representer
   self.api_name = 'variants'
   self.representation_wrap = :variant
   
@@ -25,4 +26,5 @@ class VariantDecorator < Roar::Decorator
     #put(resource_request(represented.id).url)
   end
 
+end
 end

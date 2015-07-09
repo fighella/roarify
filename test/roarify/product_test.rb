@@ -1,18 +1,18 @@
 require 'minitest/autorun'
 require 'pry-rescue/minitest'
-require "test_helper"
+require 'test_helper'
 
-class ProductRepresenterTest < MiniTest::Spec
+class Roarify::ProductTest < MiniTest::Spec
   
   describe "Products" do
     it "can create a product" do
-      product = Product.new
+      product = Roarify::Product.new
       product.title = 'Trailblazer. The Book.'
       product.body_html = DummyData.new.description
       product.vendor = 'Sutterer Inc'
       product.product_type = 'Video'
       VCR.use_cassette "create_product_#{product.title}-#{product.vendor}" do
-        Product.create(product)
+        Roarify::Product.create(product)
       end
       product.title.must_equal 'Trailblazer. The Book.'
     end
@@ -35,18 +35,18 @@ class ProductRepresenterTest < MiniTest::Spec
     # end
 
     it "find and update a product" do
-      product = Product.new
+      product = Roarify::Product.new
       product.title = 'I was like. The movie.'
       product.body_html = DummyData.new.description
       product.vendor = 'Sutterer Inc'
       product.handle = 'like-the-movie'
       product.product_type = 'Video'
       VCR.use_cassette "create_product_with_handle_#{product.handle}" do
-        Product.create(product)
+        Roarify::Product.create(product)
       end
       new_product = nil
       VCR.use_cassette "find_new_product_by_handle_#{product.handle}" do
-        new_product = Product.where('handle', product.handle).first
+        new_product = Roarify::Product.where('handle', product.handle).first
       end
       new_product.title = 'This is a new titles'
       VCR.use_cassette "update_new_product_by_handle_#{product.handle}" do
@@ -60,7 +60,7 @@ class ProductRepresenterTest < MiniTest::Spec
 
     it "can search for a Product by handle" do 
       search = OpenStruct.new
-      representer = SearchRepresenter.new(search)
+      representer = Roarify::SearchRepresenter.new(search)
       VCR.use_cassette 'find_product_by_handle' do
         representer.find_by(:handle, 'trailblazer-the-book')
       end
@@ -70,7 +70,7 @@ class ProductRepresenterTest < MiniTest::Spec
     it "can find a product or create a new one" do
       product = nil
       VCR.use_cassette 'find_or_init_product' do
-        product = Product.where_first_or_initialize('handle', 'i-like-this-book')
+        product = Roarify::Product.where_first_or_initialize('handle', 'i-like-this-book')
       end
       product.title = 'New Title'
       VCR.use_cassette 'update_fs_o_i_product' do
@@ -82,9 +82,9 @@ class ProductRepresenterTest < MiniTest::Spec
     it "can add product images" do
       product = nil
       VCR.use_cassette "show_product_1418685443" do
-        product = Product.find(1418685443)
+        product = Roarify::Product.find(1418685443)
       end
-      image = Image.new
+      image = Roarify::Image.new
       image.src = DummyData.image
       product.images << image
       product.update
@@ -100,7 +100,7 @@ class ProductRepresenterTest < MiniTest::Spec
     it "can find if a product has any variants" do
       product = nil
       VCR.use_cassette "show_product_1418685443" do
-        product = Product.find(1418685443)
+        product = Roarify::Product.find(1418685443)
       end
       product.variants.count.wont_match 0
     end
@@ -108,16 +108,16 @@ class ProductRepresenterTest < MiniTest::Spec
     it "will send an error message if we add duplicate product variants" do
       product = nil
       VCR.use_cassette "find_product_1418685443" do
-        product = Product.find(1418685443)
+        product = Roarify::Product.find(1418685443)
       end
-      option_1 = Option.new
-      option_2 = Option.new
+      option_1 = Roarify::Option.new
+      option_2 = Roarify::Option.new
       option_1.name = 'Size'
       option_2.name = 'Colour'
       product.options << option_1
       product.options << option_2
 
-      variant = Variant.new
+      variant = Roarify::Variant.new
       variant.option1 = 'Large'
       variant.option2 = 'Blue'
       variant.price = 12.50
@@ -136,8 +136,8 @@ class ProductRepresenterTest < MiniTest::Spec
     end
 
     it "can find product variants by id" do
-      product = Product.new
-      representer = ProductDecorator.new(product)
+      product = Roarify::Product.new
+      representer = Roarify::ProductDecorator.new(product)
       product_url = "https://#{DummyStore.store}/admin/products/1418685443.json"
       VCR.use_cassette 'show_product' do
         representer.get(uri: product_url,
@@ -148,8 +148,8 @@ class ProductRepresenterTest < MiniTest::Spec
     end
 
     it "can connect to the shop" do
-      product = Product.new
-      representer = ProductDecorator.new(product)
+      product = Roarify::Product.new
+      representer = Roarify::ProductDecorator.new(product)
       product_url = "https://#{DummyStore.store}/admin/products/1418685443.json"
       VCR.use_cassette 'show_product' do
         representer.get(uri: product_url,
@@ -161,14 +161,14 @@ class ProductRepresenterTest < MiniTest::Spec
     end
 
     it "can find a product by hand and update one of its variant" do
-      search = Search.new
-      srepresenter = SearchRepresenter.new(search)
+      search = Roarify::Search.new
+      srepresenter = Roarify::SearchRepresenter.new(search)
       srepresenter.find_by(:handle, 'trailblazer-the-book')
 
       ## Do the search, but then 're-find' the book... ??
       product = nil
       VCR.use_cassette 'find_product' do
-        product = Product.find(search.products[0].id)
+        product = Roarify::Product.find(search.products[0].id)
       end
 
       matching = product.variants[0]
@@ -179,7 +179,7 @@ class ProductRepresenterTest < MiniTest::Spec
       # puts "1. Matching: #{matching.inventory_quantity}"
       #is 12
 
-      variant = VariantDecorator.new(matching)
+      variant = Roarify::VariantDecorator.new(matching)
       VCR.use_cassette 'update_product_variant' do
         variant.update
       end

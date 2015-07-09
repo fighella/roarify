@@ -1,4 +1,5 @@
-class CollectionRule
+module Roarify
+  class CollectionRule
   attr_accessor :condition, :column, :relation
 
   # column:
@@ -11,4 +12,5 @@ class CollectionRule
   # variant_weight: Weight.
   # variant_inventory: Inventory stock.
   # variant_title: Variant's title.
+  end
 end
