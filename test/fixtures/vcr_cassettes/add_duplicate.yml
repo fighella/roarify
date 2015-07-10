@@ -5,7 +5,7 @@ http_interactions:
     uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products/1418685443.json
     body:
       encoding: UTF-8
-      string: '{"product":{"variants":[{},{"option1":"Large","option2":"Blue","price":12.5,"title":"BestEdition","barcode":"iwaslike","inventory_quantity":12}],"images":[],"options":[{"id":1701824579,"name":"Title","position":1,"product_id":1418685443,"values":["Large"]},"#<Option:0x007f92178bab68>","#<Option:0x007f92178bab40>"],"title":"Trailblazer
+      string: '{"product":{"variants":[{},{"option1":"Large","option2":"Blue","price":12.5,"title":"BestEdition","barcode":"iwaslike","inventory_quantity":12}],"images":[],"options":[{"id":1701824579,"name":"Title","position":1,"product_id":1418685443,"values":["Large"]},"#<Roarify::Option:0x007fdf8101ae38>","#<Roarify::Option:0x007fdf8101ae10>"],"title":"Trailblazer
         the book.","id":1418685443,"vendor":"VayBay","created_at":"2015-07-03T08:26:03-04:00","body_html":"<p>  EXT.  CITY
         STREET - TRAFFIC - DAY  Johnny weaves the sedan among the creeping commuters.\n  Long
         glittering lines and heat waves.                           UTAH\n            I
@@ -84,7 +84,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Thu, 09 Jul 2015 12:21:56 GMT
+      - Fri, 10 Jul 2015 12:32:15 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -102,7 +102,7 @@ http_interactions:
       Status:
       - 422 Unprocessable Entity
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/1e3a9311-59c5-4b49-957e-c2a6556e9682?source%5Baction%5D=update&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/e577d000-89d2-472b-94cf-3fd8050bea74?source%5Baction%5D=update&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
@@ -124,14 +124,14 @@ http_interactions:
       X-Stats-Validation-Errors:
       - The variant 'Large' already exists.
       Set-Cookie:
-      - _secure_admin_session_id=9368bbf396d1e24b0f692f5e91946a80; path=/admin; secure;
+      - _secure_admin_session_id=02f5130088180643c5fb9a707f4e19b6; path=/admin; secure;
         HttpOnly
       - request_method=PUT; path=/
       X-Request-Id:
-      - 1e3a9311-59c5-4b49-957e-c2a6556e9682
+      - e577d000-89d2-472b-94cf-3fd8050bea74
     body:
       encoding: UTF-8
       string: '{"errors":{"base":["The variant ''Large'' already exists."]}}'
     http_version: 
-  recorded_at: Thu, 09 Jul 2015 12:21:56 GMT
+  recorded_at: Fri, 10 Jul 2015 12:32:16 GMT
 recorded_with: VCR 2.9.3

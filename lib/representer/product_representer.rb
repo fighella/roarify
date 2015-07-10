@@ -16,9 +16,6 @@ module Roarify
     include Roar::Client
     include Roarify::Representer
     self.api_name = 'product'
-    ## when accessing Product through SEARCH, it does not "self wrap" each product...
-    # self.representation_wrap = :product
-
     collection :variants, class: Roarify::Variant, decorator: Roarify::VariantDecorator, wrap: false
     collection :images, class: Roarify::Image, decorator: Roarify::ImageRepresenter
     collection :options, class: Roarify::Option, decorator: Roarify::OptionDecorator
@@ -50,12 +47,5 @@ module Roarify
     property :inventory_quantity
     property :metafield
 
-    # def shopify_url
-    #   resource_request.url
-    # end
-
-    # def resource_request(id=nil)
-    #   Url.new(self.class.api_name,id)
-    # end
   end
 end

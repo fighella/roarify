@@ -8,16 +8,12 @@ module Roarify
   module SmartCollectionRepresenter
     include Roar::JSON
     include Roar::Client
-    include Representer
-    self.api_name = 'smart_collections'
-    collection :rules, class: Roarify::CollectionRule, decorator: CollectionRuleDecorator, wrap: false
+    include Roarify::Representer
+    self.api_name = 'smart_collection'
+    collection :rules, class: Roarify::CollectionRule, decorator: Roarify::CollectionRuleDecorator, wrap: false
 
     property :title
     property :id
-
-    def create
-      post(resource_request.url)
-    end
 
   end
 end

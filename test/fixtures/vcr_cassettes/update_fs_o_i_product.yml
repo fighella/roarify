@@ -24,7 +24,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Thu, 09 Jul 2015 12:26:38 GMT
+      - Fri, 10 Jul 2015 12:31:22 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -42,7 +42,7 @@ http_interactions:
       Status:
       - 422 Unprocessable Entity
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/7471d1fb-d76e-4054-9427-ffe939e26eba?source%5Baction%5D=update&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/e6e2f21e-936c-43b4-822f-28d83a073d65?source%5Baction%5D=update&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
@@ -64,14 +64,14 @@ http_interactions:
       X-Stats-Validation-Errors:
       - The variant 'Default Title' already exists.
       Set-Cookie:
-      - _secure_admin_session_id=97d30d7fdfcf3ab0d3bd64296c3c1c8a; path=/admin; secure;
+      - _secure_admin_session_id=3a0fe0b12e5caf9c1447ee3426b7ee17; path=/admin; secure;
         HttpOnly
       - request_method=PUT; path=/
       X-Request-Id:
-      - 7471d1fb-d76e-4054-9427-ffe939e26eba
+      - e6e2f21e-936c-43b4-822f-28d83a073d65
     body:
       encoding: UTF-8
       string: '{"errors":{"base":["The variant ''Default Title'' already exists."]}}'
     http_version: 
-  recorded_at: Thu, 09 Jul 2015 12:26:39 GMT
+  recorded_at: Fri, 10 Jul 2015 12:31:23 GMT
 recorded_with: VCR 2.9.3
