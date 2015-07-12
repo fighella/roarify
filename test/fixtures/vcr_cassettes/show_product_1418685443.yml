@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sun, 12 Jul 2015 07:06:12 GMT
+      - Sun, 12 Jul 2015 07:03:55 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -43,7 +43,7 @@ http_interactions:
       Status:
       - 200 OK
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/70488468-d7d5-4289-afd5-75369736c85a?source%5Baction%5D=show&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/8611c2a8-960c-47b7-b68f-c4cb58727e18?source%5Baction%5D=show&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
       X-Content-Type-Options:
       - nosniff
       - nosniff
@@ -66,7 +66,7 @@ http_interactions:
       Set-Cookie:
       - request_method=GET; path=/
       X-Request-Id:
-      - 70488468-d7d5-4289-afd5-75369736c85a
+      - 8611c2a8-960c-47b7-b68f-c4cb58727e18
       P3p:
       - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
       X-Dc:
@@ -74,10 +74,10 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"product":{"body_html":"New Description","created_at":"2015-07-03T08:26:03-04:00","handle":"trailblazer-the-book-12","id":1418685443,"product_type":"Bible","published_at":"2015-07-03T08:26:03-04:00","published_scope":"global","template_suffix":null,"title":"Trailblazer
-        the book.","updated_at":"2015-07-12T03:05:56-04:00","vendor":"VayBay","tags":"","variants":[{"barcode":"iwaslike3","compare_at_price":null,"created_at":"2015-07-12T02:23:36-04:00","fulfillment_service":"manual","grams":0,"id":4679059971,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        the book.","updated_at":"2015-07-12T02:23:36-04:00","vendor":"VayBay","tags":"","variants":[{"barcode":"iwaslike3","compare_at_price":null,"created_at":"2015-07-12T02:23:36-04:00","fulfillment_service":"manual","grams":0,"id":4679059971,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
         Boogie 2015-07-12 16:23:29 +1000","option2":null,"option3":null,"position":1,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
         Boogie 2015-07-12 16:23:29 +1000","updated_at":"2015-07-12T02:23:36-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"}],"options":[{"id":1701824579,"name":"Title","position":1,"product_id":1418685443,"values":["Largest
         Boogie 2015-07-12 16:23:29 +1000"]}],"images":[],"image":null}}'
     http_version: 
-  recorded_at: Sun, 12 Jul 2015 07:06:13 GMT
+  recorded_at: Sun, 12 Jul 2015 07:03:55 GMT
 recorded_with: VCR 2.9.3

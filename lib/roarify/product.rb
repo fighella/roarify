@@ -2,9 +2,11 @@ module Roarify
   class Product
     attr_accessor :id, :body_html, :title, :vendor, :handle, :product_type, :variants, :images, :created_at, :handle, :body_html, :images, :options,:product_type,:published_at,:published_scope,:published, :tags,:template_suffix,:title,:updated_at,:barcode,:compare_at_price,:created_at,:fulfillment_service,:grams,:weight,:weight_unit,:inventory_management,:inventory_policy,:inventory_quantity,:metafield,:vendor
 
+
     def self.find(id)
       representer = ProductDecorator.new(self.new)
-      representer.get(representer.resource_request(id).url)
+      product = representer.get(representer.resource_request(id).url)
+      product
     end
     
     def self.find_by_ids(ids)
@@ -14,7 +16,6 @@ module Roarify
     def save
       representer = ProductDecorator.new(product_data)
       if exists?
-        puts representer.inspect
         update(representer)
       else
         create(representer)
@@ -88,11 +89,11 @@ module Roarify
 
     def merge_variants
       ## hang onto this for now
-      safe_variants.any? ? safe_variants : nil
+      safe_variants.any? ? self.variants.select { |v| !v.nil? and v.option1 } : nil
     end
 
     def safe_variants
-      has_variants? ? self.variants.select { |v| !v.nil? and v.option1 and v.option2 } : []
+      has_variants? ? self.variants.select { |v| !v.nil? and v.option1 } : []
     end
 
     def has_variants?
