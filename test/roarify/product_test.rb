@@ -5,7 +5,7 @@ require 'test_helper'
 class Roarify::ProductTest < MiniTest::Spec
   
   describe "Products" do
-    it "can create a product xxx" do
+    it "can create a product" do
       product = Roarify::Product.new
       product.title = 'Trailblazer. The Booksie.'
       product.body_html = DummyData.new.description
@@ -30,7 +30,19 @@ class Roarify::ProductTest < MiniTest::Spec
     
       ## Cant Delte in my tests
       #product.must_be_nil
+    end
 
+    it "does not update a product when trying to use a handle already taken" do
+      product = Roarify::Product.new
+      product.title = 'I was like. The movie.'
+      product.body_html = DummyData.new.description
+      product.vendor = 'Sutterer Inc'
+      product.handle = 'like-the-movie'
+      product.product_type = 'Video'
+      VCR.use_cassette "create_product_with_taken_handle_#{product.handle}" do
+        err = ->{ product.save }.must_raise RuntimeError
+        assert_match /Set field will/, err.message
+      end
     end
 
     it "find and update a product" do
@@ -38,20 +50,18 @@ class Roarify::ProductTest < MiniTest::Spec
       product.title = 'I was like. The movie.'
       product.body_html = DummyData.new.description
       product.vendor = 'Sutterer Inc'
-      product.handle = 'like-the-movie'
       product.product_type = 'Video'
-      VCR.use_cassette "create_product_with_handle_#{product.handle}" do
+      VCR.use_cassette "create_product_with_other_handle_#{product.title}" do
         product.save
       end
       new_product = nil
-      VCR.use_cassette "find_new_product_by_handle_#{product.handle}" do
+      VCR.use_cassette "find_new_product_by_handle_#{product.title}" do
         new_product = Roarify::Product.where('handle', product.handle).first
       end
       new_product.title = 'This is a new titles'
       VCR.use_cassette "update_new_product_by_handle_#{product.handle}" do
-        new_product.update
+        new_product.save
       end
-
 
       new_product.handle.must_equal product.handle
       new_product.title.must_equal 'This is a new titles'
@@ -73,7 +83,7 @@ class Roarify::ProductTest < MiniTest::Spec
       end
       product.title = 'New Title'
       VCR.use_cassette 'update_fs_o_i_product' do
-        product.update
+        product.save
       end
       product.handle.must_equal 'i-like-this-book'
     end
@@ -86,7 +96,9 @@ class Roarify::ProductTest < MiniTest::Spec
       image = Roarify::Image.new
       image.src = DummyData.image
       product.images << image
-      product.update
+      VCR.use_cassette 'add_product_image' do
+        product.save
+      end
     end
 
     # it "searches in product model / but breaks" do 
@@ -104,41 +116,48 @@ class Roarify::ProductTest < MiniTest::Spec
       product.variants.count.wont_match 0
     end
 
-    it "will send an error message if we add duplicate product variants" do
+    it "wont save product variants on update xxx" do
       product = nil
       VCR.use_cassette "find_product_1418685443" do
         product = Roarify::Product.find(1418685443)
       end
+      product_variants_count = product.variants.count
+      product.body_html = 'New Description'
+      
       option_1 = Roarify::Option.new
       option_2 = Roarify::Option.new
       option_1.name = 'Size'
       option_2.name = 'Colour'
       product.options << option_1
       product.options << option_2
-
+      
+      VCR.use_cassette 'save_product_with_options' do
+        product.save
+      end
+      
       variant = Roarify::Variant.new
-      variant.option1 = 'Large'
-      variant.option2 = 'Blue'
-      variant.price = 12.50
-      variant.inventory_quantity = 12
+      variant.option1 = "Largest #{Time.now}"
+      variant.option2 = 'Bluest'
+      variant.price = 13.50
+      variant.inventory_quantity = 22
       variant.barcode = 'iwaslike'
-      variant.title = 'BestEdition'
+      variant.title = 'Best Edition 2'
       product.variants << variant
 
-      updated_product = nil
-      VCR.use_cassette 'add_duplicate' do
-        updated_product = product.update
+      VCR.use_cassette 'save_product_with_new_variant' do
+        product.save
       end
 
-      ## Updating a product simply won't change variants...
-      updated_product.must_equal 'Probably trying to save a duplicate'
+      product.body_html.must_equal 'New Description'
+      product.variants.count.must_equal product_variants_count + 1
+      product.variants.any? { |v| v.title == 'Best Edition 2' }.must_equal true
     end
 
     it "can find product variants by id" do
       product = Roarify::Product.new
       representer = Roarify::ProductDecorator.new(product)
       product_url = "https://#{DummyStore.store}/admin/products/1418685443.json"
-      VCR.use_cassette 'show_product' do
+      VCR.use_cassette 'show_product_1' do
         representer.get(uri: product_url,
                         as: "application/json",
                         basic_auth: [DummyStore.api_key, DummyStore.password])
@@ -150,7 +169,7 @@ class Roarify::ProductTest < MiniTest::Spec
       product = Roarify::Product.new
       representer = Roarify::ProductDecorator.new(product)
       product_url = "https://#{DummyStore.store}/admin/products/1418685443.json"
-      VCR.use_cassette 'show_product' do
+      VCR.use_cassette 'show_product_2' do
         representer.get(uri: product_url,
                         as: "application/json",
                         basic_auth: [DummyStore.api_key, DummyStore.password])
@@ -162,11 +181,13 @@ class Roarify::ProductTest < MiniTest::Spec
     it "can find a product by hand and update one of its variant" do
       search = Roarify::Search.new
       srepresenter = Roarify::SearchRepresenter.new(search)
-      srepresenter.find_by(:handle, 'trailblazer-the-book-18')
+      VCR.use_cassette 'find_product_18' do
+        srepresenter.find_by(:handle, 'trailblazer-the-book-18')
+      end
 
       ## Do the search, but then 're-find' the book... ??
       product = nil
-      VCR.use_cassette 'find_product' do
+      VCR.use_cassette 'find_product_3' do
         product = Roarify::Product.find(search.products[0].id)
       end
 

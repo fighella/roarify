@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 10 Jul 2015 12:32:13 GMT
+      - Sun, 12 Jul 2015 03:12:49 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -35,15 +35,15 @@ http_interactions:
       X-Sorting-Hat-Shopid:
       - '9123524'
       X-Sorting-Hat-Podid-Cached:
-      - '1'
+      - '0'
       X-Sorting-Hat-Shopid-Cached:
-      - '1'
+      - '0'
       Vary:
       - Accept-Encoding
       Status:
       - 200 OK
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/2c824a8a-5022-4054-94ae-1e059845d251?source%5Baction%5D=show&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/33cc5815-50de-421e-aa17-07402f0da17a?source%5Baction%5D=show&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
       X-Content-Type-Options:
       - nosniff
       - nosniff
@@ -66,75 +66,18 @@ http_interactions:
       Set-Cookie:
       - request_method=GET; path=/
       X-Request-Id:
-      - 2c824a8a-5022-4054-94ae-1e059845d251
+      - 33cc5815-50de-421e-aa17-07402f0da17a
       P3p:
       - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
       X-Dc:
       - ash
     body:
       encoding: UTF-8
-      string: '{"product":{"body_html":"\u003cp\u003e  EXT.  CITY STREET - TRAFFIC
-        - DAY  Johnny weaves the sedan among the creeping commuters.\n  Long glittering
-        lines and heat waves.                           UTAH\n            I say we
-        call it in.  Get some\n            backup.  But you gotta do it.  Harp\n            won''t
-        listen to me.                           PAPPAS\n            Sure.  No problem.  I''ll
-        just call\n            up and tell him his favorite agent\n            saw
-        this one surfer moon another\n            surfer yesterday and it looked real\n            suspicious.  Shit,
-        he''ll probably\n            call out the National Guard.                           UTAH\n            I
-        say we don''t call it in.  Under no\n            circumstance are we to call
-        this in.                           PAPPAS\n            Look, we handle it
-        ourselves, for\n            right now, okay?  We cover the bank,\n            whatever.  You
-        and me.  That way if\n            nothing happens, or more accurately,\n            when
-        nothing happens... I don''t get\n            my tits any further into the
-        wringer\n            than they already are.                                              CUT
-        TO:  EXT.  ASSURED TRUST SAVING AND LOAN  SLOW PAN from the facade of the
-        bank halfway up the block\n  to Utah''s sedan in the TIGHT F.G.  Head flopped
-        back over\n  the seat, Angelo snoozes in the hot sun with a sports page\n  over
-        his face.  Johnny looks at his watch for the fiftieth\n  time.  Whole lot
-        of nothing going on.  Angelo slides the sports page down to his chin, without\n  otherwise
-        moving.                           PAPPAS\n            Time for lunch.                           UTAH\n            Angelo,
-        it''s eleven thirty.                           PAPPAS\n            That place
-        up the street has\n            meatball sandwiches.  Get me two.  Utah slides
-        out of the car.  Feeling a little exposed he\n  pulls his Dodgers cap down
-        a little tighter, and adjusts\n  his sunglasses.\n  He trudges off through
-        the sidewalk crowd toward the FAST-\n  FOOD STAND nearby.\n  Pappas pulls
-        the sports page back up to block the sun.                                              CUT
-        TO:  EXT.  FAST FOOD PLACE  ON A LONG LENS, very stacked up, we see Johnny
-        standing at\n  the grody pick-up window.  He keeps looking at the bank,\n  visible
-        B.G.\n  The pick-up window opens and food appears, sliding out.\n  Utah turns,
-        pulling out his wallet.                           VOICE FROM INSIDE\n            Two
-        meatball, one tuna on wheat,\n            two lemonades.  Total''s seven eighty\n            four.  As
-        Johnny is counting out the bills, a BURGUNDY\n  THUNDERBIRD pulls up in front
-        of the bank.  The doors fly\n  open.\n  The Ex-Presidents jump out.\n  They
-        sprint for the entrance.  All this OUT OF FOCUS, B.G.\n  Johnny misses it
-        as he picks up the food order.\n  The Presidents disappear inside.\n  Johnny
-        looks toward the bank again.  There is no movement.  REVERSE, as Utah walks
-        back toward his car.  Pappas is\n  still under the paper.  He slides it down
-        when he smells\n  food.                           UTAH\n            Here,
-        yours is the one that looks\n            like a road kill.  Enjoy.  Utah throws
-        a big stack of napkins through the window into\n  Pappas'' lap.  Still standing
-        next to the car.                           UTAH\n            Here''s your
-        lemonade.\n                    (he looks down the\n                     street)\n            Did
-        you see that T-Bird pull up?  Pappas pulls a disgusting mass from the bag,
-        unwrapping\n  one end.                           PAPPAS\n                    (without
-        looking)\n            Damn, I could eat the ass out of an\n            elephant.  I
-        shoulda had you get me\n            three a these.  What T-Bird?  Pappas is
-        about to take a huge bite when a meatball falls\n  out of the end of the sandwich.  It
-        lands on the seat next\n  to him.\n  He looks at it.  Picks it up.  Pops it
-        into his mouth\n  and--\n  Freezes, mouth open.  Eyes focused on...\n  The
-        Ex-Presidents, in living color, flashing through the\n  doors of the bank
-        80 feet away.  Johnny is so astounded he doesn''t do anything for about\n  two
-        seconds.  Pappas coughs out his meatball, eyes\n  bugging.                           PAPPAS\n            Jesus
-        Christ!!  It''s them!  The Presidents are piling into the car.\n  Johnny reacts
-        characteristically.  He whips out the\n  Beretta and yells--                           UTAH\n            FBI!!  Freeze!!  Right
-        now!  NIXON spins, raising his shotgun.\n  But Reagan knocks the muzzle down
-        with his hand.  Shoves\n  him into the car.  Then Reagan jumps behind the
-        wheel.\n  The back wheels light up, smoking, as the T-Bird launches.  Utah
-        FIRES.\n  BLAM!  BLAM!  BLAM!\n  He puts two into the trunk and blows the
-        back window into\n  junk jewelry.  The T-Bird peels out into traffic, clipping\n  a
-        Subaru which locks them up and spins.                           PAPPAS\n            Come
-        on, kid, get in the car!\n            Jesus!\u003c\/p\u003e","created_at":"2015-07-03T08:26:03-04:00","handle":"trailblazer-the-book-12","id":1418685443,"product_type":"Bible","published_at":"2015-07-03T08:26:03-04:00","published_scope":"global","template_suffix":null,"title":"Trailblazer
-        the book.","updated_at":"2015-07-09T07:03:44-04:00","vendor":"VayBay","tags":"","variants":[{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-03T20:51:56-04:00","fulfillment_service":"manual","grams":0,"id":4294729667,"inventory_management":null,"inventory_policy":"deny","option1":"Large","option2":null,"option3":null,"position":1,"price":"12.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Large","updated_at":"2015-07-03T20:51:56-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"}],"options":[{"id":1701824579,"name":"Title","position":1,"product_id":1418685443,"values":["Large"]}],"images":[],"image":null}}'
+      string: '{"product":{"body_html":"New Description","created_at":"2015-07-03T08:26:03-04:00","handle":"trailblazer-the-book-12","id":1418685443,"product_type":"Bible","published_at":"2015-07-03T08:26:03-04:00","published_scope":"global","template_suffix":null,"title":"Trailblazer
+        the book.","updated_at":"2015-07-11T23:12:07-04:00","vendor":"VayBay","tags":"","variants":[{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-11T23:12:07-04:00","fulfillment_service":"manual","grams":0,"id":4676588099,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        2015-07-12 13:12:01 +1000","option2":null,"option3":null,"position":1,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        2015-07-12 13:12:01 +1000","updated_at":"2015-07-11T23:12:07-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"}],"options":[{"id":1701824579,"name":"Title","position":1,"product_id":1418685443,"values":["Largest
+        2015-07-12 13:12:01 +1000"]}],"images":[],"image":null}}'
     http_version: 
-  recorded_at: Fri, 10 Jul 2015 12:32:14 GMT
+  recorded_at: Sun, 12 Jul 2015 03:12:49 GMT
 recorded_with: VCR 2.9.3

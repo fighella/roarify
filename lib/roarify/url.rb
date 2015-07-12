@@ -18,7 +18,7 @@ module Roarify
     def search(attribute,query)
       start_url = url
       original_uri = url[:uri]
-      search_url = original_uri + '?' + attribute + '=' + query
+      search_url = original_uri + '?' + attribute + '=' + query + '&fields=id'
       start_url.merge({uri: search_url})
     end
 

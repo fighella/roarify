@@ -12,9 +12,36 @@ module Roarify
     end
 
     def save
-      representer = ProductDecorator.new(self)
-      representer.post(representer.resource_request.url)
+      representer = ProductDecorator.new(product_data)
+      if exists?
+        puts representer.inspect
+        update(representer)
+      else
+        create(representer)
+      end
     end
+
+    def exists?
+      ## If it's already a Shopify Product it will return with an ID apparently
+      self.id
+    end
+
+    def create(representer)
+      if self.changeable?
+        raise 'Set field will change.'
+      else
+        representer.post(representer.resource_request.url)
+      end
+    end
+
+    def update(representer)
+      if self.changeable?
+        raise 'Set will change.'
+      else
+        representer.put(representer.resource_request(self.id).url)
+      end
+    end
+    
 
     def self.where(attribute, value)
       search = OpenStruct.new
@@ -41,24 +68,35 @@ module Roarify
     end
 
 
-    def update
-      product = self
-      if self.variants
-        ## well don't do anything yet 
-      else
-        ## if no variants dont send the variants back with a product update?
-        product.variants = nil
+
+    def changeables
+      [:handle]
+    end
+
+    def changeable?
+      (exists? and self.handle and Product.where('handle',self.handle).any? and Product.where('handle',self.handle).first.id != self.id) or
+      (!exists? and self.handle and Product.where('handle',self.handle).any?)
+    end
+
+    def product_data
+      # raise 'Hell'
+      if exists?
+        self.variants = merge_variants
       end
-      representer = ProductDecorator.new(product)
-      if self.id
-        begin
-          representer.put(representer.resource_request(self.id).url)
-        rescue 
-          'Probably trying to save a duplicate'
-        end
-      else
-        representer.post(representer.resource_request.url)
-      end
+      self
+    end
+
+    def merge_variants
+      ## hang onto this for now
+      safe_variants.any? ? safe_variants : nil
+    end
+
+    def safe_variants
+      has_variants? ? self.variants.select { |v| !v.nil? and v.option1 and v.option2 } : []
+    end
+
+    def has_variants?
+      self.variants and self.variants.any?
     end
 
   end

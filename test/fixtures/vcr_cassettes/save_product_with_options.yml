@@ -1,0 +1,402 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products.json?fields=id&handle=trailblazer-the-book-12
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 12 Jul 2015 03:12:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Sorting-Hat-Podid:
+      - '2'
+      X-Sorting-Hat-Shopid:
+      - '9123524'
+      X-Sorting-Hat-Podid-Cached:
+      - '1'
+      X-Sorting-Hat-Shopid-Cached:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      Status:
+      - 200 OK
+      X-Xss-Protection:
+      - 1; mode=block; report=/xss-report/9d5d7fb0-114a-4ccb-9e18-c6257a289165?source%5Baction%5D=index&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Shopid:
+      - '9123524'
+      X-Shardid:
+      - '2'
+      X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      Http-X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      X-Stats-Userid:
+      - '0'
+      X-Stats-Apiclientid:
+      - '977366'
+      X-Stats-Apipermissionid:
+      - '12331486'
+      Set-Cookie:
+      - request_method=GET; path=/
+      X-Request-Id:
+      - 9d5d7fb0-114a-4ccb-9e18-c6257a289165
+      P3p:
+      - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
+      X-Dc:
+      - ash
+    body:
+      encoding: UTF-8
+      string: '{"products":[{"id":1418685443}]}'
+    http_version: 
+  recorded_at: Sun, 12 Jul 2015 03:12:50 GMT
+- request:
+    method: get
+    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products/1418685443.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 12 Jul 2015 03:12:51 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Sorting-Hat-Podid:
+      - '2'
+      X-Sorting-Hat-Shopid:
+      - '9123524'
+      X-Sorting-Hat-Podid-Cached:
+      - '1'
+      X-Sorting-Hat-Shopid-Cached:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      Status:
+      - 200 OK
+      X-Xss-Protection:
+      - 1; mode=block; report=/xss-report/9a51bbd8-622e-4313-a880-8cd52297e971?source%5Baction%5D=show&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Shopid:
+      - '9123524'
+      X-Shardid:
+      - '2'
+      X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      Http-X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      X-Stats-Userid:
+      - '0'
+      X-Stats-Apiclientid:
+      - '977366'
+      X-Stats-Apipermissionid:
+      - '12331486'
+      Set-Cookie:
+      - request_method=GET; path=/
+      X-Request-Id:
+      - 9a51bbd8-622e-4313-a880-8cd52297e971
+      P3p:
+      - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
+      X-Dc:
+      - ash
+    body:
+      encoding: UTF-8
+      string: '{"product":{"body_html":"New Description","created_at":"2015-07-03T08:26:03-04:00","handle":"trailblazer-the-book-12","id":1418685443,"product_type":"Bible","published_at":"2015-07-03T08:26:03-04:00","published_scope":"global","template_suffix":null,"title":"Trailblazer
+        the book.","updated_at":"2015-07-11T23:12:07-04:00","vendor":"VayBay","tags":"","variants":[{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-11T23:12:07-04:00","fulfillment_service":"manual","grams":0,"id":4676588099,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        2015-07-12 13:12:01 +1000","option2":null,"option3":null,"position":1,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        2015-07-12 13:12:01 +1000","updated_at":"2015-07-11T23:12:07-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"}],"options":[{"id":1701824579,"name":"Title","position":1,"product_id":1418685443,"values":["Largest
+        2015-07-12 13:12:01 +1000"]}],"images":[],"image":null}}'
+    http_version: 
+  recorded_at: Sun, 12 Jul 2015 03:12:51 GMT
+- request:
+    method: get
+    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products.json?fields=id&handle=trailblazer-the-book-12
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 12 Jul 2015 03:12:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Sorting-Hat-Podid:
+      - '2'
+      X-Sorting-Hat-Shopid:
+      - '9123524'
+      X-Sorting-Hat-Podid-Cached:
+      - '1'
+      X-Sorting-Hat-Shopid-Cached:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      Status:
+      - 200 OK
+      X-Xss-Protection:
+      - 1; mode=block; report=/xss-report/5c9b5db7-096b-4f54-994e-cc5e605ade60?source%5Baction%5D=index&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Shopid:
+      - '9123524'
+      X-Shardid:
+      - '2'
+      X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      Http-X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      X-Stats-Userid:
+      - '0'
+      X-Stats-Apiclientid:
+      - '977366'
+      X-Stats-Apipermissionid:
+      - '12331486'
+      Set-Cookie:
+      - request_method=GET; path=/
+      X-Request-Id:
+      - 5c9b5db7-096b-4f54-994e-cc5e605ade60
+      P3p:
+      - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
+      X-Dc:
+      - ash
+    body:
+      encoding: UTF-8
+      string: '{"products":[{"id":1418685443}]}'
+    http_version: 
+  recorded_at: Sun, 12 Jul 2015 03:12:53 GMT
+- request:
+    method: get
+    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products/1418685443.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 12 Jul 2015 03:12:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Sorting-Hat-Podid:
+      - '2'
+      X-Sorting-Hat-Shopid:
+      - '9123524'
+      X-Sorting-Hat-Podid-Cached:
+      - '1'
+      X-Sorting-Hat-Shopid-Cached:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      Status:
+      - 200 OK
+      X-Xss-Protection:
+      - 1; mode=block; report=/xss-report/0f6fac7f-0e2d-4b99-90b2-91461834d845?source%5Baction%5D=show&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Shopid:
+      - '9123524'
+      X-Shardid:
+      - '2'
+      X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      Http-X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      X-Stats-Userid:
+      - '0'
+      X-Stats-Apiclientid:
+      - '977366'
+      X-Stats-Apipermissionid:
+      - '12331486'
+      Set-Cookie:
+      - request_method=GET; path=/
+      X-Request-Id:
+      - 0f6fac7f-0e2d-4b99-90b2-91461834d845
+      P3p:
+      - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
+      X-Dc:
+      - ash
+    body:
+      encoding: UTF-8
+      string: '{"product":{"body_html":"New Description","created_at":"2015-07-03T08:26:03-04:00","handle":"trailblazer-the-book-12","id":1418685443,"product_type":"Bible","published_at":"2015-07-03T08:26:03-04:00","published_scope":"global","template_suffix":null,"title":"Trailblazer
+        the book.","updated_at":"2015-07-11T23:12:07-04:00","vendor":"VayBay","tags":"","variants":[{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-11T23:12:07-04:00","fulfillment_service":"manual","grams":0,"id":4676588099,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        2015-07-12 13:12:01 +1000","option2":null,"option3":null,"position":1,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        2015-07-12 13:12:01 +1000","updated_at":"2015-07-11T23:12:07-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"}],"options":[{"id":1701824579,"name":"Title","position":1,"product_id":1418685443,"values":["Largest
+        2015-07-12 13:12:01 +1000"]}],"images":[],"image":null}}'
+    http_version: 
+  recorded_at: Sun, 12 Jul 2015 03:12:54 GMT
+- request:
+    method: put
+    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products/1418685443.json
+    body:
+      encoding: UTF-8
+      string: '{"product":{"images":[],"options":[{"id":1701824579,"name":"Title","position":1,"product_id":1418685443,"values":["Largest
+        2015-07-12 13:12:01 +1000"]},"#<Roarify::Option:0x007fc033751e58>","#<Roarify::Option:0x007fc033751e30>"],"title":"Trailblazer
+        the book.","id":1418685443,"vendor":"VayBay","created_at":"2015-07-03T08:26:03-04:00","body_html":"New
+        Description","handle":"trailblazer-the-book-12","product_type":"Bible","published_at":"2015-07-03T08:26:03-04:00","published_scope":"global","tags":"","updated_at":"2015-07-11T23:12:07-04:00"}}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 12 Jul 2015 03:12:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Sorting-Hat-Podid:
+      - '2'
+      X-Sorting-Hat-Shopid:
+      - '9123524'
+      X-Sorting-Hat-Podid-Cached:
+      - '1'
+      X-Sorting-Hat-Shopid-Cached:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      Status:
+      - 200 OK
+      X-Xss-Protection:
+      - 1; mode=block; report=/xss-report/dcdeb7fa-5cc9-4aa6-81d6-44501c92ff78?source%5Baction%5D=update&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Shopid:
+      - '9123524'
+      X-Shardid:
+      - '2'
+      X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      Http-X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      X-Stats-Userid:
+      - '0'
+      X-Stats-Apiclientid:
+      - '977366'
+      X-Stats-Apipermissionid:
+      - '12331486'
+      Location:
+      - https://roarify.myshopify.com/admin/products/1418685443
+      Set-Cookie:
+      - _secure_admin_session_id=6b5dcfe4efdbadd409cabe657beb43a2; path=/admin; secure;
+        HttpOnly
+      - request_method=PUT; path=/
+      X-Request-Id:
+      - dcdeb7fa-5cc9-4aa6-81d6-44501c92ff78
+      P3p:
+      - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
+      X-Dc:
+      - ash
+    body:
+      encoding: UTF-8
+      string: '{"product":{"body_html":"New Description","created_at":"2015-07-03T08:26:03-04:00","handle":"trailblazer-the-book-12","id":1418685443,"product_type":"Bible","published_at":"2015-07-03T08:26:03-04:00","published_scope":"global","template_suffix":null,"title":"Trailblazer
+        the book.","updated_at":"2015-07-11T23:12:55-04:00","vendor":"VayBay","tags":"","variants":[{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-11T23:12:07-04:00","fulfillment_service":"manual","grams":0,"id":4676588099,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        2015-07-12 13:12:01 +1000","option2":null,"option3":null,"position":1,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        2015-07-12 13:12:01 +1000","updated_at":"2015-07-11T23:12:07-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"}],"options":[{"id":1701824579,"name":"Title","position":1,"product_id":1418685443,"values":["Largest
+        2015-07-12 13:12:01 +1000"]}],"images":[],"image":null}}'
+    http_version: 
+  recorded_at: Sun, 12 Jul 2015 03:12:56 GMT
+recorded_with: VCR 2.9.3
