@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sun, 12 Jul 2015 07:03:50 GMT
+      - Sun, 12 Jul 2015 11:25:33 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -41,7 +41,7 @@ http_interactions:
       Status:
       - 201 Created
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/2a0dfc58-412a-4f35-9250-be583cecc7cb?source%5Baction%5D=create&source%5Bcontroller%5D=admin%2Fsmart_collections&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/16954b3b-f853-4476-a7a9-16623f58c2b5?source%5Baction%5D=create&source%5Bcontroller%5D=admin%2Fsmart_collections&source%5Bsection%5D=admin
       X-Content-Type-Options:
       - nosniff
       - nosniff
@@ -62,21 +62,21 @@ http_interactions:
       X-Stats-Apipermissionid:
       - '12331486'
       Location:
-      - https://roarify.myshopify.com/admin/smart_collections/91756803
+      - https://roarify.myshopify.com/admin/smart_collections/91812803
       Set-Cookie:
-      - _secure_admin_session_id=ae3779a9e8be3a25540b7283f496d086; path=/admin; secure;
+      - _secure_admin_session_id=cbb3eaf52e0457f0a37ae2d03aead4dd; path=/admin; secure;
         HttpOnly
       - request_method=POST; path=/
       X-Request-Id:
-      - 2a0dfc58-412a-4f35-9250-be583cecc7cb
+      - 16954b3b-f853-4476-a7a9-16623f58c2b5
       P3p:
       - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
       X-Dc:
       - ash
     body:
       encoding: UTF-8
-      string: '{"smart_collection":{"body_html":null,"disjunctive":false,"handle":"new-sc-56","id":91756803,"published_at":"2015-07-12T03:03:50-04:00","published_scope":"global","sort_order":"alpha-asc","template_suffix":null,"title":"New
-        SC","updated_at":"2015-07-12T03:03:50-04:00","rules":[]}}'
+      string: '{"smart_collection":{"body_html":null,"disjunctive":false,"handle":"new-sc-72","id":91812803,"published_at":"2015-07-12T07:25:33-04:00","published_scope":"global","sort_order":"alpha-asc","template_suffix":null,"title":"New
+        SC","updated_at":"2015-07-12T07:25:33-04:00","rules":[]}}'
     http_version: 
-  recorded_at: Sun, 12 Jul 2015 07:03:50 GMT
+  recorded_at: Sun, 12 Jul 2015 11:25:33 GMT
 recorded_with: VCR 2.9.3

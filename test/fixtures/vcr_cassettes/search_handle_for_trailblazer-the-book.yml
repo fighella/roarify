@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products.json?fields=id&handle=trailblazer-the-book-18
+    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products.json?fields=id&handle=trailblazer-the-book
     body:
       encoding: US-ASCII
       string: ''
@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sun, 12 Jul 2015 07:03:53 GMT
+      - Mon, 13 Jul 2015 09:40:33 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -43,7 +43,7 @@ http_interactions:
       Status:
       - 200 OK
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/78fdd196-22b7-4554-9a28-a9c68df875aa?source%5Baction%5D=index&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/e1f822f6-0d32-4bb4-b0df-d8b299e708e1?source%5Baction%5D=index&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
       X-Content-Type-Options:
       - nosniff
       - nosniff
@@ -66,14 +66,14 @@ http_interactions:
       Set-Cookie:
       - request_method=GET; path=/
       X-Request-Id:
-      - 78fdd196-22b7-4554-9a28-a9c68df875aa
+      - e1f822f6-0d32-4bb4-b0df-d8b299e708e1
       P3p:
       - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
       X-Dc:
       - ash
     body:
       encoding: UTF-8
-      string: '{"products":[{"id":1419019843}]}'
+      string: '{"products":[]}'
     http_version: 
-  recorded_at: Sun, 12 Jul 2015 07:03:53 GMT
+  recorded_at: Mon, 13 Jul 2015 09:40:33 GMT
 recorded_with: VCR 2.9.3
