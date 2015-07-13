@@ -1,0 +1,83 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/smart_collections.json
+    body:
+      encoding: UTF-8
+      string: '{"smart_collection":{"rules":[{"column":"title","relation":"contains","condition":"Trailblazer"},{"column":"vendor","relation":"not_equals","condition":"Boogie"}],"title":"New
+        SC 2"}}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 13 Jul 2015 12:14:06 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Sorting-Hat-Podid:
+      - '2'
+      X-Sorting-Hat-Shopid:
+      - '9123524'
+      X-Sorting-Hat-Podid-Cached:
+      - '1'
+      X-Sorting-Hat-Shopid-Cached:
+      - '1'
+      Status:
+      - 201 Created
+      X-Xss-Protection:
+      - 1; mode=block; report=/xss-report/58a75cb9-03b0-4e98-bfac-526062c8af27?source%5Baction%5D=create&source%5Bcontroller%5D=admin%2Fsmart_collections&source%5Bsection%5D=admin
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Shopid:
+      - '9123524'
+      X-Shardid:
+      - '2'
+      X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      Http-X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      X-Stats-Userid:
+      - '0'
+      X-Stats-Apiclientid:
+      - '977366'
+      X-Stats-Apipermissionid:
+      - '12331486'
+      Location:
+      - https://roarify.myshopify.com/admin/smart_collections/92198979
+      Set-Cookie:
+      - _secure_admin_session_id=5a3b224b24ae30c918ef547d041fcd10; path=/admin; secure;
+        HttpOnly
+      - request_method=POST; path=/
+      X-Request-Id:
+      - 58a75cb9-03b0-4e98-bfac-526062c8af27
+      P3p:
+      - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
+      X-Dc:
+      - ash
+    body:
+      encoding: UTF-8
+      string: '{"smart_collection":{"body_html":null,"disjunctive":false,"handle":"new-sc-103","id":92198979,"published_at":"2015-07-13T08:14:06-04:00","published_scope":"global","sort_order":"alpha-asc","template_suffix":null,"title":"New
+        SC 2","updated_at":"2015-07-13T08:14:06-04:00","rules":[{"column":"title","relation":"contains","condition":"Trailblazer"},{"column":"vendor","relation":"not_equals","condition":"Boogie"}]}}'
+    http_version: 
+  recorded_at: Mon, 13 Jul 2015 12:14:06 GMT
+recorded_with: VCR 2.9.3
