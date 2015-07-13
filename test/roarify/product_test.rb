@@ -41,7 +41,7 @@ class Roarify::ProductTest < MiniTest::Spec
       product.product_type = 'Video'
       VCR.use_cassette "create_product_with_taken_handle_#{product.handle}" do
         err = ->{ product.save }.must_raise RuntimeError
-        assert_match /Set field will/, err.message
+        assert_match /Taken Handle/, err.message
       end
     end
 
@@ -93,9 +93,11 @@ class Roarify::ProductTest < MiniTest::Spec
       VCR.use_cassette "show_product_1418685443" do
         product = Roarify::Product.find(1418685443)
       end
+      product.title = 'Easy to find!'
       image = Roarify::Image.new
       image.src = DummyData.image
       product.images << image
+      ##product.variants = nil
       VCR.use_cassette 'add_product_image' do
         product.save
       end
@@ -151,16 +153,11 @@ class Roarify::ProductTest < MiniTest::Spec
       variant.barcode = 'iwaslike'
       variant.title = 'Best Edition 2'
       product.variants << variant
-      puts product.variants.inspect
-      puts 'SAVE!'
       VCR.use_cassette 'save_product_with_new_variant' do
         product.save
       end
-      puts 'SAVED!'
-      puts product.variants.inspect
-
       product.body_html.must_equal 'New Description'
-      product.variants.count.must_equal product_variants_count + 1
+      product.variants.count.must_equal product_variants_count + 2
       sv = product.variants.count
 
       variant = Roarify::Variant.new
@@ -181,8 +178,6 @@ class Roarify::ProductTest < MiniTest::Spec
         product = Roarify::Product.find(1418685443)
       end
       product.variants.count.must_equal sv + 1
-      ## Not sure here...
-      ## product.variants.any? { |v| v.title == 'Best Edition 2' }.must_equal true
     end
 
     it "can find product variants by id" do
@@ -226,9 +221,6 @@ class Roarify::ProductTest < MiniTest::Spec
       matching.sku = 'DISKO-sUz'
       matching.old_inventory_quantity = 1
       matching.inventory_quantity = 12
-
-      # puts "1. Matching: #{matching.inventory_quantity}"
-      #is 12
 
       variant = Roarify::VariantDecorator.new(matching)
       VCR.use_cassette 'update_product_variant' do

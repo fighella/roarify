@@ -1,82 +1,11 @@
 ---
 http_interactions:
 - request:
-    method: post
-    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products.json
+    method: get
+    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products.json?fields=id&handle=like-the-movie
     body:
-      encoding: UTF-8
-      string: '{"product":{"title":"I was like. The movie.","vendor":"Sutterer Inc","body_html":"<p>  EXT.  CLIFF
-        - NIGHT<br/>  A Buddha in the moonlight, BODHI sits crosslegged upon the\n  cliff,
-        staring at the ocean.\n  CAMERA CIRCLES AROUND HIM, focusing in upon his eyes.<br/>                                              DISSOLVE
-        TO:<br/>  INT.  BEDROOM - NIGHT<br/>  UTAH asleep, flopped in a spread-eagled
-        X.\n  WE HEAR the bedroom door opening, see a slash of light\n  fall across
-        the bed.\n  Johnny doesn''t stir.\n  A shadow appears on the wall, moving
-        toward him.\n  An outstretched arm holding a gun.\n  Utah snores softly, sleeping
-        like a baby.\n  CAMERA TRACKS IN on his peaceful face.\n  A single eyelid
-        flutters.  Total silence, until...<br/>  KABOOOOMMM!  The Pillow beside him
-        EXPLODES into a\n  blizzard of goosedown.  Johnny rears up, eyes wide, mouth\n  agape.\n  TYLER
-        stands above him, recovering from the kick of the\n  smoking 9mm Beretta in
-        her hand.<br/>                           TYLER\n            A lawyer!?  You
-        lied to me!<br/>  She throws his FBI gold star at his face.<br/>                           TYLER\n            Look,
-        Tyler, I can--<br/>  BOOM!  Tyler SQUEEZES off another round.\n  Cascading
-        goosefeathers falling like snow.\n  Utah flinches sideways.<br/>                           TYLER\n            Jesus
-        Christ, Johnny -- you''ve been\n            using me!  Your jacket''s on the\n            floor
-        in the bathroom -- this\n            goddamn thing''s half out of the\n            pocket...
-        Oh God, it''s all part of\n            some case, isn''t it?<br/>                           UTAH\n            Tyler,
-        put the gun down.<br/>                           TYLER\n            You tell
-        me the fucking truth\n            Johnny... did your parents really\n            die
-        in a car crash?  DID THEY?!<br/>  She waves the Beretta in his face.<br/>                           UTAH\n            No.  They
-        live in Columbus Ohio.<br/>  Tyler lowers the pistol slowly, the strength
-        leaving her.\n  Her face begins to flood with tears.<br/>                           UTAH\n            I
-        work bank robbery.  Guys I''m after\n            are surfers.  I needed you,
-        at\n            first, but not--<br/>                           TYLER\n            Fuck
-        you, Johnny Utah.  Fuck you!!\n            Don''t you have a soul?  Goddamn
-        you\n            to hell!<br/>  She goes limp as the sobs rack her body.  The
-        gun flops\n  from her grip.\n  Utah sweeps it under the bed with his foot.\n  He
-        moves to gently comfort her.\n  She bolts at his touch, running from the bedroom.\n  Utah
-        is up and hopping into his pants to follow her.  He\n  stumbles.<br/>                           UTAH\n            Tyler!  Wait!!<br/>  From
-        the living room we hear a rattling of keys, the front\n  door opens and slams
-        shut.  He hobbles to the door,\n  favoring his knee.  Opens it.  We hear the
-        Porsche\n  screeching away.\n  Utah sags, the breath coming out of him long
-        and slow.<br/>                                              CUT TO:<br/>  UTAH
-        on the bed staring up at the ceiling.  Phone cradled,\n  listening to--<br/>                           TYLER
-        (V.O.)\n            Hi, it''s me.  Leave a message.<br/>  BEEP!  He rests
-        the telephone on his chest, letting the\n  tape roll a moment before he speaks.<br/>                           UTAH\n            Tyler
-        I... look, I fucked up, okay.\n            I know I fucked up.  I wanted to\n            tell
-        you, but I couldn''t -- I was\n            afraid you''d leave... good guess,\n            huh?\n                    (grimacing)\n            Fuck,
-        why can''t I ever say what I\n            really mean?  I lied to you.  I''m
-        an\n            asshole... but I need you, Tyler.  I\n            want you
-        to know that I''ve never\n            known anyone like you before in my\n            life...
-        and I... I hope you change\n            your mind...<br/>  He cradles the
-        receiver, looks out the window.  Black of\n  night.  Dead still.<br/>                                              DISSOLVE
-        TO:<br/>  UTAH asleep, telephone still perched on his bare chest.<br/>  BUZZZZZZ!  The
-        rasp of the doorbell.\n  Johnny is airborne, phone flying across the floor.\n  Hunting
-        for his pants, realizes they are already on, limps\n  in fast motion to the
-        door.<br/>                           UTAH\n            Tyler!  Wait, I--<br/>  Whips
-        it open.\n  BODHI standing in the doorway, smiling like an excited\n  child.<br/>                           BODHI\n            Howdy
-        brah.<br/>  NATHANIEL, ROACH, and GROMMET are there behind him.\n  They look
-        like sentry dogs.  Johnny freezes.\n  Bodhi walks past Utah, into the room.<br/>                           BODHI\n            C''mon,
-        get your gear on, we''re\n            rollin''.<br/>  Cheerful, hardly able
-        to contain his exuberance.\n  He moves through the room, grabbing Johnny''s
-        shirt from a\n  chair, a pair of sneakers on the floor.\n  Utah sees his FBI
-        shield sitting on the dresser in plain\n  sight.\n  He palms it when Bodhi
-        is turned away, and slips it into\n  his hip pocket to conceal it.<br/>                           UTAH\n            What
-        going on, Bodhi?<br/>  Bodhi plucks a couple socks off the couch, hands them
-        to\n  Utah.<br/>                           BODHI\n            Here.\n                    (spying
-        Johnny''s cut\n                     face)\n            Hey, what happened?  Ya
-        cut\n            yourself shaving?<br/>  Johnny meets Bodhi''s cold stare.<br/>                           UTAH\n            I
-        don''t think I wanna surf right\n            now.<br/>  Bodhi''s face takes
-        on a crazy glow.<br/>                           BODHI\n            Naw, this
-        is different, Johnny.\n            This is something totally\n            different...
-        you''re gonna love this.<br/>  He winds an arm around Johnny''s shoulders,
-        guides him\n  toward the door.<br/>                           BODHI\n            C''mon,
-        let''s go, let''s go.  Time''s\n            wastin'', brah.<br/>  Bodhi claps
-        Utah on the back, ushering him outside.\n  Nathaniel, Roach and Grommet fall
-        into step beside them.\n  The door closes behind them.\n  CAMERA DRIFTS back
-        through the apartment, coming to rest\n  on the 9mm Beretta, on the floor
-        under the bed... useless.<br/>                                              CUT
-        TO:<br/>  EXT.  BODHI''S PICKUP - PREDAWN<br/>  The pickup is a funnel of
-        dust along the desert road.\n  Black mountains against a silver sky.</p>","handle":"like-the-movie","product_type":"Video"}}'
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -88,13 +17,13 @@ http_interactions:
       - application/json
   response:
     status:
-      code: 201
-      message: Created
+      code: 200
+      message: OK
     headers:
       Server:
       - nginx
       Date:
-      - Sun, 12 Jul 2015 11:25:36 GMT
+      - Mon, 13 Jul 2015 12:13:28 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -109,10 +38,12 @@ http_interactions:
       - '1'
       X-Sorting-Hat-Shopid-Cached:
       - '1'
+      Vary:
+      - Accept-Encoding
       Status:
-      - 201 Created
+      - 200 OK
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/8985687e-a24c-46e2-aab3-bbbbba5c7241?source%5Baction%5D=create&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/c36eedef-309b-4bb3-a698-aa1d0f6d6aa1?source%5Baction%5D=index&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
       X-Content-Type-Options:
       - nosniff
       - nosniff
@@ -132,103 +63,128 @@ http_interactions:
       - '977366'
       X-Stats-Apipermissionid:
       - '12331486'
-      Location:
-      - https://roarify.myshopify.com/admin/products/1578584835
       Set-Cookie:
-      - _secure_admin_session_id=dca38b23ea0b0c8ccf7f2a3bcbe17f6a; path=/admin; secure;
-        HttpOnly
-      - request_method=POST; path=/
+      - request_method=GET; path=/
       X-Request-Id:
-      - 8985687e-a24c-46e2-aab3-bbbbba5c7241
+      - c36eedef-309b-4bb3-a698-aa1d0f6d6aa1
       P3p:
       - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
       X-Dc:
       - ash
     body:
       encoding: UTF-8
-      string: '{"product":{"body_html":"\u003cp\u003e  EXT.  CLIFF - NIGHT\u003cbr\u003e  A
-        Buddha in the moonlight, BODHI sits crosslegged upon the\n  cliff, staring
-        at the ocean.\n  CAMERA CIRCLES AROUND HIM, focusing in upon his eyes.\u003cbr\u003e                                              DISSOLVE
-        TO:\u003cbr\u003e  INT.  BEDROOM - NIGHT\u003cbr\u003e  UTAH asleep, flopped
-        in a spread-eagled X.\n  WE HEAR the bedroom door opening, see a slash of
-        light\n  fall across the bed.\n  Johnny doesn''t stir.\n  A shadow appears
-        on the wall, moving toward him.\n  An outstretched arm holding a gun.\n  Utah
-        snores softly, sleeping like a baby.\n  CAMERA TRACKS IN on his peaceful face.\n  A
-        single eyelid flutters.  Total silence, until...\u003cbr\u003e  KABOOOOMMM!  The
-        Pillow beside him EXPLODES into a\n  blizzard of goosedown.  Johnny rears
-        up, eyes wide, mouth\n  agape.\n  TYLER stands above him, recovering from
-        the kick of the\n  smoking 9mm Beretta in her hand.\u003cbr\u003e                           TYLER\n            A
-        lawyer!?  You lied to me!\u003cbr\u003e  She throws his FBI gold star at his
-        face.\u003cbr\u003e                           TYLER\n            Look, Tyler,
-        I can--\u003cbr\u003e  BOOM!  Tyler SQUEEZES off another round.\n  Cascading
-        goosefeathers falling like snow.\n  Utah flinches sideways.\u003cbr\u003e                           TYLER\n            Jesus
-        Christ, Johnny -- you''ve been\n            using me!  Your jacket''s on the\n            floor
-        in the bathroom -- this\n            goddamn thing''s half out of the\n            pocket...
-        Oh God, it''s all part of\n            some case, isn''t it?\u003cbr\u003e                           UTAH\n            Tyler,
-        put the gun down.\u003cbr\u003e                           TYLER\n            You
-        tell me the fucking truth\n            Johnny... did your parents really\n            die
-        in a car crash?  DID THEY?!\u003cbr\u003e  She waves the Beretta in his face.\u003cbr\u003e                           UTAH\n            No.  They
-        live in Columbus Ohio.\u003cbr\u003e  Tyler lowers the pistol slowly, the
-        strength leaving her.\n  Her face begins to flood with tears.\u003cbr\u003e                           UTAH\n            I
-        work bank robbery.  Guys I''m after\n            are surfers.  I needed you,
-        at\n            first, but not--\u003cbr\u003e                           TYLER\n            Fuck
-        you, Johnny Utah.  Fuck you!!\n            Don''t you have a soul?  Goddamn
-        you\n            to hell!\u003cbr\u003e  She goes limp as the sobs rack her
-        body.  The gun flops\n  from her grip.\n  Utah sweeps it under the bed with
-        his foot.\n  He moves to gently comfort her.\n  She bolts at his touch, running
-        from the bedroom.\n  Utah is up and hopping into his pants to follow her.  He\n  stumbles.\u003cbr\u003e                           UTAH\n            Tyler!  Wait!!\u003cbr\u003e  From
-        the living room we hear a rattling of keys, the front\n  door opens and slams
-        shut.  He hobbles to the door,\n  favoring his knee.  Opens it.  We hear the
-        Porsche\n  screeching away.\n  Utah sags, the breath coming out of him long
-        and slow.\u003cbr\u003e                                              CUT TO:\u003cbr\u003e  UTAH
-        on the bed staring up at the ceiling.  Phone cradled,\n  listening to--\u003cbr\u003e                           TYLER
-        (V.O.)\n            Hi, it''s me.  Leave a message.\u003cbr\u003e  BEEP!  He
-        rests the telephone on his chest, letting the\n  tape roll a moment before
-        he speaks.\u003cbr\u003e                           UTAH\n            Tyler
-        I... look, I fucked up, okay.\n            I know I fucked up.  I wanted to\n            tell
-        you, but I couldn''t -- I was\n            afraid you''d leave... good guess,\n            huh?\n                    (grimacing)\n            Fuck,
-        why can''t I ever say what I\n            really mean?  I lied to you.  I''m
-        an\n            asshole... but I need you, Tyler.  I\n            want you
-        to know that I''ve never\n            known anyone like you before in my\n            life...
-        and I... I hope you change\n            your mind...\u003cbr\u003e  He cradles
-        the receiver, looks out the window.  Black of\n  night.  Dead still.\u003cbr\u003e                                              DISSOLVE
-        TO:\u003cbr\u003e  UTAH asleep, telephone still perched on his bare chest.\u003cbr\u003e  BUZZZZZZ!  The
-        rasp of the doorbell.\n  Johnny is airborne, phone flying across the floor.\n  Hunting
-        for his pants, realizes they are already on, limps\n  in fast motion to the
-        door.\u003cbr\u003e                           UTAH\n            Tyler!  Wait,
-        I--\u003cbr\u003e  Whips it open.\n  BODHI standing in the doorway, smiling
-        like an excited\n  child.\u003cbr\u003e                           BODHI\n            Howdy
-        brah.\u003cbr\u003e  NATHANIEL, ROACH, and GROMMET are there behind him.\n  They
-        look like sentry dogs.  Johnny freezes.\n  Bodhi walks past Utah, into the
-        room.\u003cbr\u003e                           BODHI\n            C''mon, get
-        your gear on, we''re\n            rollin''.\u003cbr\u003e  Cheerful, hardly
-        able to contain his exuberance.\n  He moves through the room, grabbing Johnny''s
-        shirt from a\n  chair, a pair of sneakers on the floor.\n  Utah sees his FBI
-        shield sitting on the dresser in plain\n  sight.\n  He palms it when Bodhi
-        is turned away, and slips it into\n  his hip pocket to conceal it.\u003cbr\u003e                           UTAH\n            What
-        going on, Bodhi?\u003cbr\u003e  Bodhi plucks a couple socks off the couch,
-        hands them to\n  Utah.\u003cbr\u003e                           BODHI\n            Here.\n                    (spying
-        Johnny''s cut\n                     face)\n            Hey, what happened?  Ya
-        cut\n            yourself shaving?\u003cbr\u003e  Johnny meets Bodhi''s cold
-        stare.\u003cbr\u003e                           UTAH\n            I don''t
-        think I wanna surf right\n            now.\u003cbr\u003e  Bodhi''s face takes
-        on a crazy glow.\u003cbr\u003e                           BODHI\n            Naw,
-        this is different, Johnny.\n            This is something totally\n            different...
-        you''re gonna love this.\u003cbr\u003e  He winds an arm around Johnny''s shoulders,
-        guides him\n  toward the door.\u003cbr\u003e                           BODHI\n            C''mon,
-        let''s go, let''s go.  Time''s\n            wastin'', brah.\u003cbr\u003e  Bodhi
-        claps Utah on the back, ushering him outside.\n  Nathaniel, Roach and Grommet
-        fall into step beside them.\n  The door closes behind them.\n  CAMERA DRIFTS
-        back through the apartment, coming to rest\n  on the 9mm Beretta, on the floor
-        under the bed... useless.\u003cbr\u003e                                              CUT
-        TO:\u003cbr\u003e  EXT.  BODHI''S PICKUP - PREDAWN\u003cbr\u003e  The pickup
-        is a funnel of dust along the desert road.\n  Black mountains against a silver
-        sky.\u003c\/p\u003e","created_at":"2015-07-12T07:25:36-04:00","handle":"like-the-movie-30","id":1578584835,"product_type":"Video","published_at":"2015-07-12T07:25:36-04:00","published_scope":"global","template_suffix":null,"title":"I
-        was like. The movie.","updated_at":"2015-07-12T07:25:36-04:00","vendor":"Sutterer
-        Inc","tags":"","variants":[{"barcode":null,"compare_at_price":null,"created_at":"2015-07-12T07:25:36-04:00","fulfillment_service":"manual","grams":0,"id":4684152451,"inventory_management":null,"inventory_policy":"deny","option1":"Default
-        Title","option2":null,"option3":null,"position":1,"price":"0.00","product_id":1578584835,"requires_shipping":true,"sku":"","taxable":true,"title":"Default
-        Title","updated_at":"2015-07-12T07:25:36-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"}],"options":[{"id":1900544579,"name":"Title","position":1,"product_id":1578584835,"values":["Default
+      string: '{"products":[{"id":1487979075}]}'
+    http_version: 
+  recorded_at: Mon, 13 Jul 2015 12:13:28 GMT
+- request:
+    method: get
+    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products/1487979075.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 13 Jul 2015 12:13:29 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Sorting-Hat-Podid:
+      - '2'
+      X-Sorting-Hat-Shopid:
+      - '9123524'
+      X-Sorting-Hat-Podid-Cached:
+      - '1'
+      X-Sorting-Hat-Shopid-Cached:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      Status:
+      - 200 OK
+      X-Xss-Protection:
+      - 1; mode=block; report=/xss-report/80537fce-9101-44c3-a95b-35b2d378d272?source%5Baction%5D=show&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Shopid:
+      - '9123524'
+      X-Shardid:
+      - '2'
+      X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      Http-X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      X-Stats-Userid:
+      - '0'
+      X-Stats-Apiclientid:
+      - '977366'
+      X-Stats-Apipermissionid:
+      - '12331486'
+      Set-Cookie:
+      - request_method=GET; path=/
+      X-Request-Id:
+      - 80537fce-9101-44c3-a95b-35b2d378d272
+      P3p:
+      - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
+      X-Dc:
+      - ash
+    body:
+      encoding: UTF-8
+      string: '{"product":{"body_html":"\u003cp\u003e  EXT.  MALIBU PIER - DUSK\u003cbr\u003e  Big
+        surf.  Rough conditions.  Closeout set.\n  UTAH, board in arm, follows Tyler
+        out of the whitewater\n  onto the beach.\u003cbr\u003e                           TYLER\n            It''s
+        closing out completely.  Let''s\n            call it.\u003cbr\u003e  Utah
+        nods.  His eyes track the unruly break.\u003cbr\u003e                           UTAH\n            Who''s
+        that?\u003cbr\u003e  A LONE SURFER slashing through the pilings of the pier.  A\n  real
+        kamikaze run as the whitewater walls thunder behind\n  him.\n  SILHOUETTED
+        against a crimson sky and backlit spray the\n  figure pumps among the pier
+        pilings in a frenzy of motion\n  that is somehow balletic.\n  Laying out bottom
+        turns, torquing his body and blasting\n  the lip a few times, moving so fast
+        his long dark hair\n  stands straight back as if he were leaning out a car\n  window
+        on the freeway.\u003cbr\u003e                           TYLER (V.O.)\n            That''s
+        Bodhi.  They call his the\n            Bodhisattva.\u003cbr\u003e  Utah watches
+        as THE BODHISATTVA gets vertical with a snap,\n  trims down the volcanic wall,
+        carves the bottom, pivots,\n  pumps to the top, gouging the lip, getting six
+        feet of\n  air.\n  Gawkers HOWL and shout praise at the manic surfer.\u003cbr\u003e                           TYLER\n            The
+        modern savage.  Guy''s even\n            crazier than you, Johnny Utah.\n            C''mon.\u003cbr\u003e  They
+        start to walk.  The sky darkens as the sea finally\n  closes out completely.  The
+        Bodhisattva seems to levitate\n  through the shapeless mush to shore.\u003cbr\u003e                           ROACH
+        (O.S.)\n            Brah!\u003cbr\u003e  Suddenly a football whistles through
+        the air above Utah''s\n  head.\n  He watches as--\n  The Bodhisattva, board
+        under arm, walking out of the\n  whitewater, makes a one-handed chest catch.\u003cbr\u003e  A
+        few yards away two teams of SURFERS play football.\n  Utah gazes down the
+        beach at the Bodhisattva.\n  Almost 30 years old, his body lean and hard as
+        a tree\n  trunk.  Hardness in the face accented by long Comanche\n  hair.\u003cbr\u003e                           BODHI\n            Hey
+        Tyler!\u003cbr\u003e  She whirls.  Bodhi pumps his arm.  Tyler jogs back for
+        the\n  catch.  Bullseye.  She shoots Bodhi a look.  Something\n  crosses her
+        face.\n  Bodhi smiles.  Tyler doesn''t.  Then it passes.\n  She chucks the
+        ball to Utah.\n  Who drops his board and makes the catch in one move.\n  He
+        SPINS the football on his fingertip, drops it on his\n  foot, kicks it up
+        into his hands.  Razzle dazzle.  He\n  grins evilly.\u003c\/p\u003e","created_at":"2015-07-07T07:37:17-04:00","handle":"like-the-movie","id":1487979075,"product_type":"Video","published_at":"2015-07-07T07:37:17-04:00","published_scope":"global","template_suffix":null,"title":"This
+        is a new title","updated_at":"2015-07-07T07:37:20-04:00","vendor":"Sutterer
+        Inc","tags":"","variants":[{"barcode":null,"compare_at_price":null,"created_at":"2015-07-07T07:37:17-04:00","fulfillment_service":"manual","grams":0,"id":4430218307,"inventory_management":null,"inventory_policy":"deny","option1":"Default
+        Title","option2":null,"option3":null,"position":1,"price":"0.00","product_id":1487979075,"requires_shipping":true,"sku":"","taxable":true,"title":"Default
+        Title","updated_at":"2015-07-07T07:37:17-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"}],"options":[{"id":1779700483,"name":"Title","position":1,"product_id":1487979075,"values":["Default
         Title"]}],"images":[],"image":null}}'
     http_version: 
-  recorded_at: Sun, 12 Jul 2015 11:25:36 GMT
+  recorded_at: Mon, 13 Jul 2015 12:13:30 GMT
 recorded_with: VCR 2.9.3

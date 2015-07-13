@@ -2,7 +2,6 @@ module Roarify
   class Product
     attr_accessor :id, :body_html, :title, :vendor, :handle, :product_type, :variants, :images, :created_at, :handle, :body_html, :images, :options,:product_type,:published_at,:published_scope,:published, :tags,:template_suffix,:title,:updated_at,:barcode,:compare_at_price,:created_at,:fulfillment_service,:grams,:weight,:weight_unit,:inventory_management,:inventory_policy,:inventory_quantity,:metafield,:vendor
 
-
     def self.find(id)
       representer = ProductDecorator.new(self.new)
       product = representer.get(representer.resource_request(id).url)
@@ -61,9 +60,12 @@ module Roarify
     end
 
     def changeable?
-      handle and Product.where('handle',handle).any? and Product.where('handle',handle).first.id != id
+      handle and Product.where('handle',handle).any? and ids_match
     end
-    
+
+    def ids_match
+      !id or Product.where('handle',handle).first.id != id
+    end
 
   end
 end

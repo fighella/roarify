@@ -1,11 +1,11 @@
 ---
 http_interactions:
 - request:
-    method: post
-    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/smart_collections.json
+    method: get
+    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products.json?fields=id&handle=trailblazer-the-book-18
     body:
-      encoding: UTF-8
-      string: '{"smart_collection":{"title":"New SC"}}'
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -17,13 +17,13 @@ http_interactions:
       - application/json
   response:
     status:
-      code: 201
-      message: Created
+      code: 200
+      message: OK
     headers:
       Server:
       - nginx
       Date:
-      - Sun, 12 Jul 2015 11:25:33 GMT
+      - Mon, 13 Jul 2015 12:13:26 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -35,13 +35,15 @@ http_interactions:
       X-Sorting-Hat-Shopid:
       - '9123524'
       X-Sorting-Hat-Podid-Cached:
-      - '0'
+      - '1'
       X-Sorting-Hat-Shopid-Cached:
-      - '0'
+      - '1'
+      Vary:
+      - Accept-Encoding
       Status:
-      - 201 Created
+      - 200 OK
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/16954b3b-f853-4476-a7a9-16623f58c2b5?source%5Baction%5D=create&source%5Bcontroller%5D=admin%2Fsmart_collections&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/5785899b-d5d4-4f3c-b995-fa0fe441d110?source%5Baction%5D=index&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
       X-Content-Type-Options:
       - nosniff
       - nosniff
@@ -61,22 +63,17 @@ http_interactions:
       - '977366'
       X-Stats-Apipermissionid:
       - '12331486'
-      Location:
-      - https://roarify.myshopify.com/admin/smart_collections/91812803
       Set-Cookie:
-      - _secure_admin_session_id=cbb3eaf52e0457f0a37ae2d03aead4dd; path=/admin; secure;
-        HttpOnly
-      - request_method=POST; path=/
+      - request_method=GET; path=/
       X-Request-Id:
-      - 16954b3b-f853-4476-a7a9-16623f58c2b5
+      - 5785899b-d5d4-4f3c-b995-fa0fe441d110
       P3p:
       - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
       X-Dc:
       - ash
     body:
       encoding: UTF-8
-      string: '{"smart_collection":{"body_html":null,"disjunctive":false,"handle":"new-sc-72","id":91812803,"published_at":"2015-07-12T07:25:33-04:00","published_scope":"global","sort_order":"alpha-asc","template_suffix":null,"title":"New
-        SC","updated_at":"2015-07-12T07:25:33-04:00","rules":[]}}'
+      string: '{"products":[{"id":1419019843}]}'
     http_version: 
-  recorded_at: Sun, 12 Jul 2015 11:25:33 GMT
+  recorded_at: Mon, 13 Jul 2015 12:13:26 GMT
 recorded_with: VCR 2.9.3

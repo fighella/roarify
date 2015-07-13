@@ -10,15 +10,15 @@ module Roarify
     end
 
     def update
-      if changeable?
-        raise 'Set will change.'
+      if @product.changeable?
+        raise 'Taken Handle'
       else
         representer.put(representer.resource_request(@product.id).url)
       end
     end
 
     def product_data
-      if exists?
+      if @product.exists?
         @product.variants = merge_variants
       end
       @product

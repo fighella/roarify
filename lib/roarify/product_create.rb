@@ -1,15 +1,15 @@
 module Roarify
   class ProductCreate < Roarify::Product
+    attr_reader :handle
+
     def initialize(product)
       @product = product
       create
     end
 
     def create
-      if changeable? 
-        if handle_taken?
-          raise 'Taken Handle'
-        end
+      if @product.changeable? 
+        raise 'Taken Handle'
       end
       create_product
     end
