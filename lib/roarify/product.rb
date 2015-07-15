@@ -3,8 +3,9 @@ module Roarify
     attr_accessor :id, :body_html, :title, :vendor, :handle, :product_type, :variants, :images, :created_at, :handle, :body_html, :images, :options,:product_type,:published_at,:published_scope,:published, :tags,:template_suffix,:title,:updated_at,:barcode,:compare_at_price,:created_at,:fulfillment_service,:grams,:weight,:weight_unit,:inventory_management,:inventory_policy,:inventory_quantity,:metafield,:vendor
 
     def self.find(id)
-      representer = ProductDecorator.new(self.new)
-      product = representer.get(representer.resource_request(id).url)
+      product = Product.new
+      representer = ProductDecorator.new(product)
+      representer.get(representer.resource_request(id).url)
       product
     end
     
@@ -25,7 +26,7 @@ module Roarify
       representer = SearchRepresenter.new(search)
       representer.get(representer.resource_request.search(attribute,value))
       ## Returns an array of id's
-      Product.find_by_ids(representer.represented.products.map {|p| p.id })
+      Product.find_by_ids(search.products.map {|p| p.id })
     end
 
     def self.where_first_or_initialize(attribute,value)

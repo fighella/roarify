@@ -7,7 +7,7 @@ module Roarify
     include Roar::JSON
     include Roar::Client
     collection :products, class: OpenStruct, decorator: Roarify::ProductRepresenter
-    # collection :variants, class: OpenStruct, decorator: VariantRepresenter
+    # collection :themes, class: OpenStruct, decorator: Roarify::ThemeRepresenter
     # collection :images, class: OpenStruct, decorator: ImageRepresenter
 
     property :id
@@ -31,9 +31,9 @@ module Roarify
       resource_request.url
     end
 
-    def resource_request
+    def resource_request(resource='products')
       ## just use products for now
-      Roarify::Url.new('products')
+      Roarify::Url.new(resource)
     end
   end
 end

@@ -22,6 +22,7 @@ module Roarify
       start_url.merge({uri: search_url})
     end
 
+
     def filter(ids)
       search('ids',ids.join(','))
     end
