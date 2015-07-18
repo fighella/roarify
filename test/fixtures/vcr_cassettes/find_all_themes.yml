@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 15 Jul 2015 00:57:20 GMT
+      - Sat, 18 Jul 2015 10:58:45 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -43,7 +43,7 @@ http_interactions:
       Status:
       - 200 OK
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/8a2884ed-8b5d-4399-988a-a967d9e76f5c?source%5Baction%5D=index&source%5Bcontroller%5D=admin%2Fthemes&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/7354bef6-96c9-44d0-a879-32c2616de070?source%5Baction%5D=index&source%5Bcontroller%5D=admin%2Fthemes&source%5Bsection%5D=admin
       X-Content-Type-Options:
       - nosniff
       - nosniff
@@ -66,14 +66,14 @@ http_interactions:
       Set-Cookie:
       - request_method=GET; path=/
       X-Request-Id:
-      - 8a2884ed-8b5d-4399-988a-a967d9e76f5c
+      - 7354bef6-96c9-44d0-a879-32c2616de070
       P3p:
       - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
       X-Dc:
       - ash
     body:
       encoding: UTF-8
-      string: '{"themes":[{"created_at":"2015-07-03T06:28:39-04:00","id":44140483,"name":"launchpad-star","role":"unpublished","theme_store_id":null,"updated_at":"2015-07-03T07:50:04-04:00","previewable":true,"processing":false},{"created_at":"2015-07-03T07:50:01-04:00","id":44159875,"name":"solo","role":"main","theme_store_id":null,"updated_at":"2015-07-08T18:47:47-04:00","previewable":true,"processing":false}]}'
+      string: '{"themes":[{"created_at":"2015-07-03T06:28:39-04:00","id":44140483,"name":"launchpad-star","role":"unpublished","theme_store_id":null,"updated_at":"2015-07-15T12:49:12-04:00","previewable":true,"processing":false},{"created_at":"2015-07-03T07:50:01-04:00","id":44159875,"name":"solo","role":"main","theme_store_id":null,"updated_at":"2015-07-08T18:47:47-04:00","previewable":true,"processing":false}]}'
     http_version: 
-  recorded_at: Wed, 15 Jul 2015 00:57:20 GMT
+  recorded_at: Sat, 18 Jul 2015 10:58:46 GMT
 recorded_with: VCR 2.9.3

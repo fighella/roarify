@@ -13,7 +13,7 @@ module Roarify
       if @product.changeable?
         raise 'Taken Handle'
       else
-        representer.put(representer.resource_request(@product.id).url)
+        representer.put(representer.resource_request(@product.id))
       end
     end
 

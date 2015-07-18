@@ -47,5 +47,6 @@ module Roarify
     property :inventory_quantity
     property :metafield
 
+   
   end
 end

@@ -68,10 +68,8 @@ class Roarify::ProductTest < MiniTest::Spec
     end
 
     it "can search for a Product by handle" do 
-      search = OpenStruct.new
-      representer = Roarify::SearchRepresenter.new(search)
       VCR.use_cassette 'find_product_by_handle' do
-        representer.find_by(:handle, 'trailblazer-the-book')
+        Roarify::Product.where('handle', 'trailblazer-the-book')
       end
       # search.products[0].title.must_match 'Trailblazer the book.'
     end
@@ -205,19 +203,12 @@ class Roarify::ProductTest < MiniTest::Spec
     end
 
     it "can find a product by hand and update one of its variant" do
-      search = Roarify::Search.new
-      srepresenter = Roarify::SearchRepresenter.new(search)
+      search = nil
       VCR.use_cassette 'find_product_18' do
-        srepresenter.find_by(:handle, 'trailblazer-the-book-18')
+        search = Roarify::Product.where(:handle, 'trailblazer-the-book-18')
       end
 
-      ## Do the search, but then 're-find' the book... ??
-      product = nil
-      VCR.use_cassette 'find_product_3' do
-        product = Roarify::Product.find(search.products[0].id)
-      end
-
-      matching = product.variants[0]
+      matching = search[0].variants[0]
       matching.sku = 'DISKO-sUz'
       matching.old_inventory_quantity = 1
       matching.inventory_quantity = 12

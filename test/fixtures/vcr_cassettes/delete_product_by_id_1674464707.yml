@@ -1,8 +1,8 @@
 ---
 http_interactions:
 - request:
-    method: get
-    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products.json?fields=id&handle=trailblazer-the-book-18
+    method: delete
+    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products/1674464707.json
     body:
       encoding: US-ASCII
       string: ''
@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 13 Jul 2015 12:13:26 GMT
+      - Sat, 18 Jul 2015 10:56:06 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -43,7 +43,7 @@ http_interactions:
       Status:
       - 200 OK
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/5785899b-d5d4-4f3c-b995-fa0fe441d110?source%5Baction%5D=index&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/3cad575c-63dd-4c0f-89fb-1ad58c152f61?source%5Baction%5D=destroy&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
       X-Content-Type-Options:
       - nosniff
       - nosniff
@@ -63,17 +63,21 @@ http_interactions:
       - '977366'
       X-Stats-Apipermissionid:
       - '12331486'
+      Location:
+      - https://roarify.myshopify.com/admin/products
       Set-Cookie:
-      - request_method=GET; path=/
+      - _secure_admin_session_id=bba4339ca92171043ab152f192e9919e; path=/admin; secure;
+        HttpOnly
+      - request_method=DELETE; path=/
       X-Request-Id:
-      - 5785899b-d5d4-4f3c-b995-fa0fe441d110
+      - 3cad575c-63dd-4c0f-89fb-1ad58c152f61
       P3p:
       - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
       X-Dc:
       - ash
     body:
       encoding: UTF-8
-      string: '{"products":[{"id":1419019843}]}'
+      string: '{}'
     http_version: 
-  recorded_at: Mon, 13 Jul 2015 12:13:26 GMT
+  recorded_at: Sat, 18 Jul 2015 10:56:06 GMT
 recorded_with: VCR 2.9.3

@@ -7,10 +7,9 @@ module Roarify
     it 'finds the themes' do
       themes = nil
       VCR.use_cassette 'find all themes' do
-        themes = Roarify::Theme.find_all
+        themes = Roarify::Theme.all
       end
-      puts "Themes: #{themes.inspect}"
-      # themes.length.must_be_greater_than 0
+      themes.length.must_equal 2
     end
   end
 end

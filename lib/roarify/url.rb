@@ -22,7 +22,6 @@ module Roarify
       start_url.merge({uri: search_url})
     end
 
-
     def filter(ids)
       search('ids',ids.join(','))
     end
@@ -38,7 +37,7 @@ module Roarify
 
     private
     def connect
-      Shop.new.connect
+      Connect.test_auth.connection
     end
 
     def set_request_type!

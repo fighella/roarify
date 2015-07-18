@@ -4,7 +4,7 @@ module Roarify
 
     def create
       representer = Roarify::SmartCollectionDecorator.new(self)
-      representer.post(representer.resource_request.url)
+      representer.post(representer.resource_request)
     end
 
   end

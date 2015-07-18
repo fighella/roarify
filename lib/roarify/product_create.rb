@@ -15,7 +15,7 @@ module Roarify
     end
 
     def create_product
-      representer.post(representer.resource_request.url)
+      representer.post(representer.resource_request)
     end
 
     def representer

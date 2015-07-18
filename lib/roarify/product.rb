@@ -3,10 +3,7 @@ module Roarify
     attr_accessor :id, :body_html, :title, :vendor, :handle, :product_type, :variants, :images, :created_at, :handle, :body_html, :images, :options,:product_type,:published_at,:published_scope,:published, :tags,:template_suffix,:title,:updated_at,:barcode,:compare_at_price,:created_at,:fulfillment_service,:grams,:weight,:weight_unit,:inventory_management,:inventory_policy,:inventory_quantity,:metafield,:vendor
 
     def self.find(id)
-      product = Product.new
-      representer = ProductDecorator.new(product)
-      representer.get(representer.resource_request(id).url)
-      product
+      Finder.new(Product,id).find
     end
     
     def self.find_by_ids(ids)
@@ -22,11 +19,7 @@ module Roarify
     end
 
     def self.where(attribute, value)
-      search = OpenStruct.new
-      representer = SearchRepresenter.new(search)
-      representer.get(representer.resource_request.search(attribute,value))
-      ## Returns an array of id's
-      Product.find_by_ids(search.products.map {|p| p.id })
+      find_by_ids(Search.new(Product).find_by(attribute,value).products.map { |v| v.id })
     end
 
     def self.where_first_or_initialize(attribute,value)
@@ -42,7 +35,7 @@ module Roarify
 
     def delete
       representer = ProductDecorator.new(self)
-      representer.delete(representer.resource_request(id).url)
+      representer.delete(representer.resource_request(id))
     end
 
     def exists?
@@ -51,9 +44,7 @@ module Roarify
     end
 
     def handle_taken?
-      search = OpenStruct.new
-      representer = SearchRepresenter.new(search)
-      representer.get(representer.resource_request.search('handle',handle)).any?
+      Search.new(Product).find_by('handle', handle).any?
     end
 
     def changeables
@@ -66,6 +57,10 @@ module Roarify
 
     def ids_match
       !id or Product.where('handle',handle).first.id != id
+    end
+
+    def self.decorator
+      ProductDecorator
     end
 
   end

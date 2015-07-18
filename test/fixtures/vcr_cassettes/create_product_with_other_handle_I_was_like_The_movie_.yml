@@ -5,24 +5,65 @@ http_interactions:
     uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products.json
     body:
       encoding: UTF-8
-      string: '{"product":{"title":"I was like. The movie.","vendor":"Sutterer Inc","body_html":"<p>  INT./
-        EXT.  TAXI<br/>  A flood of orange through the windshield as the cab crawls\n  down
-        Ocean Park to the sea.  CAMERA HANDHELD from the back\n  seat.\n  The driver
-        turns to us.<br/>                           DRIVER\n            Anywhere?  You
-        don''t care?<br/>                           UTAH (V.O.)\n            Anywhere.  I''ve
-        just never seen the\n            ocean before.<br/>                                              CUT
-        TO:<br/>  EXT.  VENICE BEACH<br/>  JOHNNY UTAH trudging across the sand, holding
-        his shoes.\n  Garment bag and a big duffel over his shoulder.\n  He looks
-        silly in his dark suit, tie loosened, wearing a\n  turned around baseball
-        cap.\n  He wiggles his toes in the sand, looks around like a kid.\n  A pack
-        of BOUNCING BEAUTIES jog through frame.\n  Utah grins, reaches up and turns
-        his cap around.\n  It reads \"I Love L.A.\"<br/>                                              CUT
-        TO:<br/>  EXT.  FEDERAL BUILDING<br/>  Looking down the face of the concrete
-        monolith at Wilshire\n  and Veteran.  Ant-like, Johnny Utah''s tiny figure
-        moves\n  toward the entrance.<br/>                           VOICE (OVER)\n            Day
-        One in LA, special agent Utah.\n            You may have been top two percent
-        of\n            your class at Quantico but you have\n            exactly zero
-        hours in the field\n            here.  You know nothing...</p>","product_type":"Video"}}'
+      string: '{"product":{"title":"I was like. The movie.","vendor":"Sutterer Inc","body_html":"<p>  EXT.  MALIBU
+        PIER - DAY<br/>  Utah and Pappas walking back to the car.\n  Two FBI agents
+        in suits and ties walking with a day-glo\n  orange surfboard.  Surreal image.  The
+        ocean shimmers in\n  B.G.<br/>                           PAPPAS\n            Johnny,
+        it''s the only way.<br/>                           UTAH\n            Why can''t
+        I just walk around with\n            this thing under my arm and act\n            stoned?  Ask
+        a few questions.<br/>  Angelo stops at the railing, points toward the ocean.<br/>                           PAPPAS\n            Look.  Look
+        at them out there.<br/>  LONG LENS on packs of surfers sitting outside.  Bobbing\n  slowly.  Hunched
+        like sea birds.  Waiting for an unseen\n  sign.  Disappearing and reappearing
+        beyond the break.<br/>                           PAPPAS\n            They''re
+        like some kind of tribe.\n            Got their own language.  You can''t\n            just
+        walk up to these guys.  You''ve\n            got to get out there.  Learn
+        some\n            moves.  Get into their head.  Pick\n            up the speech.<br/>                           UTAH\n            Angelo,
+        this stuff is for little\n            rubber people who don''t shave yet.<br/>                           PAPPAS\n            It''s
+        all balance, right?  And\n            coordination.  How hard can it be?<br/>                                              CUT
+        TO:<br/>  EXT.  SURFRIDER BEACH - DAY<br/>  WHAAAAAM!  Johnny is CLOBBERED
+        by a wave.\n  He''s flipped off his board and hits the water face-first\n  as
+        the wave crashes over him.  Other surfers steer clear.<br/>  PAPPAS lounges
+        in a beach chair in his plutonium pink\n  shorts, purple Vuarnet''s and a
+        T-shirt emblazoned with\n  \"Surf This\" across the chest.  A picnic basket
+        sits close\n  at hand.  He winces at Utah''s wipeout.  Shouts from his\n  beach
+        chair.<br/>                           PAPPAS\n            I think you gotta
+        hit them straight\n            on!<br/>                           UTAH\n                    (out
+        of breath)\n            Got it...<br/>  UTAH holds the tip steady, gouges
+        the face of a wave and\n  squirts out the other side.  Another wave rises
+        and Utah\n  glides up over the hump.  He clears the swell and the\n  ocean
+        suddenly smooths out like a giant lake.  Triumphant\n  over having made the
+        lineup, he sits up on the board, and\n  falls over.<br/>  PAPPAS slices a
+        green apple, some feta cheese and eats off\n  the knife.<br/>  UTAH climbs
+        back on his board.  WHISTLES and HOOTS sound\n  as SURFERS spot a new swell.  Utah
+        watches as the regulars\n  start catching rides.  Suddenly he feels like a
+        lost dog\n  on a busy freeway.\n  A young LOCAL in a neon wetsuit slashes
+        past him, inches\n  away.<br/>                           LOCAL\n            Outta
+        the way, you dick!<br/>  Another, shredding viciously, is blasting toward
+        him.<br/>                           LOCAL 2\n            Move it, kook!<br/>  Johnny
+        paddles rapidly, ducks under.\n  Sees another, bigger wave coming.\n  Pissed
+        off... at himself, at the downy-cheeked hotshots,\n  at the frustration, he
+        turns his board around and starts\n  paddling hard.\n  He somehow gets the
+        soles of his feet in contact with the\n  top of the board, then struggles
+        up.  He''s standing --\n  sort of.\n  Arms pinwheeling, he topples in a nasty
+        crash...\n  Right in front of a SHAVED-HEAD SURFER on full\n  afterburner.<br/>  Johnny
+        vanishes in an explosion of spray.  His board\n  SHOOTS OUT.\n  It SMASHES
+        SIDEWAYS INTO RAZORHEAD.\n  The guy does an ugly endo.\n  Utah comes up GASPING
+        for air, arms flailing.\n  His board, floating a few feet away, tugging at
+        his ankle.\n  He drapes his torso across the board and pants for breath.\n  Razorhead,
+        already back on his board, paddles over.\n  Points to a small dent in the
+        fiberglass.<br/>                           RAZORHEAD\n            You dinged
+        my board, kook!!<br/>  Utah looks up in apology as--\n  A CRUSHING RIGHT HOOK
+        SMACKS HIS FACE!\n  Knocks him under.\n  Razorhead pulls a KNIFE from a sheath
+        held by a thong\n  around his neck.  As Johnny surfaces, Razorhead slashes
+        in\n  a vicious arc--\n  Severing Utah''s leash, close to the board.\n  His
+        flame-job surfboard bobs away.<br/>                           RAZORHEAD\n            Politeness
+        counts, ASSHOLE!<br/>  The surf punk plunges under a wave, disappearing.<br/>                           UTAH\n            Goddamn
+        son-of-a--<br/>  Before Utah can finish, another wave engulfs him and he\n  tumbles
+        to shore, Razorhead nowhere to be seen.<br/>  ON PAPPAS as Johnny''s flame-job
+        board washes in at his\n  feet.  He calmly picks it up as Utah staggers INTO
+        FRAME\n  out of the knee-deep whitewash.  Johnny rubs his jaw.\n  Spits blood.<br/>                           PAPPAS\n            Kid,
+        maybe this ain''t your sport.<br/>  Utah grabs the board out of Pappas'' hands
+        and stalks off\n  across the beach.</p>","product_type":"Video"}}'
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -40,7 +81,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 13 Jul 2015 12:13:33 GMT
+      - Sat, 18 Jul 2015 10:56:56 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -58,7 +99,7 @@ http_interactions:
       Status:
       - 201 Created
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/40d2c03e-568f-4492-a888-11bfba3a8720?source%5Baction%5D=create&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/34d8dc88-a65c-4c3e-ae1f-73d1af7507a2?source%5Baction%5D=create&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
       X-Content-Type-Options:
       - nosniff
       - nosniff
@@ -79,42 +120,84 @@ http_interactions:
       X-Stats-Apipermissionid:
       - '12331486'
       Location:
-      - https://roarify.myshopify.com/admin/products/1592648771
+      - https://roarify.myshopify.com/admin/products/1674466819
       Set-Cookie:
-      - _secure_admin_session_id=35346f8626f6e3780a426da93505481e; path=/admin; secure;
+      - _secure_admin_session_id=a26c3ff9657cd3e34f87c07a499a0266; path=/admin; secure;
         HttpOnly
       - request_method=POST; path=/
       X-Request-Id:
-      - 40d2c03e-568f-4492-a888-11bfba3a8720
+      - 34d8dc88-a65c-4c3e-ae1f-73d1af7507a2
       P3p:
       - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
       X-Dc:
       - ash
     body:
       encoding: UTF-8
-      string: '{"product":{"body_html":"\u003cp\u003e  INT.\/ EXT.  TAXI\u003cbr\u003e  A
-        flood of orange through the windshield as the cab crawls\n  down Ocean Park
-        to the sea.  CAMERA HANDHELD from the back\n  seat.\n  The driver turns to
-        us.\u003cbr\u003e                           DRIVER\n            Anywhere?  You
-        don''t care?\u003cbr\u003e                           UTAH (V.O.)\n            Anywhere.  I''ve
-        just never seen the\n            ocean before.\u003cbr\u003e                                              CUT
-        TO:\u003cbr\u003e  EXT.  VENICE BEACH\u003cbr\u003e  JOHNNY UTAH trudging
-        across the sand, holding his shoes.\n  Garment bag and a big duffel over his
-        shoulder.\n  He looks silly in his dark suit, tie loosened, wearing a\n  turned
-        around baseball cap.\n  He wiggles his toes in the sand, looks around like
-        a kid.\n  A pack of BOUNCING BEAUTIES jog through frame.\n  Utah grins, reaches
-        up and turns his cap around.\n  It reads \"I Love L.A.\"\u003cbr\u003e                                              CUT
-        TO:\u003cbr\u003e  EXT.  FEDERAL BUILDING\u003cbr\u003e  Looking down the
-        face of the concrete monolith at Wilshire\n  and Veteran.  Ant-like, Johnny
-        Utah''s tiny figure moves\n  toward the entrance.\u003cbr\u003e                           VOICE
-        (OVER)\n            Day One in LA, special agent Utah.\n            You may
-        have been top two percent of\n            your class at Quantico but you have\n            exactly
-        zero hours in the field\n            here.  You know nothing...\u003c\/p\u003e","created_at":"2015-07-13T08:13:33-04:00","handle":"i-was-like-the-movie-34","id":1592648771,"product_type":"Video","published_at":"2015-07-13T08:13:33-04:00","published_scope":"global","template_suffix":null,"title":"I
-        was like. The movie.","updated_at":"2015-07-13T08:13:33-04:00","vendor":"Sutterer
-        Inc","tags":"","variants":[{"barcode":null,"compare_at_price":null,"created_at":"2015-07-13T08:13:33-04:00","fulfillment_service":"manual","grams":0,"id":4732345411,"inventory_management":null,"inventory_policy":"deny","option1":"Default
-        Title","option2":null,"option3":null,"position":1,"price":"0.00","product_id":1592648771,"requires_shipping":true,"sku":"","taxable":true,"title":"Default
-        Title","updated_at":"2015-07-13T08:13:33-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"}],"options":[{"id":1923877827,"name":"Title","position":1,"product_id":1592648771,"values":["Default
+      string: '{"product":{"body_html":"\u003cp\u003e  EXT.  MALIBU PIER - DAY\u003cbr\u003e  Utah
+        and Pappas walking back to the car.\n  Two FBI agents in suits and ties walking
+        with a day-glo\n  orange surfboard.  Surreal image.  The ocean shimmers in\n  B.G.\u003cbr\u003e                           PAPPAS\n            Johnny,
+        it''s the only way.\u003cbr\u003e                           UTAH\n            Why
+        can''t I just walk around with\n            this thing under my arm and act\n            stoned?  Ask
+        a few questions.\u003cbr\u003e  Angelo stops at the railing, points toward
+        the ocean.\u003cbr\u003e                           PAPPAS\n            Look.  Look
+        at them out there.\u003cbr\u003e  LONG LENS on packs of surfers sitting outside.  Bobbing\n  slowly.  Hunched
+        like sea birds.  Waiting for an unseen\n  sign.  Disappearing and reappearing
+        beyond the break.\u003cbr\u003e                           PAPPAS\n            They''re
+        like some kind of tribe.\n            Got their own language.  You can''t\n            just
+        walk up to these guys.  You''ve\n            got to get out there.  Learn
+        some\n            moves.  Get into their head.  Pick\n            up the speech.\u003cbr\u003e                           UTAH\n            Angelo,
+        this stuff is for little\n            rubber people who don''t shave yet.\u003cbr\u003e                           PAPPAS\n            It''s
+        all balance, right?  And\n            coordination.  How hard can it be?\u003cbr\u003e                                              CUT
+        TO:\u003cbr\u003e  EXT.  SURFRIDER BEACH - DAY\u003cbr\u003e  WHAAAAAM!  Johnny
+        is CLOBBERED by a wave.\n  He''s flipped off his board and hits the water
+        face-first\n  as the wave crashes over him.  Other surfers steer clear.\u003cbr\u003e  PAPPAS
+        lounges in a beach chair in his plutonium pink\n  shorts, purple Vuarnet''s
+        and a T-shirt emblazoned with\n  \"Surf This\" across the chest.  A picnic
+        basket sits close\n  at hand.  He winces at Utah''s wipeout.  Shouts from
+        his\n  beach chair.\u003cbr\u003e                           PAPPAS\n            I
+        think you gotta hit them straight\n            on!\u003cbr\u003e                           UTAH\n                    (out
+        of breath)\n            Got it...\u003cbr\u003e  UTAH holds the tip steady,
+        gouges the face of a wave and\n  squirts out the other side.  Another wave
+        rises and Utah\n  glides up over the hump.  He clears the swell and the\n  ocean
+        suddenly smooths out like a giant lake.  Triumphant\n  over having made the
+        lineup, he sits up on the board, and\n  falls over.\u003cbr\u003e  PAPPAS
+        slices a green apple, some feta cheese and eats off\n  the knife.\u003cbr\u003e  UTAH
+        climbs back on his board.  WHISTLES and HOOTS sound\n  as SURFERS spot a new
+        swell.  Utah watches as the regulars\n  start catching rides.  Suddenly he
+        feels like a lost dog\n  on a busy freeway.\n  A young LOCAL in a neon wetsuit
+        slashes past him, inches\n  away.\u003cbr\u003e                           LOCAL\n            Outta
+        the way, you dick!\u003cbr\u003e  Another, shredding viciously, is blasting
+        toward him.\u003cbr\u003e                           LOCAL 2\n            Move
+        it, kook!\u003cbr\u003e  Johnny paddles rapidly, ducks under.\n  Sees another,
+        bigger wave coming.\n  Pissed off... at himself, at the downy-cheeked hotshots,\n  at
+        the frustration, he turns his board around and starts\n  paddling hard.\n  He
+        somehow gets the soles of his feet in contact with the\n  top of the board,
+        then struggles up.  He''s standing --\n  sort of.\n  Arms pinwheeling, he
+        topples in a nasty crash...\n  Right in front of a SHAVED-HEAD SURFER on full\n  afterburner.\u003cbr\u003e  Johnny
+        vanishes in an explosion of spray.  His board\n  SHOOTS OUT.\n  It SMASHES
+        SIDEWAYS INTO RAZORHEAD.\n  The guy does an ugly endo.\n  Utah comes up GASPING
+        for air, arms flailing.\n  His board, floating a few feet away, tugging at
+        his ankle.\n  He drapes his torso across the board and pants for breath.\n  Razorhead,
+        already back on his board, paddles over.\n  Points to a small dent in the
+        fiberglass.\u003cbr\u003e                           RAZORHEAD\n            You
+        dinged my board, kook!!\u003cbr\u003e  Utah looks up in apology as--\n  A
+        CRUSHING RIGHT HOOK SMACKS HIS FACE!\n  Knocks him under.\n  Razorhead pulls
+        a KNIFE from a sheath held by a thong\n  around his neck.  As Johnny surfaces,
+        Razorhead slashes in\n  a vicious arc--\n  Severing Utah''s leash, close to
+        the board.\n  His flame-job surfboard bobs away.\u003cbr\u003e                           RAZORHEAD\n            Politeness
+        counts, ASSHOLE!\u003cbr\u003e  The surf punk plunges under a wave, disappearing.\u003cbr\u003e                           UTAH\n            Goddamn
+        son-of-a--\u003cbr\u003e  Before Utah can finish, another wave engulfs him
+        and he\n  tumbles to shore, Razorhead nowhere to be seen.\u003cbr\u003e  ON
+        PAPPAS as Johnny''s flame-job board washes in at his\n  feet.  He calmly picks
+        it up as Utah staggers INTO FRAME\n  out of the knee-deep whitewash.  Johnny
+        rubs his jaw.\n  Spits blood.\u003cbr\u003e                           PAPPAS\n            Kid,
+        maybe this ain''t your sport.\u003cbr\u003e  Utah grabs the board out of Pappas''
+        hands and stalks off\n  across the beach.\u003c\/p\u003e","created_at":"2015-07-18T06:56:56-04:00","handle":"i-was-like-the-movie-39","id":1674466819,"product_type":"Video","published_at":"2015-07-18T06:56:56-04:00","published_scope":"global","template_suffix":null,"title":"I
+        was like. The movie.","updated_at":"2015-07-18T06:56:56-04:00","vendor":"Sutterer
+        Inc","tags":"","variants":[{"barcode":null,"compare_at_price":null,"created_at":"2015-07-18T06:56:56-04:00","fulfillment_service":"manual","grams":0,"id":4946636675,"inventory_management":null,"inventory_policy":"deny","option1":"Default
+        Title","option2":null,"option3":null,"position":1,"price":"0.00","product_id":1674466819,"requires_shipping":true,"sku":"","taxable":true,"title":"Default
+        Title","updated_at":"2015-07-18T06:56:56-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"}],"options":[{"id":2027462915,"name":"Title","position":1,"product_id":1674466819,"values":["Default
         Title"]}],"images":[],"image":null}}'
     http_version: 
-  recorded_at: Mon, 13 Jul 2015 12:13:33 GMT
+  recorded_at: Sat, 18 Jul 2015 10:56:57 GMT
 recorded_with: VCR 2.9.3

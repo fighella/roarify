@@ -1,17 +1,21 @@
 module Roarify
   class Search
     attr_accessor :id, :handle, :products
-
-    def self.find_by(attribute,value)
-
+    def initialize(klass)
+      @klass = klass
     end
 
-    def title
-      '123'
+    def all
+      representer.get(representer.resource_request(@klass.decorator.api_name).url)
     end
 
-    def images
-      ##
+    def find_by(attribute, value)
+      representer.get(representer.resource_request(@klass.decorator.api_name).search(attribute.to_s,value))
+    end
+
+    def representer
+      search = OpenStruct.new
+      SearchRepresenter.new(search)
     end
 
   end

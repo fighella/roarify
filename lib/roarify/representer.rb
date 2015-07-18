@@ -5,7 +5,11 @@ module Roarify
     end
 
     def resource_request(id=nil)
-      Roarify::Url.new(self.class.api_name,id)
+      Roarify::Url.new(self.class.api_name,id).url
+    end
+
+    def search_request(options={})
+      Roarify::Url.new(self.class.api_name,options).search
     end
 
     module ClassMethods
