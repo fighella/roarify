@@ -1,6 +1,10 @@
 module Roarify 
   class Theme
-    attr_accessor :id, :api_key
+    attr_accessor :id
+
+    def self.find(id)
+      Finder.new(Theme,id).find
+    end
 
     def self.all
       search = Roarify::Search.new(Theme).all

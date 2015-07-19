@@ -8,10 +8,6 @@ module Roarify
       Roarify::Url.new(self.class.api_name,id).url
     end
 
-    def search_request(options={})
-      Roarify::Url.new(self.class.api_name,options).search
-    end
-
     module ClassMethods
       def api_name
         @api_name

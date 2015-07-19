@@ -1,7 +1,5 @@
 module Roarify
   class Connect
-    #attr_accessor :shop_name, :api_key, :password, :shared_secret, :app_type
-
     def initialize(keys) #api_key=nil, password=nil, shop_domain=nil)
       @api_key = keys[:api_key]
       @password = keys[:password]

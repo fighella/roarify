@@ -6,10 +6,6 @@ module Roarify
       Finder.new(Product,id).find
     end
     
-    def self.find_by_ids(ids)
-      ids.each.map { |id| Product.find(id) }
-    end
-
     def save
       if exists?
         Roarify::ProductUpdate.new(self)
@@ -47,16 +43,17 @@ module Roarify
       Search.new(Product).find_by('handle', handle).any?
     end
 
-    def changeables
-      [:handle]
-    end
-
     def changeable?
+      ## Shopify will change handles even if you specificy what you'd like / ie: dupes
       handle and Product.where('handle',handle).any? and ids_match
     end
 
     def ids_match
       !id or Product.where('handle',handle).first.id != id
+    end
+
+    def self.find_by_ids(ids)
+      ids.each.map { |id| Product.find(id) }
     end
 
     def self.decorator
