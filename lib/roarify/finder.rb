@@ -1,9 +1,10 @@
 module Roarify
   class Finder
     
-    def initialize(klass, id=nil)
+    def initialize(klass, id=nil, nested=nil)
       @klass= klass
       @dekorator = @klass.decorator
+      @nested_resource = nested
       @id = id
     end
 
@@ -11,10 +12,18 @@ module Roarify
       find_type
     end
 
-    private
+    def find_nested
+      nested_representer.get(nested_representer.nested_resource_request(@klass, @id,@nested_resource))
+    end
 
+    private
     def find_type
-        representer.get(representer.resource_request(@id))
+      representer.get(representer.resource_request(@id))
+    end
+
+    def nested_representer
+      obj = @nested_resource.new
+      @nested_resource.decorator.new(obj)
     end
 
     def representer

@@ -2,14 +2,12 @@ module Roarify
   class ThemeDecorator < Roar::Decorator
     include Roar::Client
     include Roar::JSON
-    #include ThemeRepresenter
+    include ThemeRepresenter
     include Representer
     self.api_name = 'themes'
-    self.representation_wrap = false
+    self.representation_wrap = :theme
     
-    # def themes
-    #   [self.represented]
-    # end
-
+    property :id
+    property :name
   end
 end

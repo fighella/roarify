@@ -8,6 +8,10 @@ module Roarify
       Roarify::Url.new(self.class.api_name,id).url
     end
 
+    def nested_resource_request(base, id, nested_resource, nested_id=nil)
+      Roarify::Url.new(base.decorator.api_name, id, nested_resource.decorator.api_name, nested_id).url
+    end
+
     module ClassMethods
       def api_name
         @api_name

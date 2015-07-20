@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 18 Jul 2015 10:56:32 GMT
+      - Mon, 20 Jul 2015 10:24:49 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -43,7 +43,7 @@ http_interactions:
       Status:
       - 200 OK
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/6e05bfb0-40fc-4421-adfb-79ec0a95d67c?source%5Baction%5D=index&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/b29f3a30-f2ea-4459-8b47-26d86253fbd3?source%5Baction%5D=index&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
       X-Content-Type-Options:
       - nosniff
       - nosniff
@@ -66,7 +66,7 @@ http_interactions:
       Set-Cookie:
       - request_method=GET; path=/
       X-Request-Id:
-      - 6e05bfb0-40fc-4421-adfb-79ec0a95d67c
+      - b29f3a30-f2ea-4459-8b47-26d86253fbd3
       P3p:
       - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
       X-Dc:
@@ -75,7 +75,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"products":[{"id":1418685443}]}'
     http_version: 
-  recorded_at: Sat, 18 Jul 2015 10:56:32 GMT
+  recorded_at: Mon, 20 Jul 2015 10:24:49 GMT
 - request:
     method: get
     uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products/1418685443.json
@@ -99,7 +99,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 18 Jul 2015 10:56:33 GMT
+      - Mon, 20 Jul 2015 10:24:51 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -119,7 +119,7 @@ http_interactions:
       Status:
       - 200 OK
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/5df94639-3903-47d6-a43e-ba5f0d9fae4c?source%5Baction%5D=show&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/8c288a27-15dd-42a8-80e6-76d53b35285a?source%5Baction%5D=show&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
       X-Content-Type-Options:
       - nosniff
       - nosniff
@@ -142,7 +142,7 @@ http_interactions:
       Set-Cookie:
       - request_method=GET; path=/
       X-Request-Id:
-      - 5df94639-3903-47d6-a43e-ba5f0d9fae4c
+      - 8c288a27-15dd-42a8-80e6-76d53b35285a
       P3p:
       - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
       X-Dc:
@@ -150,7 +150,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"product":{"body_html":"New Description","created_at":"2015-07-03T08:26:03-04:00","handle":"trailblazer-the-book-12","id":1418685443,"product_type":"Bible","published_at":"2015-07-03T08:26:03-04:00","published_scope":"global","template_suffix":null,"title":"Easy
-        to find!","updated_at":"2015-07-18T06:56:30-04:00","vendor":"VayBay","tags":"","variants":[{"barcode":null,"compare_at_price":null,"created_at":"2015-07-12T06:53:09-04:00","fulfillment_service":"manual","grams":0,"id":4683771779,"inventory_management":null,"inventory_policy":"deny","option1":"Default
+        to find!","updated_at":"2015-07-20T06:24:46-04:00","vendor":"VayBay","tags":"","variants":[{"barcode":null,"compare_at_price":null,"created_at":"2015-07-12T06:53:09-04:00","fulfillment_service":"manual","grams":0,"id":4683771779,"inventory_management":null,"inventory_policy":"deny","option1":"Default
         Title","option2":null,"option3":null,"position":1,"price":"0.00","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Default
         Title","updated_at":"2015-07-12T06:53:09-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-13T05:52:53-04:00","fulfillment_service":"manual","grams":0,"id":4722223363,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
         YIM YOM 2015-07-13 19:52:52 +1000","option2":null,"option3":null,"position":2,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
@@ -244,7 +244,37 @@ http_interactions:
         YIM YOM 2015-07-18 20:56:20 +1000","option2":null,"option3":null,"position":46,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
         YIM YOM 2015-07-18 20:56:20 +1000","updated_at":"2015-07-18T06:56:30-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-18T06:56:30-04:00","fulfillment_service":"manual","grams":0,"id":4946634883,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
         PLOONK PLANK 2015-07-18 20:56:20 +1000","option2":null,"option3":null,"position":47,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
-        PLOONK PLANK 2015-07-18 20:56:20 +1000","updated_at":"2015-07-18T06:56:30-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"}],"options":[{"id":1701824579,"name":"Title","position":1,"product_id":1418685443,"values":["Default
+        PLOONK PLANK 2015-07-18 20:56:20 +1000","updated_at":"2015-07-18T06:56:30-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike3","compare_at_price":null,"created_at":"2015-07-18T06:56:41-04:00","fulfillment_service":"manual","grams":0,"id":4946635395,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        Boogie 2015-07-18 20:56:30 +1000","option2":null,"option3":null,"position":48,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        Boogie 2015-07-18 20:56:30 +1000","updated_at":"2015-07-18T06:56:41-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-18T22:52:35-04:00","fulfillment_service":"manual","grams":0,"id":4962941251,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        YIM YOM 2015-07-19 12:52:28 +1000","option2":null,"option3":null,"position":49,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        YIM YOM 2015-07-19 12:52:28 +1000","updated_at":"2015-07-18T22:52:35-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-18T22:52:35-04:00","fulfillment_service":"manual","grams":0,"id":4962941315,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        PLOONK PLANK 2015-07-19 12:52:28 +1000","option2":null,"option3":null,"position":50,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        PLOONK PLANK 2015-07-19 12:52:28 +1000","updated_at":"2015-07-18T22:52:35-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike3","compare_at_price":null,"created_at":"2015-07-18T22:52:43-04:00","fulfillment_service":"manual","grams":0,"id":4962942787,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        Boogie 2015-07-19 12:52:35 +1000","option2":null,"option3":null,"position":51,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        Boogie 2015-07-19 12:52:35 +1000","updated_at":"2015-07-18T22:52:43-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-19T01:02:24-04:00","fulfillment_service":"manual","grams":0,"id":4964481155,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        YIM YOM 2015-07-19 15:02:10 +1000","option2":null,"option3":null,"position":52,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        YIM YOM 2015-07-19 15:02:10 +1000","updated_at":"2015-07-19T01:02:24-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-19T01:02:24-04:00","fulfillment_service":"manual","grams":0,"id":4964481219,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        PLOONK PLANK 2015-07-19 15:02:10 +1000","option2":null,"option3":null,"position":53,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        PLOONK PLANK 2015-07-19 15:02:10 +1000","updated_at":"2015-07-19T01:02:24-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike3","compare_at_price":null,"created_at":"2015-07-19T01:02:36-04:00","fulfillment_service":"manual","grams":0,"id":4964482627,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        Boogie 2015-07-19 15:02:25 +1000","option2":null,"option3":null,"position":54,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        Boogie 2015-07-19 15:02:25 +1000","updated_at":"2015-07-19T01:02:36-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-19T03:15:45-04:00","fulfillment_service":"manual","grams":0,"id":4965691587,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        YIM YOM 2015-07-19 17:15:10 +1000","option2":null,"option3":null,"position":55,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        YIM YOM 2015-07-19 17:15:10 +1000","updated_at":"2015-07-19T03:15:45-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-19T03:15:45-04:00","fulfillment_service":"manual","grams":0,"id":4965691651,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        PLOONK PLANK 2015-07-19 17:15:10 +1000","option2":null,"option3":null,"position":56,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        PLOONK PLANK 2015-07-19 17:15:10 +1000","updated_at":"2015-07-19T03:15:45-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike3","compare_at_price":null,"created_at":"2015-07-19T03:16:20-04:00","fulfillment_service":"manual","grams":0,"id":4965696067,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        Boogie 2015-07-19 17:15:46 +1000","option2":null,"option3":null,"position":57,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        Boogie 2015-07-19 17:15:46 +1000","updated_at":"2015-07-19T03:16:20-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-19T03:24:41-04:00","fulfillment_service":"manual","grams":0,"id":4965787843,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        YIM YOM 2015-07-19 17:24:21 +1000","option2":null,"option3":null,"position":58,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        YIM YOM 2015-07-19 17:24:21 +1000","updated_at":"2015-07-19T03:24:41-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-19T03:24:41-04:00","fulfillment_service":"manual","grams":0,"id":4965787907,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        PLOONK PLANK 2015-07-19 17:24:21 +1000","option2":null,"option3":null,"position":59,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        PLOONK PLANK 2015-07-19 17:24:21 +1000","updated_at":"2015-07-19T03:24:41-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike3","compare_at_price":null,"created_at":"2015-07-19T03:24:55-04:00","fulfillment_service":"manual","grams":0,"id":4965789507,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        Boogie 2015-07-19 17:24:41 +1000","option2":null,"option3":null,"position":60,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        Boogie 2015-07-19 17:24:41 +1000","updated_at":"2015-07-19T03:24:55-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-20T06:24:46-04:00","fulfillment_service":"manual","grams":0,"id":5001925251,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        YIM YOM 2015-07-20 20:24:26 +1000","option2":null,"option3":null,"position":61,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        YIM YOM 2015-07-20 20:24:26 +1000","updated_at":"2015-07-20T06:24:46-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-20T06:24:46-04:00","fulfillment_service":"manual","grams":0,"id":5001925379,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        PLOONK PLANK 2015-07-20 20:24:26 +1000","option2":null,"option3":null,"position":62,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        PLOONK PLANK 2015-07-20 20:24:26 +1000","updated_at":"2015-07-20T06:24:46-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"}],"options":[{"id":1701824579,"name":"Title","position":1,"product_id":1418685443,"values":["Default
         Title","Largest YIM YOM 2015-07-13 19:52:52 +1000","Largest PLOONK PLANK 2015-07-13
         19:52:52 +1000","Largest YIM YOM 2015-07-13 20:11:14 +1000","Largest PLOONK
         PLANK 2015-07-13 20:11:14 +1000","Largest Boogie 2015-07-13 20:11:16 +1000","Largest
@@ -270,9 +300,18 @@ http_interactions:
         PLOONK PLANK 2015-07-18 12:43:59 +1000","Largest Boogie 2015-07-18 12:44:10
         +1000","Largest YIM YOM 2015-07-18 20:11:23 +1000","Largest PLOONK PLANK 2015-07-18
         20:11:23 +1000","Largest Boogie 2015-07-18 20:11:31 +1000","Largest YIM YOM
-        2015-07-18 20:56:20 +1000","Largest PLOONK PLANK 2015-07-18 20:56:20 +1000"]}],"images":[],"image":null}}'
+        2015-07-18 20:56:20 +1000","Largest PLOONK PLANK 2015-07-18 20:56:20 +1000","Largest
+        Boogie 2015-07-18 20:56:30 +1000","Largest YIM YOM 2015-07-19 12:52:28 +1000","Largest
+        PLOONK PLANK 2015-07-19 12:52:28 +1000","Largest Boogie 2015-07-19 12:52:35
+        +1000","Largest YIM YOM 2015-07-19 15:02:10 +1000","Largest PLOONK PLANK 2015-07-19
+        15:02:10 +1000","Largest Boogie 2015-07-19 15:02:25 +1000","Largest YIM YOM
+        2015-07-19 17:15:10 +1000","Largest PLOONK PLANK 2015-07-19 17:15:10 +1000","Largest
+        Boogie 2015-07-19 17:15:46 +1000","Largest YIM YOM 2015-07-19 17:24:21 +1000","Largest
+        PLOONK PLANK 2015-07-19 17:24:21 +1000","Largest Boogie 2015-07-19 17:24:41
+        +1000","Largest YIM YOM 2015-07-20 20:24:26 +1000","Largest PLOONK PLANK 2015-07-20
+        20:24:26 +1000"]}],"images":[],"image":null}}'
     http_version: 
-  recorded_at: Sat, 18 Jul 2015 10:56:34 GMT
+  recorded_at: Mon, 20 Jul 2015 10:24:51 GMT
 - request:
     method: get
     uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products.json?fields=id&handle=trailblazer-the-book-12
@@ -296,7 +335,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 18 Jul 2015 10:56:35 GMT
+      - Mon, 20 Jul 2015 10:24:56 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -316,7 +355,7 @@ http_interactions:
       Status:
       - 200 OK
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/2b56f92d-06fe-4b71-9b30-1291e87951d3?source%5Baction%5D=index&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/23e9453e-7222-42f3-8d2e-99358057bf43?source%5Baction%5D=index&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
       X-Content-Type-Options:
       - nosniff
       - nosniff
@@ -339,7 +378,7 @@ http_interactions:
       Set-Cookie:
       - request_method=GET; path=/
       X-Request-Id:
-      - 2b56f92d-06fe-4b71-9b30-1291e87951d3
+      - 23e9453e-7222-42f3-8d2e-99358057bf43
       P3p:
       - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
       X-Dc:
@@ -348,7 +387,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"products":[{"id":1418685443}]}'
     http_version: 
-  recorded_at: Sat, 18 Jul 2015 10:56:35 GMT
+  recorded_at: Mon, 20 Jul 2015 10:24:56 GMT
 - request:
     method: get
     uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products/1418685443.json
@@ -372,7 +411,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 18 Jul 2015 10:56:36 GMT
+      - Mon, 20 Jul 2015 10:24:58 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -392,7 +431,7 @@ http_interactions:
       Status:
       - 200 OK
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/07f222f7-35ed-4d4d-a4d7-b9b0ecec64a4?source%5Baction%5D=show&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/2edddad8-f4de-46ed-b9de-8e2f989c0f98?source%5Baction%5D=show&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
       X-Content-Type-Options:
       - nosniff
       - nosniff
@@ -415,7 +454,7 @@ http_interactions:
       Set-Cookie:
       - request_method=GET; path=/
       X-Request-Id:
-      - 07f222f7-35ed-4d4d-a4d7-b9b0ecec64a4
+      - 2edddad8-f4de-46ed-b9de-8e2f989c0f98
       P3p:
       - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
       X-Dc:
@@ -423,7 +462,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"product":{"body_html":"New Description","created_at":"2015-07-03T08:26:03-04:00","handle":"trailblazer-the-book-12","id":1418685443,"product_type":"Bible","published_at":"2015-07-03T08:26:03-04:00","published_scope":"global","template_suffix":null,"title":"Easy
-        to find!","updated_at":"2015-07-18T06:56:30-04:00","vendor":"VayBay","tags":"","variants":[{"barcode":null,"compare_at_price":null,"created_at":"2015-07-12T06:53:09-04:00","fulfillment_service":"manual","grams":0,"id":4683771779,"inventory_management":null,"inventory_policy":"deny","option1":"Default
+        to find!","updated_at":"2015-07-20T06:24:46-04:00","vendor":"VayBay","tags":"","variants":[{"barcode":null,"compare_at_price":null,"created_at":"2015-07-12T06:53:09-04:00","fulfillment_service":"manual","grams":0,"id":4683771779,"inventory_management":null,"inventory_policy":"deny","option1":"Default
         Title","option2":null,"option3":null,"position":1,"price":"0.00","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Default
         Title","updated_at":"2015-07-12T06:53:09-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-13T05:52:53-04:00","fulfillment_service":"manual","grams":0,"id":4722223363,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
         YIM YOM 2015-07-13 19:52:52 +1000","option2":null,"option3":null,"position":2,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
@@ -517,7 +556,37 @@ http_interactions:
         YIM YOM 2015-07-18 20:56:20 +1000","option2":null,"option3":null,"position":46,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
         YIM YOM 2015-07-18 20:56:20 +1000","updated_at":"2015-07-18T06:56:30-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-18T06:56:30-04:00","fulfillment_service":"manual","grams":0,"id":4946634883,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
         PLOONK PLANK 2015-07-18 20:56:20 +1000","option2":null,"option3":null,"position":47,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
-        PLOONK PLANK 2015-07-18 20:56:20 +1000","updated_at":"2015-07-18T06:56:30-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"}],"options":[{"id":1701824579,"name":"Title","position":1,"product_id":1418685443,"values":["Default
+        PLOONK PLANK 2015-07-18 20:56:20 +1000","updated_at":"2015-07-18T06:56:30-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike3","compare_at_price":null,"created_at":"2015-07-18T06:56:41-04:00","fulfillment_service":"manual","grams":0,"id":4946635395,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        Boogie 2015-07-18 20:56:30 +1000","option2":null,"option3":null,"position":48,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        Boogie 2015-07-18 20:56:30 +1000","updated_at":"2015-07-18T06:56:41-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-18T22:52:35-04:00","fulfillment_service":"manual","grams":0,"id":4962941251,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        YIM YOM 2015-07-19 12:52:28 +1000","option2":null,"option3":null,"position":49,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        YIM YOM 2015-07-19 12:52:28 +1000","updated_at":"2015-07-18T22:52:35-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-18T22:52:35-04:00","fulfillment_service":"manual","grams":0,"id":4962941315,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        PLOONK PLANK 2015-07-19 12:52:28 +1000","option2":null,"option3":null,"position":50,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        PLOONK PLANK 2015-07-19 12:52:28 +1000","updated_at":"2015-07-18T22:52:35-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike3","compare_at_price":null,"created_at":"2015-07-18T22:52:43-04:00","fulfillment_service":"manual","grams":0,"id":4962942787,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        Boogie 2015-07-19 12:52:35 +1000","option2":null,"option3":null,"position":51,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        Boogie 2015-07-19 12:52:35 +1000","updated_at":"2015-07-18T22:52:43-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-19T01:02:24-04:00","fulfillment_service":"manual","grams":0,"id":4964481155,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        YIM YOM 2015-07-19 15:02:10 +1000","option2":null,"option3":null,"position":52,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        YIM YOM 2015-07-19 15:02:10 +1000","updated_at":"2015-07-19T01:02:24-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-19T01:02:24-04:00","fulfillment_service":"manual","grams":0,"id":4964481219,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        PLOONK PLANK 2015-07-19 15:02:10 +1000","option2":null,"option3":null,"position":53,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        PLOONK PLANK 2015-07-19 15:02:10 +1000","updated_at":"2015-07-19T01:02:24-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike3","compare_at_price":null,"created_at":"2015-07-19T01:02:36-04:00","fulfillment_service":"manual","grams":0,"id":4964482627,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        Boogie 2015-07-19 15:02:25 +1000","option2":null,"option3":null,"position":54,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        Boogie 2015-07-19 15:02:25 +1000","updated_at":"2015-07-19T01:02:36-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-19T03:15:45-04:00","fulfillment_service":"manual","grams":0,"id":4965691587,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        YIM YOM 2015-07-19 17:15:10 +1000","option2":null,"option3":null,"position":55,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        YIM YOM 2015-07-19 17:15:10 +1000","updated_at":"2015-07-19T03:15:45-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-19T03:15:45-04:00","fulfillment_service":"manual","grams":0,"id":4965691651,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        PLOONK PLANK 2015-07-19 17:15:10 +1000","option2":null,"option3":null,"position":56,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        PLOONK PLANK 2015-07-19 17:15:10 +1000","updated_at":"2015-07-19T03:15:45-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike3","compare_at_price":null,"created_at":"2015-07-19T03:16:20-04:00","fulfillment_service":"manual","grams":0,"id":4965696067,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        Boogie 2015-07-19 17:15:46 +1000","option2":null,"option3":null,"position":57,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        Boogie 2015-07-19 17:15:46 +1000","updated_at":"2015-07-19T03:16:20-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-19T03:24:41-04:00","fulfillment_service":"manual","grams":0,"id":4965787843,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        YIM YOM 2015-07-19 17:24:21 +1000","option2":null,"option3":null,"position":58,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        YIM YOM 2015-07-19 17:24:21 +1000","updated_at":"2015-07-19T03:24:41-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-19T03:24:41-04:00","fulfillment_service":"manual","grams":0,"id":4965787907,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        PLOONK PLANK 2015-07-19 17:24:21 +1000","option2":null,"option3":null,"position":59,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        PLOONK PLANK 2015-07-19 17:24:21 +1000","updated_at":"2015-07-19T03:24:41-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike3","compare_at_price":null,"created_at":"2015-07-19T03:24:55-04:00","fulfillment_service":"manual","grams":0,"id":4965789507,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        Boogie 2015-07-19 17:24:41 +1000","option2":null,"option3":null,"position":60,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        Boogie 2015-07-19 17:24:41 +1000","updated_at":"2015-07-19T03:24:55-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-20T06:24:46-04:00","fulfillment_service":"manual","grams":0,"id":5001925251,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        YIM YOM 2015-07-20 20:24:26 +1000","option2":null,"option3":null,"position":61,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        YIM YOM 2015-07-20 20:24:26 +1000","updated_at":"2015-07-20T06:24:46-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-20T06:24:46-04:00","fulfillment_service":"manual","grams":0,"id":5001925379,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        PLOONK PLANK 2015-07-20 20:24:26 +1000","option2":null,"option3":null,"position":62,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        PLOONK PLANK 2015-07-20 20:24:26 +1000","updated_at":"2015-07-20T06:24:46-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"}],"options":[{"id":1701824579,"name":"Title","position":1,"product_id":1418685443,"values":["Default
         Title","Largest YIM YOM 2015-07-13 19:52:52 +1000","Largest PLOONK PLANK 2015-07-13
         19:52:52 +1000","Largest YIM YOM 2015-07-13 20:11:14 +1000","Largest PLOONK
         PLANK 2015-07-13 20:11:14 +1000","Largest Boogie 2015-07-13 20:11:16 +1000","Largest
@@ -543,9 +612,18 @@ http_interactions:
         PLOONK PLANK 2015-07-18 12:43:59 +1000","Largest Boogie 2015-07-18 12:44:10
         +1000","Largest YIM YOM 2015-07-18 20:11:23 +1000","Largest PLOONK PLANK 2015-07-18
         20:11:23 +1000","Largest Boogie 2015-07-18 20:11:31 +1000","Largest YIM YOM
-        2015-07-18 20:56:20 +1000","Largest PLOONK PLANK 2015-07-18 20:56:20 +1000"]}],"images":[],"image":null}}'
+        2015-07-18 20:56:20 +1000","Largest PLOONK PLANK 2015-07-18 20:56:20 +1000","Largest
+        Boogie 2015-07-18 20:56:30 +1000","Largest YIM YOM 2015-07-19 12:52:28 +1000","Largest
+        PLOONK PLANK 2015-07-19 12:52:28 +1000","Largest Boogie 2015-07-19 12:52:35
+        +1000","Largest YIM YOM 2015-07-19 15:02:10 +1000","Largest PLOONK PLANK 2015-07-19
+        15:02:10 +1000","Largest Boogie 2015-07-19 15:02:25 +1000","Largest YIM YOM
+        2015-07-19 17:15:10 +1000","Largest PLOONK PLANK 2015-07-19 17:15:10 +1000","Largest
+        Boogie 2015-07-19 17:15:46 +1000","Largest YIM YOM 2015-07-19 17:24:21 +1000","Largest
+        PLOONK PLANK 2015-07-19 17:24:21 +1000","Largest Boogie 2015-07-19 17:24:41
+        +1000","Largest YIM YOM 2015-07-20 20:24:26 +1000","Largest PLOONK PLANK 2015-07-20
+        20:24:26 +1000"]}],"images":[],"image":null}}'
     http_version: 
-  recorded_at: Sat, 18 Jul 2015 10:56:37 GMT
+  recorded_at: Mon, 20 Jul 2015 10:24:58 GMT
 - request:
     method: put
     uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products/1418685443.json
@@ -644,8 +722,38 @@ http_interactions:
         YIM YOM 2015-07-18 20:56:20 +1000","price":"13.50","title":"Largest YIM YOM
         2015-07-18 20:56:20 +1000","barcode":"iwaslike","inventory_quantity":1,"old_inventory_quantity":1},{"id":4946634883,"sku":"","option1":"Largest
         PLOONK PLANK 2015-07-18 20:56:20 +1000","price":"13.50","title":"Largest PLOONK
-        PLANK 2015-07-18 20:56:20 +1000","barcode":"iwaslike","inventory_quantity":1,"old_inventory_quantity":1},{"option1":"Largest
-        Boogie 2015-07-18 20:56:30 +1000","option2":"Bluest 22","price":13.5,"title":"Best
+        PLANK 2015-07-18 20:56:20 +1000","barcode":"iwaslike","inventory_quantity":1,"old_inventory_quantity":1},{"id":4946635395,"sku":"","option1":"Largest
+        Boogie 2015-07-18 20:56:30 +1000","price":"13.50","title":"Largest Boogie
+        2015-07-18 20:56:30 +1000","barcode":"iwaslike3","inventory_quantity":1,"old_inventory_quantity":1},{"id":4962941251,"sku":"","option1":"Largest
+        YIM YOM 2015-07-19 12:52:28 +1000","price":"13.50","title":"Largest YIM YOM
+        2015-07-19 12:52:28 +1000","barcode":"iwaslike","inventory_quantity":1,"old_inventory_quantity":1},{"id":4962941315,"sku":"","option1":"Largest
+        PLOONK PLANK 2015-07-19 12:52:28 +1000","price":"13.50","title":"Largest PLOONK
+        PLANK 2015-07-19 12:52:28 +1000","barcode":"iwaslike","inventory_quantity":1,"old_inventory_quantity":1},{"id":4962942787,"sku":"","option1":"Largest
+        Boogie 2015-07-19 12:52:35 +1000","price":"13.50","title":"Largest Boogie
+        2015-07-19 12:52:35 +1000","barcode":"iwaslike3","inventory_quantity":1,"old_inventory_quantity":1},{"id":4964481155,"sku":"","option1":"Largest
+        YIM YOM 2015-07-19 15:02:10 +1000","price":"13.50","title":"Largest YIM YOM
+        2015-07-19 15:02:10 +1000","barcode":"iwaslike","inventory_quantity":1,"old_inventory_quantity":1},{"id":4964481219,"sku":"","option1":"Largest
+        PLOONK PLANK 2015-07-19 15:02:10 +1000","price":"13.50","title":"Largest PLOONK
+        PLANK 2015-07-19 15:02:10 +1000","barcode":"iwaslike","inventory_quantity":1,"old_inventory_quantity":1},{"id":4964482627,"sku":"","option1":"Largest
+        Boogie 2015-07-19 15:02:25 +1000","price":"13.50","title":"Largest Boogie
+        2015-07-19 15:02:25 +1000","barcode":"iwaslike3","inventory_quantity":1,"old_inventory_quantity":1},{"id":4965691587,"sku":"","option1":"Largest
+        YIM YOM 2015-07-19 17:15:10 +1000","price":"13.50","title":"Largest YIM YOM
+        2015-07-19 17:15:10 +1000","barcode":"iwaslike","inventory_quantity":1,"old_inventory_quantity":1},{"id":4965691651,"sku":"","option1":"Largest
+        PLOONK PLANK 2015-07-19 17:15:10 +1000","price":"13.50","title":"Largest PLOONK
+        PLANK 2015-07-19 17:15:10 +1000","barcode":"iwaslike","inventory_quantity":1,"old_inventory_quantity":1},{"id":4965696067,"sku":"","option1":"Largest
+        Boogie 2015-07-19 17:15:46 +1000","price":"13.50","title":"Largest Boogie
+        2015-07-19 17:15:46 +1000","barcode":"iwaslike3","inventory_quantity":1,"old_inventory_quantity":1},{"id":4965787843,"sku":"","option1":"Largest
+        YIM YOM 2015-07-19 17:24:21 +1000","price":"13.50","title":"Largest YIM YOM
+        2015-07-19 17:24:21 +1000","barcode":"iwaslike","inventory_quantity":1,"old_inventory_quantity":1},{"id":4965787907,"sku":"","option1":"Largest
+        PLOONK PLANK 2015-07-19 17:24:21 +1000","price":"13.50","title":"Largest PLOONK
+        PLANK 2015-07-19 17:24:21 +1000","barcode":"iwaslike","inventory_quantity":1,"old_inventory_quantity":1},{"id":4965789507,"sku":"","option1":"Largest
+        Boogie 2015-07-19 17:24:41 +1000","price":"13.50","title":"Largest Boogie
+        2015-07-19 17:24:41 +1000","barcode":"iwaslike3","inventory_quantity":1,"old_inventory_quantity":1},{"id":5001925251,"sku":"","option1":"Largest
+        YIM YOM 2015-07-20 20:24:26 +1000","price":"13.50","title":"Largest YIM YOM
+        2015-07-20 20:24:26 +1000","barcode":"iwaslike","inventory_quantity":1,"old_inventory_quantity":1},{"id":5001925379,"sku":"","option1":"Largest
+        PLOONK PLANK 2015-07-20 20:24:26 +1000","price":"13.50","title":"Largest PLOONK
+        PLANK 2015-07-20 20:24:26 +1000","barcode":"iwaslike","inventory_quantity":1,"old_inventory_quantity":1},{"option1":"Largest
+        Boogie 2015-07-20 20:24:47 +1000","option2":"Bluest 22","price":13.5,"title":"Best
         Edition 2b","barcode":"iwaslike3","inventory_quantity":22}],"images":[],"options":[{"id":1701824579,"name":"Title","position":1,"product_id":1418685443,"values":["Default
         Title","Largest YIM YOM 2015-07-13 19:52:52 +1000","Largest PLOONK PLANK 2015-07-13
         19:52:52 +1000","Largest YIM YOM 2015-07-13 20:11:14 +1000","Largest PLOONK
@@ -672,9 +780,17 @@ http_interactions:
         PLOONK PLANK 2015-07-18 12:43:59 +1000","Largest Boogie 2015-07-18 12:44:10
         +1000","Largest YIM YOM 2015-07-18 20:11:23 +1000","Largest PLOONK PLANK 2015-07-18
         20:11:23 +1000","Largest Boogie 2015-07-18 20:11:31 +1000","Largest YIM YOM
-        2015-07-18 20:56:20 +1000","Largest PLOONK PLANK 2015-07-18 20:56:20 +1000"]}],"title":"Easy
-        to find!","id":1418685443,"vendor":"VayBay","created_at":"2015-07-03T08:26:03-04:00","body_html":"New
-        Description","handle":"trailblazer-the-book-12","product_type":"Bible","published_at":"2015-07-03T08:26:03-04:00","published_scope":"global","tags":"","updated_at":"2015-07-18T06:56:30-04:00"}}'
+        2015-07-18 20:56:20 +1000","Largest PLOONK PLANK 2015-07-18 20:56:20 +1000","Largest
+        Boogie 2015-07-18 20:56:30 +1000","Largest YIM YOM 2015-07-19 12:52:28 +1000","Largest
+        PLOONK PLANK 2015-07-19 12:52:28 +1000","Largest Boogie 2015-07-19 12:52:35
+        +1000","Largest YIM YOM 2015-07-19 15:02:10 +1000","Largest PLOONK PLANK 2015-07-19
+        15:02:10 +1000","Largest Boogie 2015-07-19 15:02:25 +1000","Largest YIM YOM
+        2015-07-19 17:15:10 +1000","Largest PLOONK PLANK 2015-07-19 17:15:10 +1000","Largest
+        Boogie 2015-07-19 17:15:46 +1000","Largest YIM YOM 2015-07-19 17:24:21 +1000","Largest
+        PLOONK PLANK 2015-07-19 17:24:21 +1000","Largest Boogie 2015-07-19 17:24:41
+        +1000","Largest YIM YOM 2015-07-20 20:24:26 +1000","Largest PLOONK PLANK 2015-07-20
+        20:24:26 +1000"]}],"title":"Easy to find!","id":1418685443,"vendor":"VayBay","created_at":"2015-07-03T08:26:03-04:00","body_html":"New
+        Description","handle":"trailblazer-the-book-12","product_type":"Bible","published_at":"2015-07-03T08:26:03-04:00","published_scope":"global","tags":"","updated_at":"2015-07-20T06:24:46-04:00"}}'
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -692,7 +808,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 18 Jul 2015 10:56:41 GMT
+      - Mon, 20 Jul 2015 10:25:09 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -712,7 +828,7 @@ http_interactions:
       Status:
       - 200 OK
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/e85229d4-b553-4d6a-b740-bd24cfdc1e47?source%5Baction%5D=update&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/aa9cf12f-4c87-419f-922f-c52f4d6dcadd?source%5Baction%5D=update&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
       X-Content-Type-Options:
       - nosniff
       - nosniff
@@ -735,11 +851,11 @@ http_interactions:
       Location:
       - https://roarify.myshopify.com/admin/products/1418685443
       Set-Cookie:
-      - _secure_admin_session_id=12a67b27c5651a84d8e424f2ad25ecca; path=/admin; secure;
+      - _secure_admin_session_id=ad4dd380821536507232f7dcaca61b90; path=/admin; secure;
         HttpOnly
       - request_method=PUT; path=/
       X-Request-Id:
-      - e85229d4-b553-4d6a-b740-bd24cfdc1e47
+      - aa9cf12f-4c87-419f-922f-c52f4d6dcadd
       P3p:
       - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
       X-Dc:
@@ -747,7 +863,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"product":{"body_html":"New Description","created_at":"2015-07-03T08:26:03-04:00","handle":"trailblazer-the-book-12","id":1418685443,"product_type":"Bible","published_at":"2015-07-03T08:26:03-04:00","published_scope":"global","template_suffix":null,"title":"Easy
-        to find!","updated_at":"2015-07-18T06:56:41-04:00","vendor":"VayBay","tags":"","variants":[{"barcode":null,"compare_at_price":null,"created_at":"2015-07-12T06:53:09-04:00","fulfillment_service":"manual","grams":0,"id":4683771779,"inventory_management":null,"inventory_policy":"deny","option1":"Default
+        to find!","updated_at":"2015-07-20T06:25:09-04:00","vendor":"VayBay","tags":"","variants":[{"barcode":null,"compare_at_price":null,"created_at":"2015-07-12T06:53:09-04:00","fulfillment_service":"manual","grams":0,"id":4683771779,"inventory_management":null,"inventory_policy":"deny","option1":"Default
         Title","option2":null,"option3":null,"position":1,"price":"0.00","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Default
         Title","updated_at":"2015-07-12T06:53:09-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-13T05:52:53-04:00","fulfillment_service":"manual","grams":0,"id":4722223363,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
         YIM YOM 2015-07-13 19:52:52 +1000","option2":null,"option3":null,"position":2,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
@@ -843,7 +959,37 @@ http_interactions:
         PLOONK PLANK 2015-07-18 20:56:20 +1000","option2":null,"option3":null,"position":47,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
         PLOONK PLANK 2015-07-18 20:56:20 +1000","updated_at":"2015-07-18T06:56:30-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike3","compare_at_price":null,"created_at":"2015-07-18T06:56:41-04:00","fulfillment_service":"manual","grams":0,"id":4946635395,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
         Boogie 2015-07-18 20:56:30 +1000","option2":null,"option3":null,"position":48,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
-        Boogie 2015-07-18 20:56:30 +1000","updated_at":"2015-07-18T06:56:41-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"}],"options":[{"id":1701824579,"name":"Title","position":1,"product_id":1418685443,"values":["Default
+        Boogie 2015-07-18 20:56:30 +1000","updated_at":"2015-07-18T06:56:41-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-18T22:52:35-04:00","fulfillment_service":"manual","grams":0,"id":4962941251,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        YIM YOM 2015-07-19 12:52:28 +1000","option2":null,"option3":null,"position":49,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        YIM YOM 2015-07-19 12:52:28 +1000","updated_at":"2015-07-18T22:52:35-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-18T22:52:35-04:00","fulfillment_service":"manual","grams":0,"id":4962941315,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        PLOONK PLANK 2015-07-19 12:52:28 +1000","option2":null,"option3":null,"position":50,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        PLOONK PLANK 2015-07-19 12:52:28 +1000","updated_at":"2015-07-18T22:52:35-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike3","compare_at_price":null,"created_at":"2015-07-18T22:52:43-04:00","fulfillment_service":"manual","grams":0,"id":4962942787,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        Boogie 2015-07-19 12:52:35 +1000","option2":null,"option3":null,"position":51,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        Boogie 2015-07-19 12:52:35 +1000","updated_at":"2015-07-18T22:52:43-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-19T01:02:24-04:00","fulfillment_service":"manual","grams":0,"id":4964481155,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        YIM YOM 2015-07-19 15:02:10 +1000","option2":null,"option3":null,"position":52,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        YIM YOM 2015-07-19 15:02:10 +1000","updated_at":"2015-07-19T01:02:24-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-19T01:02:24-04:00","fulfillment_service":"manual","grams":0,"id":4964481219,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        PLOONK PLANK 2015-07-19 15:02:10 +1000","option2":null,"option3":null,"position":53,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        PLOONK PLANK 2015-07-19 15:02:10 +1000","updated_at":"2015-07-19T01:02:24-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike3","compare_at_price":null,"created_at":"2015-07-19T01:02:36-04:00","fulfillment_service":"manual","grams":0,"id":4964482627,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        Boogie 2015-07-19 15:02:25 +1000","option2":null,"option3":null,"position":54,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        Boogie 2015-07-19 15:02:25 +1000","updated_at":"2015-07-19T01:02:36-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-19T03:15:45-04:00","fulfillment_service":"manual","grams":0,"id":4965691587,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        YIM YOM 2015-07-19 17:15:10 +1000","option2":null,"option3":null,"position":55,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        YIM YOM 2015-07-19 17:15:10 +1000","updated_at":"2015-07-19T03:15:45-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-19T03:15:45-04:00","fulfillment_service":"manual","grams":0,"id":4965691651,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        PLOONK PLANK 2015-07-19 17:15:10 +1000","option2":null,"option3":null,"position":56,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        PLOONK PLANK 2015-07-19 17:15:10 +1000","updated_at":"2015-07-19T03:15:45-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike3","compare_at_price":null,"created_at":"2015-07-19T03:16:20-04:00","fulfillment_service":"manual","grams":0,"id":4965696067,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        Boogie 2015-07-19 17:15:46 +1000","option2":null,"option3":null,"position":57,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        Boogie 2015-07-19 17:15:46 +1000","updated_at":"2015-07-19T03:16:20-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-19T03:24:41-04:00","fulfillment_service":"manual","grams":0,"id":4965787843,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        YIM YOM 2015-07-19 17:24:21 +1000","option2":null,"option3":null,"position":58,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        YIM YOM 2015-07-19 17:24:21 +1000","updated_at":"2015-07-19T03:24:41-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-19T03:24:41-04:00","fulfillment_service":"manual","grams":0,"id":4965787907,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        PLOONK PLANK 2015-07-19 17:24:21 +1000","option2":null,"option3":null,"position":59,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        PLOONK PLANK 2015-07-19 17:24:21 +1000","updated_at":"2015-07-19T03:24:41-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike3","compare_at_price":null,"created_at":"2015-07-19T03:24:55-04:00","fulfillment_service":"manual","grams":0,"id":4965789507,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        Boogie 2015-07-19 17:24:41 +1000","option2":null,"option3":null,"position":60,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        Boogie 2015-07-19 17:24:41 +1000","updated_at":"2015-07-19T03:24:55-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-20T06:24:46-04:00","fulfillment_service":"manual","grams":0,"id":5001925251,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        YIM YOM 2015-07-20 20:24:26 +1000","option2":null,"option3":null,"position":61,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        YIM YOM 2015-07-20 20:24:26 +1000","updated_at":"2015-07-20T06:24:46-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike","compare_at_price":null,"created_at":"2015-07-20T06:24:46-04:00","fulfillment_service":"manual","grams":0,"id":5001925379,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        PLOONK PLANK 2015-07-20 20:24:26 +1000","option2":null,"option3":null,"position":62,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        PLOONK PLANK 2015-07-20 20:24:26 +1000","updated_at":"2015-07-20T06:24:46-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"barcode":"iwaslike3","compare_at_price":null,"created_at":"2015-07-20T06:25:09-04:00","fulfillment_service":"manual","grams":0,"id":5001949443,"inventory_management":null,"inventory_policy":"deny","option1":"Largest
+        Boogie 2015-07-20 20:24:47 +1000","option2":null,"option3":null,"position":63,"price":"13.50","product_id":1418685443,"requires_shipping":true,"sku":"","taxable":true,"title":"Largest
+        Boogie 2015-07-20 20:24:47 +1000","updated_at":"2015-07-20T06:25:09-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"}],"options":[{"id":1701824579,"name":"Title","position":1,"product_id":1418685443,"values":["Default
         Title","Largest YIM YOM 2015-07-13 19:52:52 +1000","Largest PLOONK PLANK 2015-07-13
         19:52:52 +1000","Largest YIM YOM 2015-07-13 20:11:14 +1000","Largest PLOONK
         PLANK 2015-07-13 20:11:14 +1000","Largest Boogie 2015-07-13 20:11:16 +1000","Largest
@@ -870,7 +1016,15 @@ http_interactions:
         +1000","Largest YIM YOM 2015-07-18 20:11:23 +1000","Largest PLOONK PLANK 2015-07-18
         20:11:23 +1000","Largest Boogie 2015-07-18 20:11:31 +1000","Largest YIM YOM
         2015-07-18 20:56:20 +1000","Largest PLOONK PLANK 2015-07-18 20:56:20 +1000","Largest
-        Boogie 2015-07-18 20:56:30 +1000"]}],"images":[],"image":null}}'
+        Boogie 2015-07-18 20:56:30 +1000","Largest YIM YOM 2015-07-19 12:52:28 +1000","Largest
+        PLOONK PLANK 2015-07-19 12:52:28 +1000","Largest Boogie 2015-07-19 12:52:35
+        +1000","Largest YIM YOM 2015-07-19 15:02:10 +1000","Largest PLOONK PLANK 2015-07-19
+        15:02:10 +1000","Largest Boogie 2015-07-19 15:02:25 +1000","Largest YIM YOM
+        2015-07-19 17:15:10 +1000","Largest PLOONK PLANK 2015-07-19 17:15:10 +1000","Largest
+        Boogie 2015-07-19 17:15:46 +1000","Largest YIM YOM 2015-07-19 17:24:21 +1000","Largest
+        PLOONK PLANK 2015-07-19 17:24:21 +1000","Largest Boogie 2015-07-19 17:24:41
+        +1000","Largest YIM YOM 2015-07-20 20:24:26 +1000","Largest PLOONK PLANK 2015-07-20
+        20:24:26 +1000","Largest Boogie 2015-07-20 20:24:47 +1000"]}],"images":[],"image":null}}'
     http_version: 
-  recorded_at: Sat, 18 Jul 2015 10:56:41 GMT
+  recorded_at: Mon, 20 Jul 2015 10:25:09 GMT
 recorded_with: VCR 2.9.3

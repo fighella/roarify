@@ -49,7 +49,7 @@ module Roarify
     end
 
     def resource
-      @collection ? @resource : @resource + '/' + @member 
+      [@resource,@member,@nested_resource].select { |r| r && !r.nil? }.join('/')
     end
 
   end

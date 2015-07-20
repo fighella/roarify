@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 18 Jul 2015 10:57:28 GMT
+      - Mon, 20 Jul 2015 10:23:18 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -35,15 +35,15 @@ http_interactions:
       X-Sorting-Hat-Shopid:
       - '9123524'
       X-Sorting-Hat-Podid-Cached:
-      - '1'
+      - '0'
       X-Sorting-Hat-Shopid-Cached:
-      - '1'
+      - '0'
       Vary:
       - Accept-Encoding
       Status:
       - 200 OK
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/f20237ad-d124-4a43-b038-ce4c20dbe05d?source%5Baction%5D=index&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/213526ca-9fab-4275-9b6e-70bf8f8362c7?source%5Baction%5D=index&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
       X-Content-Type-Options:
       - nosniff
       - nosniff
@@ -66,7 +66,7 @@ http_interactions:
       Set-Cookie:
       - request_method=GET; path=/
       X-Request-Id:
-      - f20237ad-d124-4a43-b038-ce4c20dbe05d
+      - 213526ca-9fab-4275-9b6e-70bf8f8362c7
       P3p:
       - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
       X-Dc:
@@ -75,7 +75,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"products":[{"id":1419019843}]}'
     http_version: 
-  recorded_at: Sat, 18 Jul 2015 10:57:28 GMT
+  recorded_at: Mon, 20 Jul 2015 10:23:19 GMT
 - request:
     method: get
     uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products/1419019843.json
@@ -99,7 +99,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 18 Jul 2015 10:57:30 GMT
+      - Mon, 20 Jul 2015 10:23:23 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -119,7 +119,7 @@ http_interactions:
       Status:
       - 200 OK
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/594343ef-67fa-4107-a9ca-fbaae22230c1?source%5Baction%5D=show&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/996c8d55-12c2-4471-9e73-3dc8752ff0fe?source%5Baction%5D=show&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
       X-Content-Type-Options:
       - nosniff
       - nosniff
@@ -142,7 +142,7 @@ http_interactions:
       Set-Cookie:
       - request_method=GET; path=/
       X-Request-Id:
-      - 594343ef-67fa-4107-a9ca-fbaae22230c1
+      - 996c8d55-12c2-4471-9e73-3dc8752ff0fe
       P3p:
       - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
       X-Dc:
@@ -159,5 +159,5 @@ http_interactions:
         Title","updated_at":"2015-07-03T08:55:26-04:00","inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"}],"options":[{"id":1702388739,"name":"Title","position":1,"product_id":1419019843,"values":["Default
         Title"]}],"images":[],"image":null}}'
     http_version: 
-  recorded_at: Sat, 18 Jul 2015 10:57:30 GMT
+  recorded_at: Mon, 20 Jul 2015 10:23:23 GMT
 recorded_with: VCR 2.9.3

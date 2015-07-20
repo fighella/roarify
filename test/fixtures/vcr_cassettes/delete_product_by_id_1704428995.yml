@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: delete
-    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products/1674464707.json
+    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products/1704428995.json
     body:
       encoding: US-ASCII
       string: ''
@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 18 Jul 2015 10:56:06 GMT
+      - Mon, 20 Jul 2015 10:24:06 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -43,7 +43,7 @@ http_interactions:
       Status:
       - 200 OK
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/3cad575c-63dd-4c0f-89fb-1ad58c152f61?source%5Baction%5D=destroy&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/7e123b6a-2db2-457b-b896-27da22f122ce?source%5Baction%5D=destroy&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
       X-Content-Type-Options:
       - nosniff
       - nosniff
@@ -66,11 +66,11 @@ http_interactions:
       Location:
       - https://roarify.myshopify.com/admin/products
       Set-Cookie:
-      - _secure_admin_session_id=bba4339ca92171043ab152f192e9919e; path=/admin; secure;
+      - _secure_admin_session_id=9234fb4179c100740ab2d5e26cab48d0; path=/admin; secure;
         HttpOnly
       - request_method=DELETE; path=/
       X-Request-Id:
-      - 3cad575c-63dd-4c0f-89fb-1ad58c152f61
+      - 7e123b6a-2db2-457b-b896-27da22f122ce
       P3p:
       - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
       X-Dc:
@@ -79,5 +79,5 @@ http_interactions:
       encoding: UTF-8
       string: '{}'
     http_version: 
-  recorded_at: Sat, 18 Jul 2015 10:56:06 GMT
+  recorded_at: Mon, 20 Jul 2015 10:24:06 GMT
 recorded_with: VCR 2.9.3

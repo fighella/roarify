@@ -1,6 +1,6 @@
 module Roarify
   class Search
-    attr_accessor :id, :handle, :products
+    attr_accessor :id, :handle
     def initialize(klass)
       @klass = klass
     end
