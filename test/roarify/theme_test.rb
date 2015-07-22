@@ -20,13 +20,10 @@ module Roarify
       end
       assets = nil
       VCR.use_cassette 'find all themes assets' do
-        themes.first.assets
+        assets = themes.first.assets
       end
 
-     puts assets.inspect
-     raise themes.first
-      puts "argh"
-      # puts assets.count
+      assets.count.must_equal 89
       
 
     end

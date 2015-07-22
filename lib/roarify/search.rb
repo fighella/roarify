@@ -5,8 +5,12 @@ module Roarify
       @klass = klass
     end
 
-    def all
-      representer.get(representer.resource_request(@klass.decorator.api_name).url)
+    def all(parent_class=nil, parent_id=nil)
+      if parent_class && parent_id
+        representer.get(representer.resource_request(@klass.decorator.api_name, parent_id, parent_class.decorator.api_name).url)
+      else
+        representer.get(representer.resource_request(@klass.decorator.api_name).url)
+      end
     end
 
     def find_by(attribute, value)

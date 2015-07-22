@@ -12,11 +12,7 @@ module Roarify
     end
 
     def assets
-      
-      assets = Finder.new(Theme,id,Asset).find_nested
-      representer = AssetDecorator.new(assets)
-      assets.assets
-
+      Asset.all(id)
     end
 
     def self.decorator

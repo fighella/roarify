@@ -9,6 +9,7 @@ module Roarify
     include Roar::Client
     collection :products, class: OpenStruct, decorator: Roarify::ProductRepresenter
     collection :themes, class: OpenStruct, decorator: Roarify::ThemeRepresenter
+    collection :assets, class: OpenStruct, decorator: Roarify::AssetRepresenter
 
     property :id
     property :title
