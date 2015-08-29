@@ -5,7 +5,7 @@ module Roarify
     include ProductRepresenter
     include Representer
     self.api_name = 'products'
-    self.representation_wrap = :product
+    self.representation_wrap = :entry
    
   end
 end

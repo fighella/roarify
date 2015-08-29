@@ -15,6 +15,7 @@ module Roarify
     include Roar::JSON
     include Roar::Client
     include Roarify::Representer
+    # include Representable::Hash
     self.api_name = 'product'
     collection :variants, class: Roarify::Variant, decorator: Roarify::VariantDecorator, wrap: false
     collection :images, class: Roarify::Image, decorator: Roarify::ImageRepresenter

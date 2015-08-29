@@ -121,7 +121,8 @@ class Roarify::ProductTest < MiniTest::Spec
       VCR.use_cassette "find_product_1418685443" do
         product = Roarify::Product.find(1418685443)
       end
-      product_variants_count = product.variants.count
+
+      # product_variants_count = product.variants.count
       product.body_html = 'New Description'
       
       option_1 = Roarify::Option.new
@@ -207,7 +208,7 @@ class Roarify::ProductTest < MiniTest::Spec
       VCR.use_cassette 'find_product_18' do
         search = Roarify::Product.where(:handle, 'trailblazer-the-book-18')
       end
-
+      
       matching = search[0].variants[0]
       matching.sku = 'DISKO-sUz'
       matching.old_inventory_quantity = 1

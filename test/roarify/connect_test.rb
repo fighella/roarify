@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require 'pry-rescue/minitest'
+# require 'pry-rescue/minitest'
 require 'roarify/connect'
 
 class Roarify::ConnectTest < MiniTest::Spec

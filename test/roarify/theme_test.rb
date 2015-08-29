@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require 'pry-rescue/minitest'
+# require 'pry-rescue/minitest'
 require 'test_helper'
 
 module Roarify
@@ -23,7 +23,7 @@ module Roarify
         assets = themes.first.assets
       end
 
-      assets.count.must_equal 89
+      assets.count.must_equal 93
       
 
     end
