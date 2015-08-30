@@ -40,4 +40,8 @@ module Roarify
   require "roarify/theme"
   require "roarify/url"
   require "roarify/variant"
+
+  def self.keys
+    { api_key: 'not set', password: 'not set', shop_domain: 'not_set' }
+  end
 end

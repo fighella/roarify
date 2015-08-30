@@ -36,7 +36,7 @@ module Roarify
 
     private
     def connect
-      Connect.test_auth.connection
+      Connect.auth.connection
     end
 
     def set_request_type!

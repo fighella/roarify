@@ -12,6 +12,12 @@ class DummyStore
     'roarify.myshopify.com'
   end
 
+
+  def self.test_auth
+    keys = { api_key: DummyStore.api_key, shop_domain: DummyStore.store, password: DummyStore.password }
+    Connect.new(keys)
+  end
+
 end
 
 # API Key

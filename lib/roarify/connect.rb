@@ -23,9 +23,10 @@ module Roarify
       }
     end
 
-    def self.test_auth
-      keys = { api_key: DummyStore.api_key, shop_domain: DummyStore.store, password: DummyStore.password }
-      Connect.new(keys)
-    end
+    # def self.auth
+    #   ## Perhaps some kind of initializer?
+    #   keys = { api_key: Roarify.shop_key[:api_key], shop_domain: Roarify.shop_key[:shop_domain], password: Roarify.shop_key[:password] }
+    #   Connect.new(keys)
+    # end
   end
 end
