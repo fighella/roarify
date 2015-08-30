@@ -1,4 +1,3 @@
-require 'roarify/shop'
 module Roarify
   class Url
     def initialize(resource, id=nil, nested_resource=nil, nested_id=nil)
