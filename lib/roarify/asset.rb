@@ -11,7 +11,7 @@ module Roarify
     end
 
     def self.decorator
-      AssetDecorator
+      Roarify::AssetDecorator
     end
 
     def self.parent
