@@ -41,7 +41,11 @@ module Roarify
   require "roarify/url"
   require "roarify/variant"
 
-  def self.keys
+  def self.keys(opts=defaults)
+    opts
+  end
+
+  def defaults
     { api_key: 'not set', password: 'not set', shop_domain: 'not_set' }
   end
 end
