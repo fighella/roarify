@@ -6,6 +6,7 @@ module Roarify
       @api_key = keys[:api_key]
       @password = keys[:password]
       @shop_domain = keys[:shop_domain]
+      set_connection
     end
 
     def connection
@@ -35,6 +36,10 @@ module Roarify
       opts[:password]     || 'Not set.'
       opts[:shop_domain]  || 'Not set.'
       @@auth_keys = opts
+    end
+
+    def set_connection
+      self.set_keys({api_key: @api_key, password: @password, shop_domain: @shop_domain})
     end
 
     # def self.auth_keys
