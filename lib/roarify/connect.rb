@@ -1,6 +1,6 @@
 module Roarify
   class Connect
-    attr_accessor :auth
+    @@auth_keys = {}
 
     def initialize(keys) #api_key=nil, password=nil, shop_domain=nil)
       @api_key = keys[:api_key]
@@ -27,11 +27,10 @@ module Roarify
     end
 
     def self.auth
-      ## Perhaps some kind of initializer?
       Connect.new(@@auth_keys)
     end
 
-    def self.set_keys( opts={} )
+    def set_keys( opts={} )
       opts[:api_key]      || 'Not set.'
       opts[:password]     || 'Not set.'
       opts[:shop_domain]  || 'Not set.'
@@ -39,12 +38,8 @@ module Roarify
     end
 
     def set_connection
-      self.set_keys({api_key: @api_key, password: @password, shop_domain: @shop_domain})
+      set_keys(api_key: @api_key, password: @password, shop_domain: @shop_domain)
     end
-
-    # def self.auth_keys
-    #   @@auth_keys
-    # end
 
   end
 end
