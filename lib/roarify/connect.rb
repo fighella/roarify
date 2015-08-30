@@ -27,7 +27,7 @@ module Roarify
 
     def self.auth
       ## Perhaps some kind of initializer?
-      Connect.new(auth_keys)
+      Connect.new(@@auth_keys)
     end
 
     def self.set_keys( opts={} )
@@ -37,9 +37,9 @@ module Roarify
       @@auth_keys = opts
     end
 
-    def auth_keys
-      @@auth_keys
-    end
+    # def self.auth_keys
+    #   @@auth_keys
+    # end
 
   end
 end
