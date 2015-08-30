@@ -1,0 +1,84 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/shop.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 30 Aug 2015 08:26:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Sorting-Hat-Podid:
+      - '2'
+      X-Sorting-Hat-Shopid:
+      - '9123524'
+      X-Sorting-Hat-Podid-Cached:
+      - '1'
+      X-Sorting-Hat-Shopid-Cached:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - DENY
+      X-Shopid:
+      - '9123524'
+      X-Shardid:
+      - '2'
+      X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      Http-X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      X-Stats-Userid:
+      - '0'
+      X-Stats-Apiclientid:
+      - '977366'
+      X-Stats-Apipermissionid:
+      - '12331486'
+      X-Xss-Protection:
+      - 1; mode=block; report=/xss-report/a0fd067a-1606-4dd0-b87f-cb676c287d8a?source%5Baction%5D=show&source%5Bcontroller%5D=admin%2Fshops&source%5Bsection%5D=admin
+      Set-Cookie:
+      - request_method=GET; path=/
+      X-Request-Id:
+      - a0fd067a-1606-4dd0-b87f-cb676c287d8a
+      P3p:
+      - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
+      X-Content-Type-Options:
+      - nosniff
+      X-Dc:
+      - ash
+    body:
+      encoding: UTF-8
+      string: '{"shop":{"id":9123524,"name":"Roarify","email":"shopify@30acres.com.au","domain":"roarify.myshopify.com","created_at":"2015-07-03T06:28:37-04:00","province":"New
+        South Wales","country":"AU","address1":"17 Lawson St","zip":"2481","city":"Byron
+        Bay","source":"fighella","phone":"0403248955","updated_at":"2015-07-03T07:51:20-04:00","customer_email":null,"latitude":-28.642441,"longitude":153.613388,"primary_location_id":3134339,"primary_locale":"en","country_code":"AU","country_name":"Australia","currency":"AUD","timezone":"(GMT-05:00)
+        Eastern Time (US \u0026 Canada)","iana_timezone":"America\/New_York","shop_owner":"Jonny
+        Dalgleish","money_format":"${{amount}}","money_with_currency_format":"${{amount}}
+        AUD","province_code":"NSW","taxes_included":false,"tax_shipping":null,"county_taxes":true,"plan_display_name":"affiliate","plan_name":"affiliate","myshopify_domain":"roarify.myshopify.com","google_apps_domain":null,"google_apps_login_enabled":null,"money_in_emails_format":"${{amount}}","money_with_currency_in_emails_format":"${{amount}}
+        AUD","eligible_for_payments":false,"requires_extra_payments_agreement":false,"password_enabled":false,"has_storefront":true,"setup_required":false}}'
+    http_version: 
+  recorded_at: Sun, 30 Aug 2015 08:26:54 GMT
+recorded_with: VCR 2.9.3

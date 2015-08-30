@@ -28,7 +28,7 @@ module Roarify
     property :body_html
     property :handle
     property :images
-    property :options
+    # property :options
     property :product_type
     property :published_at
     property :published

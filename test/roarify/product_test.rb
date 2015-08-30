@@ -122,31 +122,32 @@ class Roarify::ProductTest < MiniTest::Spec
         product = Roarify::Product.find(1418685443)
       end
 
-      # product_variants_count = product.variants.count
+      product_variants_count = product.variants.count
       product.body_html = 'New Description'
       
       option_1 = Roarify::Option.new
       option_2 = Roarify::Option.new
       option_1.name = 'Size'
       option_2.name = 'Colour'
-      product.options << option_1
-      product.options << option_2
+      new_options = []
+      new_options << option_1
+      # new_options << option_2
+      product.options = new_options
       VCR.use_cassette 'save_product_with_options' do
         product.save
       end
       variant = Roarify::Variant.new
       variant.option1 = "Largest YIM YOM #{Time.now}"
-      variant.option2 = 'Bluest 3'
+      # variant.option2 = 'Bluest 3'
       variant.price = 13.50
       variant.inventory_quantity = 22
       variant.barcode = 'iwaslike'
       variant.title = 'Best Edition 4'
       product.variants << variant
       
-      
       variant = Roarify::Variant.new
       variant.option1 = "Largest PLOONK PLANK #{Time.now}"
-      variant.option2 = 'Bluest'
+      # variant.option2 = 'Bluest'
       variant.price = 13.50
       variant.inventory_quantity = 22
       variant.barcode = 'iwaslike'
@@ -161,7 +162,7 @@ class Roarify::ProductTest < MiniTest::Spec
 
       variant = Roarify::Variant.new
       variant.option1 = "Largest Boogie #{Time.now}"
-      variant.option2 = 'Bluest 22'
+      # variant.option2 = 'Bluest 22'
       variant.price = 13.50
       variant.inventory_quantity = 22
       variant.barcode = 'iwaslike3'

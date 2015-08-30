@@ -3,6 +3,6 @@ module Roarify
     include Roar::Client
     include Roar::JSON
     include OptionRepresenter
-    self.representation_wrap = :option
+    # self.representation_wrap = false
   end
 end

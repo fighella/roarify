@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/smart_collections.json
+    body:
+      encoding: UTF-8
+      string: '{"smart_collection":{"rules":[{"column":"title","relation":"contains","condition":"Trailblazer"},{"column":"vendor","relation":"not_equals","condition":"Boogie"}],"title":"New
+        SC 2"}}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 30 Aug 2015 08:26:47 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Sorting-Hat-Podid:
+      - '2'
+      X-Sorting-Hat-Shopid:
+      - '9123524'
+      X-Sorting-Hat-Podid-Cached:
+      - '0'
+      X-Sorting-Hat-Shopid-Cached:
+      - '0'
+      Status:
+      - 201 Created
+      X-Frame-Options:
+      - DENY
+      X-Shopid:
+      - '9123524'
+      X-Shardid:
+      - '2'
+      X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      Http-X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      X-Stats-Userid:
+      - '0'
+      X-Stats-Apiclientid:
+      - '977366'
+      X-Stats-Apipermissionid:
+      - '12331486'
+      Location:
+      - https://roarify.myshopify.com/admin/smart_collections/118757187
+      X-Xss-Protection:
+      - 1; mode=block; report=/xss-report/36aadff6-c9b4-4de1-b56c-62c064b2f8d8?source%5Baction%5D=create&source%5Bcontroller%5D=admin%2Fsmart_collections&source%5Bsection%5D=admin
+      Set-Cookie:
+      - request_method=POST; path=/
+      X-Request-Id:
+      - 36aadff6-c9b4-4de1-b56c-62c064b2f8d8
+      P3p:
+      - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
+      X-Content-Type-Options:
+      - nosniff
+      X-Dc:
+      - ash
+    body:
+      encoding: UTF-8
+      string: '{"smart_collection":{"id":118757187,"handle":"new-sc-150","title":"New
+        SC 2","updated_at":"2015-08-30T04:26:47-04:00","body_html":null,"published_at":"2015-08-30T04:26:47-04:00","sort_order":"alpha-asc","template_suffix":null,"published_scope":"global","disjunctive":false,"rules":[{"column":"title","relation":"contains","condition":"Trailblazer"},{"column":"vendor","relation":"not_equals","condition":"Boogie"}]}}'
+    http_version: 
+  recorded_at: Sun, 30 Aug 2015 08:26:47 GMT
+recorded_with: VCR 2.9.3
