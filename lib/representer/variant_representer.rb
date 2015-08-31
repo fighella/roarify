@@ -23,6 +23,7 @@ module Roarify
     property :inventory_management
     property :inventory_quantity
     property :old_inventory_quantity
+    property :fulfillment_service
 
     def update
       put(resource_request(represented.id).url)
