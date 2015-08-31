@@ -1,0 +1,139 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products.json
+    body:
+      encoding: UTF-8
+      string: '{"product":{"title":"Trailblazer. The Booksie.","vendor":"Sutterer
+        Inc","body_html":"<p>  EXT.  GAS STATION<br/>  The T-Bird vaults into the
+        parking lot and slides to a\n  smoking stop at one of the pump islands.  The
+        Presidents\n  explode out of the car in a blur.<br/>  Reagan bodyslams a TEENAGER
+        putting gas in his MUSTANG.\n  He flips his big pistol to LBJ as the other
+        Presidents\n  charge past him.  Nixon jumps behind the wheel of the\n  Mustang.  LBJ
+        and JFK pile in.<br/>  Reagan grabs the gas nozzle out of the car.\n  He pulls
+        out a ZIPPO LIGHTER.\n  Reagan raises the gas nozzle like a gun and holds
+        the\n  zippo below and slightly in front of it.  He flicks the\n  flame.\n  Then
+        pulls the trigger on the nozzle.<br/>  Like an impromptu flame thrower, the
+        nozzle spews A TWENTY\n  FOOT JET OF FIRE which engulfs the T-Bird in an instant.\n  Any
+        physical evidence in the car is rapidly incinerated.\n  Customers are running,
+        screaming.\n  Nixon has the Mustang fired up.<br/>                           NIXON\n            Let''s
+        go!  Move it, Ronny!<br/>  Ronny''s eyes sparkle behind his mask as he paints
+        the\n  scene with the jet of fire.  You can see it getting good\n  to him.  In
+        a second he''s going to blow up the whole\n  block.  But he''s getting his
+        rocks off.  He sets two other\n  cars on fire.<br/>  A FIGURE BLURS INTO FRAME.\n  In
+        a flying tackle, Utah catapults Reagan off his pins.\n  They roll, skidding
+        across the oily concrete.\n  Spraying wild, the fire swirls around the pump
+        island.<br/>  Out of the black smoke, PAPPAS charges like an angry bull,\n  his
+        snubnose held high.  NIXON sees him and floors it.\n  The Mustang smokes out
+        of the gas station as Pappas'' shots\n  blow out the back window.<br/>  Utah
+        and Reagan roll away from the blaze.  Johnny''s pants\n  are burning.  He
+        gets to his knees in time for Reagan''s\n  kick to take him square in the
+        solar plexus.  He folds in\n  half.  Drops to the cement.\n  Reagan kicks
+        him again and takes off running.\n  The President is burning.\n  His suit
+        jacket is ablaze.  He shucks out of it as he\n  runs.<br/>  Gasping, Johnny
+        rapidly slaps his jeans.  Puts himself\n  out.  He comes up running, pulling
+        his Beretta.  Sees the\n  back of Reagan''s head disappearing into an alley
+        behind\n  the gas station.</p>","product_type":"Video"}}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 31 Aug 2015 06:58:01 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Sorting-Hat-Podid:
+      - '2'
+      X-Sorting-Hat-Shopid:
+      - '9123524'
+      X-Sorting-Hat-Podid-Cached:
+      - '1'
+      X-Sorting-Hat-Shopid-Cached:
+      - '1'
+      Status:
+      - 201 Created
+      X-Frame-Options:
+      - DENY
+      X-Shopid:
+      - '9123524'
+      X-Shardid:
+      - '2'
+      X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      Http-X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      X-Stats-Userid:
+      - '0'
+      X-Stats-Apiclientid:
+      - '977366'
+      X-Stats-Apipermissionid:
+      - '12331486'
+      Location:
+      - https://roarify.myshopify.com/admin/products/2348153219
+      X-Xss-Protection:
+      - 1; mode=block; report=/xss-report/5f9c9d63-d03a-4fda-9568-551487bd9788?source%5Baction%5D=create&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      Set-Cookie:
+      - request_method=POST; path=/
+      X-Request-Id:
+      - 5f9c9d63-d03a-4fda-9568-551487bd9788
+      P3p:
+      - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
+      X-Content-Type-Options:
+      - nosniff
+      X-Dc:
+      - ash
+    body:
+      encoding: UTF-8
+      string: '{"product":{"id":2348153219,"title":"Trailblazer. The Booksie.","body_html":"\u003cp\u003e  EXT.  GAS
+        STATION\u003cbr\u003e  The T-Bird vaults into the parking lot and slides to
+        a\n  smoking stop at one of the pump islands.  The Presidents\n  explode out
+        of the car in a blur.\u003cbr\u003e  Reagan bodyslams a TEENAGER putting gas
+        in his MUSTANG.\n  He flips his big pistol to LBJ as the other Presidents\n  charge
+        past him.  Nixon jumps behind the wheel of the\n  Mustang.  LBJ and JFK pile
+        in.\u003cbr\u003e  Reagan grabs the gas nozzle out of the car.\n  He pulls
+        out a ZIPPO LIGHTER.\n  Reagan raises the gas nozzle like a gun and holds
+        the\n  zippo below and slightly in front of it.  He flicks the\n  flame.\n  Then
+        pulls the trigger on the nozzle.\u003cbr\u003e  Like an impromptu flame thrower,
+        the nozzle spews A TWENTY\n  FOOT JET OF FIRE which engulfs the T-Bird in
+        an instant.\n  Any physical evidence in the car is rapidly incinerated.\n  Customers
+        are running, screaming.\n  Nixon has the Mustang fired up.\u003cbr\u003e                           NIXON\n            Let''s
+        go!  Move it, Ronny!\u003cbr\u003e  Ronny''s eyes sparkle behind his mask
+        as he paints the\n  scene with the jet of fire.  You can see it getting good\n  to
+        him.  In a second he''s going to blow up the whole\n  block.  But he''s getting
+        his rocks off.  He sets two other\n  cars on fire.\u003cbr\u003e  A FIGURE
+        BLURS INTO FRAME.\n  In a flying tackle, Utah catapults Reagan off his pins.\n  They
+        roll, skidding across the oily concrete.\n  Spraying wild, the fire swirls
+        around the pump island.\u003cbr\u003e  Out of the black smoke, PAPPAS charges
+        like an angry bull,\n  his snubnose held high.  NIXON sees him and floors
+        it.\n  The Mustang smokes out of the gas station as Pappas'' shots\n  blow
+        out the back window.\u003cbr\u003e  Utah and Reagan roll away from the blaze.  Johnny''s
+        pants\n  are burning.  He gets to his knees in time for Reagan''s\n  kick
+        to take him square in the solar plexus.  He folds in\n  half.  Drops to the
+        cement.\n  Reagan kicks him again and takes off running.\n  The President
+        is burning.\n  His suit jacket is ablaze.  He shucks out of it as he\n  runs.\u003cbr\u003e  Gasping,
+        Johnny rapidly slaps his jeans.  Puts himself\n  out.  He comes up running,
+        pulling his Beretta.  Sees the\n  back of Reagan''s head disappearing into
+        an alley behind\n  the gas station.\u003c\/p\u003e","vendor":"Sutterer Inc","product_type":"Video","created_at":"2015-08-31T02:58:01-04:00","handle":"trailblazer-the-booksie-56","updated_at":"2015-08-31T02:58:01-04:00","published_at":"2015-08-31T02:58:01-04:00","template_suffix":null,"published_scope":"global","tags":"","variants":[{"id":6796568579,"product_id":2348153219,"title":"Default
+        Title","price":"0.00","sku":"","position":1,"grams":0,"inventory_policy":"deny","compare_at_price":null,"fulfillment_service":"manual","inventory_management":null,"option1":"Default
+        Title","option2":null,"option3":null,"created_at":"2015-08-31T02:58:01-04:00","updated_at":"2015-08-31T02:58:01-04:00","requires_shipping":true,"taxable":true,"barcode":null,"inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"}],"options":[{"id":2827016771,"product_id":2348153219,"name":"Title","position":1,"values":["Default
+        Title"]}],"images":[],"image":null}}'
+    http_version: 
+  recorded_at: Mon, 31 Aug 2015 06:58:01 GMT
+recorded_with: VCR 2.9.3

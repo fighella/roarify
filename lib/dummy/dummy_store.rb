@@ -15,7 +15,7 @@ class DummyStore
 
   def self.test_auth
     keys = { api_key: DummyStore.api_key, shop_domain: DummyStore.store, password: DummyStore.password }
-    Connect.new(keys)
+    Roarify::Connect.new(keys)
   end
 
 end

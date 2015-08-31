@@ -1,0 +1,391 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products.json?fields=id&handle=i-like-this-book
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 31 Aug 2015 06:56:13 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Sorting-Hat-Podid:
+      - '2'
+      X-Sorting-Hat-Shopid:
+      - '9123524'
+      X-Sorting-Hat-Podid-Cached:
+      - '1'
+      X-Sorting-Hat-Shopid-Cached:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - DENY
+      X-Shopid:
+      - '9123524'
+      X-Shardid:
+      - '2'
+      X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      Http-X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      X-Stats-Userid:
+      - '0'
+      X-Stats-Apiclientid:
+      - '977366'
+      X-Stats-Apipermissionid:
+      - '12331486'
+      X-Xss-Protection:
+      - 1; mode=block; report=/xss-report/43123d7d-a102-48ff-b16c-f862ce9b02dd?source%5Baction%5D=index&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      Set-Cookie:
+      - request_method=GET; path=/
+      X-Request-Id:
+      - 43123d7d-a102-48ff-b16c-f862ce9b02dd
+      P3p:
+      - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
+      X-Content-Type-Options:
+      - nosniff
+      X-Dc:
+      - ash
+    body:
+      encoding: UTF-8
+      string: '{"products":[{"id":1505250435}]}'
+    http_version: 
+  recorded_at: Mon, 31 Aug 2015 06:56:13 GMT
+- request:
+    method: get
+    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products/1505250435.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 31 Aug 2015 06:56:14 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Sorting-Hat-Podid:
+      - '2'
+      X-Sorting-Hat-Shopid:
+      - '9123524'
+      X-Sorting-Hat-Podid-Cached:
+      - '1'
+      X-Sorting-Hat-Shopid-Cached:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - DENY
+      X-Shopid:
+      - '9123524'
+      X-Shardid:
+      - '2'
+      X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      Http-X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      X-Stats-Userid:
+      - '0'
+      X-Stats-Apiclientid:
+      - '977366'
+      X-Stats-Apipermissionid:
+      - '12331486'
+      X-Xss-Protection:
+      - 1; mode=block; report=/xss-report/39284bdb-a494-4f80-aef8-c8d2e7607cc2?source%5Baction%5D=show&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      Set-Cookie:
+      - request_method=GET; path=/
+      X-Request-Id:
+      - 39284bdb-a494-4f80-aef8-c8d2e7607cc2
+      P3p:
+      - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
+      X-Content-Type-Options:
+      - nosniff
+      X-Dc:
+      - ash
+    body:
+      encoding: UTF-8
+      string: '{"product":{"id":1505250435,"title":"New Title","body_html":null,"vendor":"Roarify","product_type":"","created_at":"2015-07-08T07:42:19-04:00","handle":"i-like-this-book","updated_at":"2015-07-20T06:25:34-04:00","published_at":"2015-07-08T07:42:19-04:00","template_suffix":null,"published_scope":"global","tags":"","variants":[{"id":4515919875,"product_id":1505250435,"title":"Default
+        Title","price":"0.00","sku":"","position":1,"grams":0,"inventory_policy":"deny","compare_at_price":null,"fulfillment_service":"manual","inventory_management":null,"option1":"Default
+        Title","option2":null,"option3":null,"created_at":"2015-07-08T07:42:19-04:00","updated_at":"2015-07-08T07:42:19-04:00","requires_shipping":true,"taxable":true,"barcode":null,"inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"}],"options":[{"id":1802264003,"product_id":1505250435,"name":"Title","position":1,"values":["Default
+        Title"]}],"images":[],"image":null}}'
+    http_version: 
+  recorded_at: Mon, 31 Aug 2015 06:56:14 GMT
+- request:
+    method: get
+    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products.json?fields=id&handle=i-like-this-book
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 31 Aug 2015 06:56:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Sorting-Hat-Podid:
+      - '2'
+      X-Sorting-Hat-Shopid:
+      - '9123524'
+      X-Sorting-Hat-Podid-Cached:
+      - '1'
+      X-Sorting-Hat-Shopid-Cached:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - DENY
+      X-Shopid:
+      - '9123524'
+      X-Shardid:
+      - '2'
+      X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      Http-X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      X-Stats-Userid:
+      - '0'
+      X-Stats-Apiclientid:
+      - '977366'
+      X-Stats-Apipermissionid:
+      - '12331486'
+      X-Xss-Protection:
+      - 1; mode=block; report=/xss-report/cb0b3850-f845-4315-88af-dca79e00e7a0?source%5Baction%5D=index&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      Set-Cookie:
+      - request_method=GET; path=/
+      X-Request-Id:
+      - cb0b3850-f845-4315-88af-dca79e00e7a0
+      P3p:
+      - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
+      X-Content-Type-Options:
+      - nosniff
+      X-Dc:
+      - ash
+    body:
+      encoding: UTF-8
+      string: '{"products":[{"id":1505250435}]}'
+    http_version: 
+  recorded_at: Mon, 31 Aug 2015 06:56:16 GMT
+- request:
+    method: get
+    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products/1505250435.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 31 Aug 2015 06:56:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Sorting-Hat-Podid:
+      - '2'
+      X-Sorting-Hat-Shopid:
+      - '9123524'
+      X-Sorting-Hat-Podid-Cached:
+      - '1'
+      X-Sorting-Hat-Shopid-Cached:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - DENY
+      X-Shopid:
+      - '9123524'
+      X-Shardid:
+      - '2'
+      X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      Http-X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      X-Stats-Userid:
+      - '0'
+      X-Stats-Apiclientid:
+      - '977366'
+      X-Stats-Apipermissionid:
+      - '12331486'
+      X-Xss-Protection:
+      - 1; mode=block; report=/xss-report/c584e7a7-38c5-4790-b8b6-b7a58f50efd6?source%5Baction%5D=show&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      Set-Cookie:
+      - request_method=GET; path=/
+      X-Request-Id:
+      - c584e7a7-38c5-4790-b8b6-b7a58f50efd6
+      P3p:
+      - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
+      X-Content-Type-Options:
+      - nosniff
+      X-Dc:
+      - ash
+    body:
+      encoding: UTF-8
+      string: '{"product":{"id":1505250435,"title":"New Title","body_html":null,"vendor":"Roarify","product_type":"","created_at":"2015-07-08T07:42:19-04:00","handle":"i-like-this-book","updated_at":"2015-07-20T06:25:34-04:00","published_at":"2015-07-08T07:42:19-04:00","template_suffix":null,"published_scope":"global","tags":"","variants":[{"id":4515919875,"product_id":1505250435,"title":"Default
+        Title","price":"0.00","sku":"","position":1,"grams":0,"inventory_policy":"deny","compare_at_price":null,"fulfillment_service":"manual","inventory_management":null,"option1":"Default
+        Title","option2":null,"option3":null,"created_at":"2015-07-08T07:42:19-04:00","updated_at":"2015-07-08T07:42:19-04:00","requires_shipping":true,"taxable":true,"barcode":null,"inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"}],"options":[{"id":1802264003,"product_id":1505250435,"name":"Title","position":1,"values":["Default
+        Title"]}],"images":[],"image":null}}'
+    http_version: 
+  recorded_at: Mon, 31 Aug 2015 06:56:17 GMT
+- request:
+    method: put
+    uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products/1505250435.json
+    body:
+      encoding: UTF-8
+      string: '{"product":{"variants":[{"id":4515919875,"sku":"","option1":"Default
+        Title","price":"0.00","title":"Default Title","inventory_quantity":1,"old_inventory_quantity":1}],"images":[],"options":[{"name":"Title"}],"title":"New
+        Title","id":1505250435,"vendor":"Roarify","created_at":"2015-07-08T07:42:19-04:00","handle":"i-like-this-book","product_type":"","published_at":"2015-07-08T07:42:19-04:00","published_scope":"global","tags":"","updated_at":"2015-07-20T06:25:34-04:00"}}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 31 Aug 2015 06:56:18 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Sorting-Hat-Podid:
+      - '2'
+      X-Sorting-Hat-Shopid:
+      - '9123524'
+      X-Sorting-Hat-Podid-Cached:
+      - '1'
+      X-Sorting-Hat-Shopid-Cached:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - DENY
+      X-Shopid:
+      - '9123524'
+      X-Shardid:
+      - '2'
+      X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      Http-X-Shopify-Shop-Api-Call-Limit:
+      - 1/40
+      X-Stats-Userid:
+      - '0'
+      X-Stats-Apiclientid:
+      - '977366'
+      X-Stats-Apipermissionid:
+      - '12331486'
+      Location:
+      - https://roarify.myshopify.com/admin/products/1505250435
+      X-Xss-Protection:
+      - 1; mode=block; report=/xss-report/0db7b073-b132-48fd-93b4-0b262b45b3ef?source%5Baction%5D=update&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      Set-Cookie:
+      - request_method=PUT; path=/
+      X-Request-Id:
+      - 0db7b073-b132-48fd-93b4-0b262b45b3ef
+      P3p:
+      - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
+      X-Content-Type-Options:
+      - nosniff
+      X-Dc:
+      - ash
+    body:
+      encoding: UTF-8
+      string: '{"product":{"id":1505250435,"title":"New Title","body_html":null,"vendor":"Roarify","product_type":"","created_at":"2015-07-08T07:42:19-04:00","handle":"i-like-this-book","updated_at":"2015-07-20T06:25:34-04:00","published_at":"2015-07-08T07:42:19-04:00","template_suffix":null,"published_scope":"global","tags":"","variants":[{"id":4515919875,"product_id":1505250435,"title":"Default
+        Title","price":"0.00","sku":"","position":1,"grams":0,"inventory_policy":"deny","compare_at_price":null,"fulfillment_service":"manual","inventory_management":null,"option1":"Default
+        Title","option2":null,"option3":null,"created_at":"2015-07-08T07:42:19-04:00","updated_at":"2015-07-08T07:42:19-04:00","requires_shipping":true,"taxable":true,"barcode":null,"inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"}],"options":[{"id":1802264003,"product_id":1505250435,"name":"Title","position":1,"values":["Default
+        Title"]}],"images":[],"image":null}}'
+    http_version: 
+  recorded_at: Mon, 31 Aug 2015 06:56:18 GMT
+recorded_with: VCR 2.9.3

@@ -40,3 +40,4 @@ require "representable/debug"
 require "support/vcr"
 require "dummy/dummy_store"
 require "dummy/dummy_data"
+

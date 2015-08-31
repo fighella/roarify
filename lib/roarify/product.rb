@@ -1,6 +1,6 @@
 module Roarify
   class Product
-    attr_accessor :id, :body_html, :title, :vendor, :handle, :product_type, :variants, :images, :created_at, :handle, :body_html, :images, :options,:product_type,:published_at,:published_scope,:published, :tags,:template_suffix,:title,:updated_at,:barcode,:compare_at_price,:created_at,:fulfillment_service,:grams,:weight,:weight_unit,:inventory_management,:inventory_policy,:inventory_quantity,:metafield,:vendor
+    attr_accessor :id, :body_html, :title, :vendor, :handle, :product_type, :variants, :images, :created_at, :handle, :body_html, :images, :options,:product_type,:published_at,:published_scope,:published, :tags,:template_suffix,:title,:updated_at,:barcode,:compare_at_price,:created_at,:metafield,:vendor
 
     def self.find(id)
       Finder.new(Product,id).find
@@ -11,14 +11,14 @@ module Roarify
         begin
           Roarify::ProductUpdate.new(self)
         rescue
-          raise "Cannot Save Product - Check your data #{self.inspect.to_s}"
+          raise "Cannot Save Product - Check your data - Taken Handle? #{self.inspect.to_s} #{RuntimeError}"
           # binding.pry
         end
       else
         begin
           Roarify::ProductCreate.new(self)
         rescue
-          raise "Cannot Save Product - Check your data #{self.inspect.to_s}"
+          raise "Cannot Save Product - Check your data - Taken Handle? #{self.inspect.to_s} #{RuntimeError}"
           # binding.pry
         end
       end

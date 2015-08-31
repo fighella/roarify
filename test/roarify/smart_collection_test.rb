@@ -4,8 +4,16 @@ require "test_helper"
 
 class SmartCollectionTest < MiniTest::Spec
   
+  def vcr_connect
+    VCR.use_cassette 'connect_to_test_shop' do
+      DummyStore.test_auth
+    end
+  end
+
+  
   describe "Smart Collections" do
     it "can create a new smart collection" do
+      vcr_connect
       sc = Roarify::SmartCollection.new
       sc.title = 'New SC'
       VCR.use_cassette 'create_smart_collections' do
@@ -15,6 +23,8 @@ class SmartCollectionTest < MiniTest::Spec
     end
 
     it "should fail if you pass bad rule conditions" do
+      vcr_connect
+      sc = Roarify::SmartCollection.new
       sc = Roarify::SmartCollection.new
       sc.title = 'Bad Rules!'
       rules = []
@@ -30,6 +40,8 @@ class SmartCollectionTest < MiniTest::Spec
     end
 
     it "can create a new smart collection with rules" do
+      vcr_connect
+      sc = Roarify::SmartCollection.new
       sc = Roarify::SmartCollection.new
       sc.title = 'New SC 2'
       rules = []

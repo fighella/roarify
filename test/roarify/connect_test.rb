@@ -6,7 +6,7 @@ class Roarify::ConnectTest < MiniTest::Spec
     
     it "can connect to the shop" do
       keys = { api_key: DummyStore.api_key, shop_domain: DummyStore.store, password: DummyStore.password }
-      Roarify::Connect.new(keys).connection
+      Roarify::Connect.new(keys)
       shop = nil
       VCR.use_cassette 'finds the connected shop' do
         shop = Roarify::Shop.find

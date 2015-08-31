@@ -4,8 +4,15 @@ require 'test_helper'
 
 class Roarify::ProductTest < MiniTest::Spec
   
+  def vcr_connect
+    VCR.use_cassette 'connect_to_test_shop' do
+      DummyStore.test_auth
+    end
+  end
+  
   describe "Products" do
     it "can create a product" do
+      vcr_connect
       product = Roarify::Product.new
       product.title = 'Trailblazer. The Booksie.'
       product.body_html = DummyData.new.description
@@ -18,6 +25,8 @@ class Roarify::ProductTest < MiniTest::Spec
     end
 
     it "can delete a product zzz" do
+      vcr_connect
+      product = Roarify::Product.new
       product = Roarify::Product.new
       product.title = 'Gonna Delete this'
       VCR.use_cassette "create_product_with_handle_#{product.handle}" do
@@ -33,6 +42,8 @@ class Roarify::ProductTest < MiniTest::Spec
     end
 
     it "does not update a product when trying to use a handle already taken" do
+      vcr_connect
+      product = Roarify::Product.new
       product = Roarify::Product.new
       product.title = 'I was like. The movie.'
       product.body_html = DummyData.new.description
@@ -46,6 +57,8 @@ class Roarify::ProductTest < MiniTest::Spec
     end
 
     it "find and update a product" do
+      vcr_connect
+      product = Roarify::Product.new
       product = Roarify::Product.new
       product.title = 'I was like. The movie.'
       product.body_html = DummyData.new.description
@@ -68,6 +81,8 @@ class Roarify::ProductTest < MiniTest::Spec
     end
 
     it "can search for a Product by handle" do 
+      vcr_connect
+      product = Roarify::Product.new
       VCR.use_cassette 'find_product_by_handle' do
         Roarify::Product.where('handle', 'trailblazer-the-book')
       end
@@ -87,6 +102,8 @@ class Roarify::ProductTest < MiniTest::Spec
     end
 
     it "can add product images" do
+      vcr_connect
+      product = Roarify::Product.new
       product = nil
       VCR.use_cassette "show_product_1418685443" do
         product = Roarify::Product.find(1418685443)
@@ -109,6 +126,7 @@ class Roarify::ProductTest < MiniTest::Spec
     # end
 
     it "can find if a product has any variants" do
+      vcr_connect
       product = nil
       VCR.use_cassette "show_product_1418685443" do
         product = Roarify::Product.find(1418685443)
@@ -117,6 +135,7 @@ class Roarify::ProductTest < MiniTest::Spec
     end
 
     it "wont save product variants on update xxx" do
+      vcr_connect
       product = nil
       VCR.use_cassette "find_product_1418685443" do
         product = Roarify::Product.find(1418685443)
@@ -181,6 +200,7 @@ class Roarify::ProductTest < MiniTest::Spec
     end
 
     it "can find product variants by id" do
+      vcr_connect
       product = Roarify::Product.new
       representer = Roarify::ProductDecorator.new(product)
       product_url = "https://#{DummyStore.store}/admin/products/1418685443.json"
@@ -193,6 +213,7 @@ class Roarify::ProductTest < MiniTest::Spec
     end
 
     it "can connect to the shop" do
+      vcr_connect
       product = Roarify::Product.new
       representer = Roarify::ProductDecorator.new(product)
       product_url = "https://#{DummyStore.store}/admin/products/1418685443.json"
@@ -205,6 +226,7 @@ class Roarify::ProductTest < MiniTest::Spec
     end
 
     it "can find a product by hand and update one of its variant" do
+      vcr_connect
       search = nil
       VCR.use_cassette 'find_product_18' do
         search = Roarify::Product.where(:handle, 'trailblazer-the-book-18')
