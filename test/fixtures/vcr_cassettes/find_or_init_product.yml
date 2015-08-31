@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 31 Aug 2015 06:56:08 GMT
+      - Mon, 31 Aug 2015 10:01:22 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -59,11 +59,11 @@ http_interactions:
       X-Stats-Apipermissionid:
       - '12331486'
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/9df3aa53-82bc-43f1-a957-45c74d012b6d?source%5Baction%5D=index&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/1af7b4ba-a685-484f-9c87-1aa8b871c2ab?source%5Baction%5D=index&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
       Set-Cookie:
       - request_method=GET; path=/
       X-Request-Id:
-      - 9df3aa53-82bc-43f1-a957-45c74d012b6d
+      - 1af7b4ba-a685-484f-9c87-1aa8b871c2ab
       P3p:
       - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
       X-Content-Type-Options:
@@ -74,7 +74,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"products":[{"id":1505250435}]}'
     http_version: 
-  recorded_at: Mon, 31 Aug 2015 06:56:08 GMT
+  recorded_at: Mon, 31 Aug 2015 10:01:23 GMT
 - request:
     method: get
     uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products/1505250435.json
@@ -98,7 +98,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 31 Aug 2015 06:56:09 GMT
+      - Mon, 31 Aug 2015 10:01:25 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -134,11 +134,11 @@ http_interactions:
       X-Stats-Apipermissionid:
       - '12331486'
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/d700fe77-803d-4db1-b188-fe901685311e?source%5Baction%5D=show&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/3a3dce34-f293-4009-b264-53863035f434?source%5Baction%5D=show&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
       Set-Cookie:
       - request_method=GET; path=/
       X-Request-Id:
-      - d700fe77-803d-4db1-b188-fe901685311e
+      - 3a3dce34-f293-4009-b264-53863035f434
       P3p:
       - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
       X-Content-Type-Options:
@@ -152,7 +152,7 @@ http_interactions:
         Title","option2":null,"option3":null,"created_at":"2015-07-08T07:42:19-04:00","updated_at":"2015-07-08T07:42:19-04:00","requires_shipping":true,"taxable":true,"barcode":null,"inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"}],"options":[{"id":1802264003,"product_id":1505250435,"name":"Title","position":1,"values":["Default
         Title"]}],"images":[],"image":null}}'
     http_version: 
-  recorded_at: Mon, 31 Aug 2015 06:56:09 GMT
+  recorded_at: Mon, 31 Aug 2015 10:01:26 GMT
 - request:
     method: get
     uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products.json?fields=id&handle=i-like-this-book
@@ -176,7 +176,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 31 Aug 2015 06:56:10 GMT
+      - Mon, 31 Aug 2015 10:01:28 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -212,11 +212,11 @@ http_interactions:
       X-Stats-Apipermissionid:
       - '12331486'
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/095cfb73-2b9d-4a6b-955c-cbe64ebddfdf?source%5Baction%5D=index&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/20497554-bc0f-4e3a-8dca-51929a8fc2b0?source%5Baction%5D=index&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
       Set-Cookie:
       - request_method=GET; path=/
       X-Request-Id:
-      - 095cfb73-2b9d-4a6b-955c-cbe64ebddfdf
+      - 20497554-bc0f-4e3a-8dca-51929a8fc2b0
       P3p:
       - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
       X-Content-Type-Options:
@@ -227,7 +227,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"products":[{"id":1505250435}]}'
     http_version: 
-  recorded_at: Mon, 31 Aug 2015 06:56:10 GMT
+  recorded_at: Mon, 31 Aug 2015 10:01:29 GMT
 - request:
     method: get
     uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products/1505250435.json
@@ -251,7 +251,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 31 Aug 2015 06:56:12 GMT
+      - Mon, 31 Aug 2015 10:01:31 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -287,11 +287,11 @@ http_interactions:
       X-Stats-Apipermissionid:
       - '12331486'
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/bceec1d9-5747-47a0-92cc-7a959db20940?source%5Baction%5D=show&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/c964be60-8193-4c0d-85ac-daf5602b17ab?source%5Baction%5D=show&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
       Set-Cookie:
       - request_method=GET; path=/
       X-Request-Id:
-      - bceec1d9-5747-47a0-92cc-7a959db20940
+      - c964be60-8193-4c0d-85ac-daf5602b17ab
       P3p:
       - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
       X-Content-Type-Options:
@@ -305,5 +305,5 @@ http_interactions:
         Title","option2":null,"option3":null,"created_at":"2015-07-08T07:42:19-04:00","updated_at":"2015-07-08T07:42:19-04:00","requires_shipping":true,"taxable":true,"barcode":null,"inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"}],"options":[{"id":1802264003,"product_id":1505250435,"name":"Title","position":1,"values":["Default
         Title"]}],"images":[],"image":null}}'
     http_version: 
-  recorded_at: Mon, 31 Aug 2015 06:56:12 GMT
+  recorded_at: Mon, 31 Aug 2015 10:01:31 GMT
 recorded_with: VCR 2.9.3

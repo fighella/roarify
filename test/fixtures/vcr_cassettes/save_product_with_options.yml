@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 31 Aug 2015 06:58:04 GMT
+      - Mon, 31 Aug 2015 09:59:57 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -35,9 +35,9 @@ http_interactions:
       X-Sorting-Hat-Shopid:
       - '9123524'
       X-Sorting-Hat-Podid-Cached:
-      - '1'
+      - '0'
       X-Sorting-Hat-Shopid-Cached:
-      - '1'
+      - '0'
       Vary:
       - Accept-Encoding
       Status:
@@ -59,11 +59,11 @@ http_interactions:
       X-Stats-Apipermissionid:
       - '12331486'
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/d9020118-07c8-440f-8f77-de3fbf70aa18?source%5Baction%5D=index&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/c6f18664-7d9b-4fe3-8d08-f4538e340460?source%5Baction%5D=index&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
       Set-Cookie:
       - request_method=GET; path=/
       X-Request-Id:
-      - d9020118-07c8-440f-8f77-de3fbf70aa18
+      - c6f18664-7d9b-4fe3-8d08-f4538e340460
       P3p:
       - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
       X-Content-Type-Options:
@@ -74,7 +74,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"products":[{"id":1418685443}]}'
     http_version: 
-  recorded_at: Mon, 31 Aug 2015 06:58:04 GMT
+  recorded_at: Mon, 31 Aug 2015 09:59:57 GMT
 - request:
     method: get
     uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products/1418685443.json
@@ -98,7 +98,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 31 Aug 2015 06:58:05 GMT
+      - Mon, 31 Aug 2015 09:59:58 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -110,9 +110,9 @@ http_interactions:
       X-Sorting-Hat-Shopid:
       - '9123524'
       X-Sorting-Hat-Podid-Cached:
-      - '1'
+      - '0'
       X-Sorting-Hat-Shopid-Cached:
-      - '1'
+      - '0'
       Vary:
       - Accept-Encoding
       Status:
@@ -134,11 +134,11 @@ http_interactions:
       X-Stats-Apipermissionid:
       - '12331486'
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/2f03ce28-ae73-4aca-a475-4a502b7bcb56?source%5Baction%5D=show&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/c6e3437b-0870-4b23-a75a-55e1b32f7cbc?source%5Baction%5D=show&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
       Set-Cookie:
       - request_method=GET; path=/
       X-Request-Id:
-      - 2f03ce28-ae73-4aca-a475-4a502b7bcb56
+      - c6e3437b-0870-4b23-a75a-55e1b32f7cbc
       P3p:
       - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
       X-Content-Type-Options:
@@ -148,7 +148,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"product":{"id":1418685443,"title":"Easy to find!","body_html":"New
-        Description","vendor":"VayBay","product_type":"Bible","created_at":"2015-07-03T08:26:03-04:00","handle":"trailblazer-the-book-12","updated_at":"2015-08-30T07:29:26-04:00","published_at":"2015-07-03T08:26:03-04:00","template_suffix":null,"published_scope":"global","tags":"","variants":[{"id":4683771779,"product_id":1418685443,"title":"Default
+        Description","vendor":"VayBay","product_type":"Bible","created_at":"2015-07-03T08:26:03-04:00","handle":"trailblazer-the-book-12","updated_at":"2015-08-31T03:10:34-04:00","published_at":"2015-07-03T08:26:03-04:00","template_suffix":null,"published_scope":"global","tags":"","variants":[{"id":4683771779,"product_id":1418685443,"title":"Default
         Title","price":"0.00","sku":"","position":1,"grams":0,"inventory_policy":"deny","compare_at_price":null,"fulfillment_service":"manual","inventory_management":null,"option1":"Default
         Title","option2":null,"option3":null,"created_at":"2015-07-12T06:53:09-04:00","updated_at":"2015-07-12T06:53:09-04:00","requires_shipping":true,"taxable":true,"barcode":null,"inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"id":4722223363,"product_id":1418685443,"title":"Largest
         YIM YOM 2015-07-13 19:52:52 +1000","price":"13.50","sku":"","position":2,"grams":0,"inventory_policy":"deny","compare_at_price":null,"fulfillment_service":"manual","inventory_management":null,"option1":"Largest
@@ -324,7 +324,7 @@ http_interactions:
         Boogie 2015-08-30 18:29:50 +1000","Largest YIM YOM 2015-08-30 11:29:25 +0000","Largest
         PLOONK PLANK 2015-08-30 11:29:25 +0000"]}],"images":[],"image":null}}'
     http_version: 
-  recorded_at: Mon, 31 Aug 2015 06:58:05 GMT
+  recorded_at: Mon, 31 Aug 2015 09:59:59 GMT
 - request:
     method: get
     uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products.json?fields=id&handle=trailblazer-the-book-12
@@ -348,7 +348,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 31 Aug 2015 06:58:07 GMT
+      - Mon, 31 Aug 2015 10:00:00 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -360,9 +360,9 @@ http_interactions:
       X-Sorting-Hat-Shopid:
       - '9123524'
       X-Sorting-Hat-Podid-Cached:
-      - '1'
+      - '0'
       X-Sorting-Hat-Shopid-Cached:
-      - '1'
+      - '0'
       Vary:
       - Accept-Encoding
       Status:
@@ -384,11 +384,11 @@ http_interactions:
       X-Stats-Apipermissionid:
       - '12331486'
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/c3a7b2ad-602a-4d63-af67-3c9a848fd6a7?source%5Baction%5D=index&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/eac22448-339c-423a-8b54-c9449900317a?source%5Baction%5D=index&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
       Set-Cookie:
       - request_method=GET; path=/
       X-Request-Id:
-      - c3a7b2ad-602a-4d63-af67-3c9a848fd6a7
+      - eac22448-339c-423a-8b54-c9449900317a
       P3p:
       - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
       X-Content-Type-Options:
@@ -399,7 +399,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"products":[{"id":1418685443}]}'
     http_version: 
-  recorded_at: Mon, 31 Aug 2015 06:58:07 GMT
+  recorded_at: Mon, 31 Aug 2015 10:00:00 GMT
 - request:
     method: get
     uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products/1418685443.json
@@ -423,7 +423,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 31 Aug 2015 06:58:08 GMT
+      - Mon, 31 Aug 2015 10:00:01 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -459,11 +459,11 @@ http_interactions:
       X-Stats-Apipermissionid:
       - '12331486'
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/10fc73d4-7d76-44ba-a14f-600028c050e1?source%5Baction%5D=show&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/d402d9c2-ec68-45e7-994d-d65d1b6dfb35?source%5Baction%5D=show&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
       Set-Cookie:
       - request_method=GET; path=/
       X-Request-Id:
-      - 10fc73d4-7d76-44ba-a14f-600028c050e1
+      - d402d9c2-ec68-45e7-994d-d65d1b6dfb35
       P3p:
       - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
       X-Content-Type-Options:
@@ -473,7 +473,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"product":{"id":1418685443,"title":"Easy to find!","body_html":"New
-        Description","vendor":"VayBay","product_type":"Bible","created_at":"2015-07-03T08:26:03-04:00","handle":"trailblazer-the-book-12","updated_at":"2015-08-30T07:29:26-04:00","published_at":"2015-07-03T08:26:03-04:00","template_suffix":null,"published_scope":"global","tags":"","variants":[{"id":4683771779,"product_id":1418685443,"title":"Default
+        Description","vendor":"VayBay","product_type":"Bible","created_at":"2015-07-03T08:26:03-04:00","handle":"trailblazer-the-book-12","updated_at":"2015-08-31T03:10:34-04:00","published_at":"2015-07-03T08:26:03-04:00","template_suffix":null,"published_scope":"global","tags":"","variants":[{"id":4683771779,"product_id":1418685443,"title":"Default
         Title","price":"0.00","sku":"","position":1,"grams":0,"inventory_policy":"deny","compare_at_price":null,"fulfillment_service":"manual","inventory_management":null,"option1":"Default
         Title","option2":null,"option3":null,"created_at":"2015-07-12T06:53:09-04:00","updated_at":"2015-07-12T06:53:09-04:00","requires_shipping":true,"taxable":true,"barcode":null,"inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"id":4722223363,"product_id":1418685443,"title":"Largest
         YIM YOM 2015-07-13 19:52:52 +1000","price":"13.50","sku":"","position":2,"grams":0,"inventory_policy":"deny","compare_at_price":null,"fulfillment_service":"manual","inventory_management":null,"option1":"Largest
@@ -649,7 +649,7 @@ http_interactions:
         Boogie 2015-08-30 18:29:50 +1000","Largest YIM YOM 2015-08-30 11:29:25 +0000","Largest
         PLOONK PLANK 2015-08-30 11:29:25 +0000"]}],"images":[],"image":null}}'
     http_version: 
-  recorded_at: Mon, 31 Aug 2015 06:58:08 GMT
+  recorded_at: Mon, 31 Aug 2015 10:00:02 GMT
 - request:
     method: put
     uri: https://267bb31dc494b49d62868e5845133fea:670cb9711a17762b01aedd42692b2225@roarify.myshopify.com/admin/products/1418685443.json
@@ -792,7 +792,7 @@ http_interactions:
         PLOONK PLANK 2015-08-30 11:29:25 +0000","price":"13.50","title":"Largest PLOONK
         PLANK 2015-08-30 11:29:25 +0000","barcode":"iwaslike","inventory_quantity":1,"old_inventory_quantity":1}],"images":[],"options":[{"name":"Size"}],"title":"Easy
         to find!","id":1418685443,"vendor":"VayBay","created_at":"2015-07-03T08:26:03-04:00","body_html":"New
-        Description","handle":"trailblazer-the-book-12","product_type":"Bible","published_at":"2015-07-03T08:26:03-04:00","published_scope":"global","tags":"","updated_at":"2015-08-30T07:29:26-04:00"}}'
+        Description","handle":"trailblazer-the-book-12","product_type":"Bible","published_at":"2015-07-03T08:26:03-04:00","published_scope":"global","tags":"","updated_at":"2015-08-31T03:10:34-04:00"}}'
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -810,7 +810,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 31 Aug 2015 06:58:11 GMT
+      - Mon, 31 Aug 2015 10:00:05 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -848,11 +848,11 @@ http_interactions:
       Location:
       - https://roarify.myshopify.com/admin/products/1418685443
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/c2442cb2-0bd8-49bc-a0aa-480f9764d3fa?source%5Baction%5D=update&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/4939d867-ca99-44f4-987d-79bfb40a56d1?source%5Baction%5D=update&source%5Bcontroller%5D=admin%2Fproducts&source%5Bsection%5D=admin
       Set-Cookie:
       - request_method=PUT; path=/
       X-Request-Id:
-      - c2442cb2-0bd8-49bc-a0aa-480f9764d3fa
+      - 4939d867-ca99-44f4-987d-79bfb40a56d1
       P3p:
       - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
       X-Content-Type-Options:
@@ -862,7 +862,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"product":{"id":1418685443,"title":"Easy to find!","body_html":"New
-        Description","vendor":"VayBay","product_type":"Bible","created_at":"2015-07-03T08:26:03-04:00","handle":"trailblazer-the-book-12","updated_at":"2015-08-30T07:29:26-04:00","published_at":"2015-07-03T08:26:03-04:00","template_suffix":null,"published_scope":"global","tags":"","variants":[{"id":4683771779,"product_id":1418685443,"title":"Default
+        Description","vendor":"VayBay","product_type":"Bible","created_at":"2015-07-03T08:26:03-04:00","handle":"trailblazer-the-book-12","updated_at":"2015-08-31T03:10:34-04:00","published_at":"2015-07-03T08:26:03-04:00","template_suffix":null,"published_scope":"global","tags":"","variants":[{"id":4683771779,"product_id":1418685443,"title":"Default
         Title","price":"0.00","sku":"","position":1,"grams":0,"inventory_policy":"deny","compare_at_price":null,"fulfillment_service":"manual","inventory_management":null,"option1":"Default
         Title","option2":null,"option3":null,"created_at":"2015-07-12T06:53:09-04:00","updated_at":"2015-07-12T06:53:09-04:00","requires_shipping":true,"taxable":true,"barcode":null,"inventory_quantity":1,"old_inventory_quantity":1,"image_id":null,"weight":0.0,"weight_unit":"kg"},{"id":4722223363,"product_id":1418685443,"title":"Largest
         YIM YOM 2015-07-13 19:52:52 +1000","price":"13.50","sku":"","position":2,"grams":0,"inventory_policy":"deny","compare_at_price":null,"fulfillment_service":"manual","inventory_management":null,"option1":"Largest
@@ -1038,5 +1038,5 @@ http_interactions:
         Boogie 2015-08-30 18:29:50 +1000","Largest YIM YOM 2015-08-30 11:29:25 +0000","Largest
         PLOONK PLANK 2015-08-30 11:29:25 +0000"]}],"images":[],"image":null}}'
     http_version: 
-  recorded_at: Mon, 31 Aug 2015 06:58:11 GMT
+  recorded_at: Mon, 31 Aug 2015 10:00:05 GMT
 recorded_with: VCR 2.9.3

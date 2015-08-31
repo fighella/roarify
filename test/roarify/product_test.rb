@@ -201,15 +201,11 @@ class Roarify::ProductTest < MiniTest::Spec
 
     it "can find product variants by id" do
       vcr_connect
-      product = Roarify::Product.new
-      representer = Roarify::ProductDecorator.new(product)
-      product_url = "https://#{DummyStore.store}/admin/products/1418685443.json"
+      variant = nil
       VCR.use_cassette 'show_product_1' do
-        representer.get(uri: product_url,
-                        as: "application/json",
-                        basic_auth: [DummyStore.api_key, DummyStore.password])
+        variant = Roarify::Variant.find(4683771779)
       end
-      #product.variants[0].sku.must_equal ''
+      variant.option1.must_equal 'Default Title'
     end
 
     it "can connect to the shop" do
@@ -233,15 +229,17 @@ class Roarify::ProductTest < MiniTest::Spec
       end
       
       matching = search[0].variants[0]
-      matching.sku = 'DISKO-sUz'
+      matching.sku = 'DISKO-sUzy'
+      matching.inventory_management = "shopify"
       matching.old_inventory_quantity = 1
+      # matching.inventory_quantity_adjustment = +12
       matching.inventory_quantity = 12
 
-      variant = Roarify::VariantDecorator.new(matching)
       VCR.use_cassette 'update_product_variant' do
-        variant.update
+        matching.update
       end
-      variant.represented.sku.must_equal 'DISKO-sUz'
+      matching.sku.must_equal 'DISKO-sUzy'
+      matching.inventory_quantity.must_equal 12
     end
   end
 

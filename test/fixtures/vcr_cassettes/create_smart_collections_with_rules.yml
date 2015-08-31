@@ -24,7 +24,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 31 Aug 2015 06:56:05 GMT
+      - Mon, 31 Aug 2015 10:09:00 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -36,9 +36,9 @@ http_interactions:
       X-Sorting-Hat-Shopid:
       - '9123524'
       X-Sorting-Hat-Podid-Cached:
-      - '1'
+      - '0'
       X-Sorting-Hat-Shopid-Cached:
-      - '1'
+      - '0'
       Status:
       - 201 Created
       X-Frame-Options:
@@ -58,13 +58,13 @@ http_interactions:
       X-Stats-Apipermissionid:
       - '12331486'
       Location:
-      - https://roarify.myshopify.com/admin/smart_collections/119085059
+      - https://roarify.myshopify.com/admin/smart_collections/119149315
       X-Xss-Protection:
-      - 1; mode=block; report=/xss-report/d3dacc58-69e4-478a-9404-60ed615bd9b0?source%5Baction%5D=create&source%5Bcontroller%5D=admin%2Fsmart_collections&source%5Bsection%5D=admin
+      - 1; mode=block; report=/xss-report/9f2df3c0-3283-4b25-922c-b83c9fa595c8?source%5Baction%5D=create&source%5Bcontroller%5D=admin%2Fsmart_collections&source%5Bsection%5D=admin
       Set-Cookie:
       - request_method=POST; path=/
       X-Request-Id:
-      - d3dacc58-69e4-478a-9404-60ed615bd9b0
+      - 9f2df3c0-3283-4b25-922c-b83c9fa595c8
       P3p:
       - CP="NOI DSP COR NID ADMa OPTa OUR NOR"
       X-Content-Type-Options:
@@ -73,8 +73,8 @@ http_interactions:
       - ash
     body:
       encoding: UTF-8
-      string: '{"smart_collection":{"id":119085059,"handle":"new-sc-153","title":"New
-        SC 2","updated_at":"2015-08-31T02:56:05-04:00","body_html":null,"published_at":"2015-08-31T02:56:05-04:00","sort_order":"alpha-asc","template_suffix":null,"published_scope":"global","disjunctive":false,"rules":[{"column":"title","relation":"contains","condition":"Trailblazer"},{"column":"vendor","relation":"not_equals","condition":"Boogie"}]}}'
+      string: '{"smart_collection":{"id":119149315,"handle":"new-sc-155","title":"New
+        SC 2","updated_at":"2015-08-31T06:09:00-04:00","body_html":null,"published_at":"2015-08-31T06:08:59-04:00","sort_order":"alpha-asc","template_suffix":null,"published_scope":"global","disjunctive":false,"rules":[{"column":"title","relation":"contains","condition":"Trailblazer"},{"column":"vendor","relation":"not_equals","condition":"Boogie"}]}}'
     http_version: 
-  recorded_at: Mon, 31 Aug 2015 06:56:05 GMT
+  recorded_at: Mon, 31 Aug 2015 10:09:00 GMT
 recorded_with: VCR 2.9.3
