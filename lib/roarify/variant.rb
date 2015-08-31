@@ -6,7 +6,5 @@ module Roarify
       Finder.new(Variant,id).find
     end
 
-
-
   end
 end
