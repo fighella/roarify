@@ -8,9 +8,15 @@ module Roarify
     
     def save
       if exists?
-        Roarify::ProductUpdate.new(self)
+        begin
+          Roarify::ProductUpdate.new(self)
+        rescue
+          binding.pry
       else
-        Roarify::ProductCreate.new(self)
+        begin
+          Roarify::ProductCreate.new(self)
+        rescue
+          binding.pry
       end
     end
 
