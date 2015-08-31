@@ -19,6 +19,7 @@ module Roarify
     property :weight
     property :weight_unit
     property :grams
+    property :inventory_policy
     property :inventory_management
     property :inventory_quantity
     property :old_inventory_quantity
