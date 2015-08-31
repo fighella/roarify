@@ -16,6 +16,10 @@ module Roarify
     property :price
     property :title
     property :barcode
+    property :weight
+    property :weight_unit
+    property :grams
+    property :inventory_management
     property :inventory_quantity
     property :old_inventory_quantity
 
