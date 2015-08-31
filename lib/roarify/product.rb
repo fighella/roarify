@@ -12,11 +12,13 @@ module Roarify
           Roarify::ProductUpdate.new(self)
         rescue
           binding.pry
+        end
       else
         begin
           Roarify::ProductCreate.new(self)
         rescue
           binding.pry
+        end
       end
     end
 
