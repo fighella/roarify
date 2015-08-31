@@ -39,13 +39,14 @@ module Roarify
     property :barcode
     property :compare_at_price
     property :created_at
-    property :fulfillment_service
-    property :grams
-    property :weight
-    property :weight_unit
-    property :inventory_management
-    property :inventory_policy
-    property :inventory_quantity
+    # property :fulfillment_service
+    # Variant props
+    # property :grams
+    # property :weight
+    # property :weight_unit
+    # property :inventory_management
+    # property :inventory_policy
+    # property :inventory_quantity
     property :metafield
 
    
