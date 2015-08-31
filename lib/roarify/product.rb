@@ -11,13 +11,15 @@ module Roarify
         begin
           Roarify::ProductUpdate.new(self)
         rescue
-          binding.pry
+          raise "Cannot Save Product - Check your data #{self.inspect.to_s}"
+          # binding.pry
         end
       else
         begin
           Roarify::ProductCreate.new(self)
         rescue
-          binding.pry
+          raise "Cannot Save Product - Check your data #{self.inspect.to_s}"
+          # binding.pry
         end
       end
     end
