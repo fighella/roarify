@@ -17,6 +17,7 @@ module Roarify
 
     private
     def find_type
+      puts "Find Type: #{representer.resource_request(@id)}"
       representer.get(representer.resource_request(@id))
     end
 
