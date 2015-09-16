@@ -1,6 +1,5 @@
 module Roarify
   class Finder
-    
     def initialize(klass, id=nil, nested=nil)
       @klass= klass
       @dekorator = @klass.decorator
@@ -30,7 +29,6 @@ module Roarify
       obj = @klass.new
       @dekorator.new(obj)
     end
-
 
   end
 end
