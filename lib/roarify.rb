@@ -40,4 +40,7 @@ module Roarify
   require "roarify/theme"
   require "roarify/url"
   require "roarify/variant"
+  require "roarify/redirect"
+  require "representer/redirect_decorator"
+  # require "representer/redirect_representer"
 end
