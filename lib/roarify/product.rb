@@ -11,14 +11,14 @@ module Roarify
         begin
           Roarify::ProductUpdate.new(self)
         rescue
-          raise "Cannot Save Product - Check your data - Taken Handle? [Update] #{self.inspect.to_s} #{RuntimeError}"
+          raise "Cannot Update this Product - Check your data - Taken Handle? [Update] #{self.inspect.to_s} #{RuntimeError}"
           # binding.pry
         end
       else
         begin
           Roarify::ProductCreate.new(self)
         rescue
-          raise "Cannot Save Product - Check your data - Taken Handle? [Create] #{self.inspect.to_s} #{RuntimeError}"
+          raise "Cannot Create this Product - Check your data - Taken Handle? [Create] #{self.inspect.to_s} #{RuntimeError}"
           # binding.pry
         end
       end
