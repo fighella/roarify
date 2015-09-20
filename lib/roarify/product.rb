@@ -11,13 +11,13 @@ module Roarify
         begin
           Roarify::ProductUpdate.new(self)
         rescue Exception => e
-          puts "Cannot Update this Product - Check your data - Taken Handle? [Update] \n #{e.exception} :: #{e.exception.response.body}\n #{self.inspect.to_s}"
+          Error.new(e)
         end
       else
         begin
           Roarify::ProductCreate.new(self)
         rescue Exception => e
-          puts "Cannot Create Product - Check your data - Taken Handle? [Create] \n #{e.exception} :: #{e.exception.response.body}\n #{self.inspect.to_s}"
+          Error.new(e)
         end
       end
     end

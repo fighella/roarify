@@ -9,7 +9,7 @@ module Roarify
 
     def create
       if @product.changeable? 
-        raise 'Taken Handle'
+        raise Exception.new('Taken Handle')
       end
       create_product
     end

@@ -51,8 +51,8 @@ class Roarify::ProductTest < MiniTest::Spec
       product.handle = 'like-the-movie'
       product.product_type = 'Video'
       VCR.use_cassette "create_product_with_taken_handle_#{product.handle}" do
-        # err = ->{ product.save }.must_raise RuntimeError
-        # assert_match /Taken Handle/, err.message
+        err = ->{ product.save }.must_raise RuntimeError
+        assert_match /Taken Handle/, err.message
       end
     end
 
@@ -207,11 +207,12 @@ class Roarify::ProductTest < MiniTest::Spec
       variant.option1.must_equal 'Default Title'
     end
 
-    it "can send back an error message" do
+    it "can send back an decent error message" do
       vcr_connect
       product = Roarify::Product.new
       VCR.use_cassette 'fail_creating_a_product' do
-        product.save
+        err = ->{ product.save }.must_raise RuntimeError
+        assert_match /parameter/, err.message
       end
       ## Dome Error
     end
