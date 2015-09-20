@@ -41,6 +41,7 @@ module Roarify
   require "roarify/url"
   require "roarify/variant"
   require "roarify/redirect"
+  require "roarify/error"
   require "representer/redirect_decorator"
   # require "representer/redirect_representer"
 end
