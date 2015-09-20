@@ -10,14 +10,14 @@ module Roarify
       if exists?
         begin
           Roarify::ProductUpdate.new(self)
-        rescue
-          raise "Cannot Update this Product - Check your data - Taken Handle? [Update] #{self.inspect.to_s}"
+        rescue Exception => e
+          puts "Cannot Update this Product - Check your data - Taken Handle? [Update] \n #{e.exception} :: #{e.exception.response.body}\n #{self.inspect.to_s}"
         end
       else
         begin
           Roarify::ProductCreate.new(self)
-        rescue
-          raise "Cannot Create Product - Check your data - Taken Handle? [Create] #{self.inspect.to_s}"
+        rescue Exception => e
+          puts "Cannot Create Product - Check your data - Taken Handle? [Create] \n #{e.exception} :: #{e.exception.response.body}\n #{self.inspect.to_s}"
         end
       end
     end
