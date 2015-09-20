@@ -6,7 +6,6 @@ module Roarify
     end
   
     def raise_error
-      puts "Muthafucke"
       if @exception.class == Roar::Transport::Error
         e = @exception
         raise "Cannot Create/Update Product - Check your data - Taken Handle? [Create/Update] \n #{e.exception} :: #{e.message} #{e.exception.response.body}\n #{self.inspect.to_s}"
