@@ -11,13 +11,13 @@ module Roarify
         begin
           Roarify::ProductUpdate.new(self)
         rescue Exception => e
-          Error.new(e)
+          Error.new(e,self)
         end
       else
         begin
           Roarify::ProductCreate.new(self)
         rescue Exception => e
-          Error.new(e)
+          Error.new(e,self)
         end
       end
     end

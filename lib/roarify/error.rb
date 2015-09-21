@@ -1,7 +1,8 @@
 module Roarify
   class Error
-    def initialize(e)
+    def initialize(e,obj=nil)
       @exception = e
+      @obj = obj
       raise_error
     end
   
