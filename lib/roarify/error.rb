@@ -12,8 +12,8 @@ module Roarify
         # raise "Cannot Update this Product - Check your data - Taken Handle? [Update] \n #{e.exception} :: #{e.message} #{e.exception.response ? e.response.body : ''}"#".exception.response.body}\n #{self.inspect.to_s}"
       else
         raise "Something broke!#{@exception.inspect}"
+        binding.pry
       end
-      binding.pry
     end
 
     def self.log(error)
