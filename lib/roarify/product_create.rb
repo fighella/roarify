@@ -15,7 +15,6 @@ module Roarify
     end
 
     def create_product
-      binding.pry
       representer.post(representer.resource_request)
     end
 
