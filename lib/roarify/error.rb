@@ -11,8 +11,8 @@ module Roarify
         raise "Cannot Create/Update Product - Check your data - Taken Handle? [Create/Update] \n #{e.exception} :: #{e.message} #{e.exception.response.body}\n #{self.inspect.to_s}"
         # raise "Cannot Update this Product - Check your data - Taken Handle? [Update] \n #{e.exception} :: #{e.message} #{e.exception.response ? e.response.body : ''}"#".exception.response.body}\n #{self.inspect.to_s}"
       else
-        raise "Something broke!#{@exception.inspect}"
         binding.pry
+        raise "Something broke!#{@exception.inspect}"
       end
     end
 
