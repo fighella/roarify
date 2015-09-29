@@ -3,6 +3,7 @@ require 'representer/product_representer'
 require 'representer/variant_representer'
 require 'representer/image_representer'
 require 'representer/theme_representer'
+require 'representer/order_representer'
 module Roarify
   class SearchRepresenter < Roar::Decorator
     include Roar::JSON
@@ -11,6 +12,7 @@ module Roarify
     collection :themes, class: OpenStruct, decorator: Roarify::ThemeRepresenter
     collection :assets, class: OpenStruct, decorator: Roarify::AssetRepresenter
     collection :variants, class: OpenStruct, decorator: Roarify::VariantRepresenter
+    collection :orders, class: OpenStruct, decorator: Roarify::OrderRepresenter
 
     property :id
     property :title
