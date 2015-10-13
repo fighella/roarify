@@ -20,9 +20,8 @@ class Roarify::OrderTest < MiniTest::Spec
       end
 
       orders.each do |order|
-        puts order.inspect
+        # puts order.inspect
       end
-      puts 'One order for said test.'
       orders.count.must_be :>=, 1
       orders.count.must_be :<=, 2
     end
@@ -36,7 +35,6 @@ class Roarify::OrderTest < MiniTest::Spec
       end
 
       order = orders.first
-      puts order.class
       order.total_price.must_equal "21.00"
     end
   end
