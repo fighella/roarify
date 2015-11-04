@@ -20,6 +20,8 @@ module Roarify
   require "representer/option_decorator"
   require "representer/order_decorator"
   require "representer/order_representer"
+  require "representer/line_item_representer"
+  require "representer/line_item_decorator"
   require "representer/shop_representer"
   require "representer/shop_decorator"
   require "representer/smart_collection_representer"

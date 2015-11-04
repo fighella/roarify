@@ -11,10 +11,8 @@ module Roarify
     include Representer
     self.api_name = 'orders'
     self.representation_wrap = :order
-
-    property :id
-    property :total_price
-    property :email
+    
+    # collection :line_items, class: Roarify::LineItem, decorator: Roarify::LineItemDecorator, wrap: false
 
   end
 end

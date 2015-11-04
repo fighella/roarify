@@ -33,8 +33,10 @@ class Roarify::OrderTest < MiniTest::Spec
       VCR.use_cassette "get_orders" do
         orders = Roarify::Order.all
       end
-
+      puts 'Order Test'
       order = orders.first
+      # binding.pry
+      
       order.total_price.must_equal "21.00"
     end
   end
