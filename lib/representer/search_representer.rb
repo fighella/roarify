@@ -18,8 +18,8 @@ module Roarify
     property :title
     property :handle
 
-    def resource_request(resource=nil)
-      Roarify::Url.new(resource)
+    def resource_request(resource=nil,opts={})
+      Roarify::Url.new(resource,nil,nil, nil, opts)
     end
   end
 end

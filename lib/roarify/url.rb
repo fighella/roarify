@@ -1,16 +1,20 @@
 module Roarify
   class Url
-    def initialize(resource, id=nil, nested_resource=nil, nested_id=nil)
+    def initialize(resource, id=nil, nested_resource=nil, nested_id=nil, opts=nil)
       @resource = resource
       @id = id
       @nested_resource = nested_resource
       @nested_id = nested_id
+      @opts = opts
       set_request_type!
     end
 
     def url
       original_uri = connect[:uri]
       fixed_uri = original_uri + resource + '.json'
+      if @opts and !@opts.empty?
+        fixed_uri = fixed_uri + '?' + @opts
+      end
       connect.merge({uri: fixed_uri})
     end
 

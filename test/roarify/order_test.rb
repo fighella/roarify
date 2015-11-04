@@ -26,6 +26,38 @@ class Roarify::OrderTest < MiniTest::Spec
       orders.count.must_be :<=, 2
     end
 
+    it "can get all orders since order 1350600322" do
+      vcr_connect
+      orders = []
+      
+      VCR.use_cassette "get_orders since" do
+        orders = Roarify::Order.all_since_id('1350600322')
+      end
+
+      orders.each do |order|
+        # puts order.inspect
+      end
+
+     orders.count.must_be :>=, 1
+
+    end
+
+    it "can doesnt return any orders when none" do
+      vcr_connect
+      orders = []
+      
+      VCR.use_cassette "get_orders since huge number" do
+        orders = Roarify::Order.all_since_id('13506009325824')
+      end
+
+      orders.each do |order|
+        # puts order.inspect
+      end
+
+     orders.count.must_be :==, 0
+
+    end
+
     it "can return a single order" do
       vcr_connect
       orders = []

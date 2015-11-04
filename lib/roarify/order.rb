@@ -24,6 +24,16 @@ module Roarify
       find_by_ids( search.orders.map { |t| t.id } )
     end
 
+    def self.all_since_id(id)
+      search = Roarify::Search.new(Order, "since_id=#{id}").all
+      find_by_ids( search.orders.map { |t| t.id } )
+    end
+
+    def self.all_since_date(date)
+      search = Roarify::Search.new(Order, "?updated_at_min=#{date}").all
+      find_by_ids( search.orders.map { |t| t.id } )
+    end
+
     def self.find_by_ids(ids)
       ids.each.map { |id| Order.find(id) }
     end
