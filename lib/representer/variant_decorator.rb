@@ -23,6 +23,7 @@ module Roarify
     property :grams
     property :inventory_policy
     property :inventory_management
+    property :compare_at_price
     property :inventory_quantity
     property :inventory_quantity_adjustment
     property :old_inventory_quantity
